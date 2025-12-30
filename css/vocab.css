@@ -1,0 +1,259 @@
+/* =======================
+   Vocab Practice Page
+   ======================= */
+
+.vocab-page {
+  max-width: 1120px;
+}
+
+.vocab-main {
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+/* Hero */
+.vocab-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.vocab-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.vocab-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Progress card */
+.vocab-progress-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 16px 18px;
+  margin-bottom: 22px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vocab-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vocab-progress-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.vocab-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.vocab-progress-fill {
+  height: 100%;
+  background: #0c9c94;
+  width: 20%;
+  transition: width 0.3s ease;
+}
+
+.vocab-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.vocab-stat {
+  font-weight: 500;
+}
+
+/* Flashcard */
+.flashcard-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.flashcard {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  text-align: center;
+}
+
+.flashcard-badge {
+  display: inline-block;
+  background: #f3f4f6;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.flashcard-word {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.flashcard-translation {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.flashcard-divider {
+  width: 50px;
+  height: 2px;
+  background: #e5e7eb;
+  margin: 0 auto 14px;
+}
+
+.flashcard-example {
+  font-size: 14px;
+  color: var(--text-main);
+  font-style: italic;
+}
+
+.flashcard-icon {
+  position: absolute;
+  bottom: 16px;
+  right: 18px;
+  font-size: 18px;
+  opacity: 0.25;
+}
+
+/* Action buttons */
+.vocab-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-forgot {
+  padding: 10px 28px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: var(--text-main);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-forgot:hover {
+  background: #f9fafb;
+  border-color: #94a3b8;
+}
+
+.btn-knew {
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.vocab-hint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .vocab-title {
+    font-size: 22px;
+  }
+
+  .vocab-subtitle {
+    font-size: 13px;
+  }
+
+  .flashcard {
+    padding: 24px 20px;
+  }
+
+  .flashcard-word {
+    font-size: 28px;
+  }
+
+  .flashcard-translation {
+    font-size: 14px;
+  }
+
+  .flashcard-example {
+    font-size: 13px;
+  }
+
+  .vocab-actions {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .btn-forgot,
+  .btn-knew {
+    width: 100%;
+  }
+
+  .vocab-progress-card {
+    padding: 14px 16px;
+  }
+
+  .vocab-stats {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .flashcard-word {
+    font-size: 24px;
+  }
+
+  .flashcard {
+    padding: 20px 16px;
+  }
+}
+.speak-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.speak-btn:hover {
+  transform: scale(1.2);
+}
+
+.speak-btn:active {
+  transform: scale(0.9);
+}

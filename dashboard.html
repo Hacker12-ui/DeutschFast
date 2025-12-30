@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page dashboard-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">DeutschFast</div>
+      <nav class="nav-links">
+  <a href="dashboard.html" class="nav-link active">Dashboard</a>
+  <a href="courses.html">Courses</a>
+  <a href="lesson.html">Lessons</a>
+  <a href="vocab.html">Vocab</a>
+  <a href="#">Profile</a>
+  <a href="login.html" class="nav-link logout-link">Log out</a>
+</nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="dashboard-main">
+      <section class="dashboard-hero">
+        <h1 class="dashboard-title">Welcome back, Alex</h1>
+        <p class="dashboard-subtitle">
+          Here's your progress and today's next step.
+        </p>
+      </section>
+
+
+      <!-- Today's focus -->
+      <section class="today-card">
+        <h2 class="today-title">Today's focus</h2>
+        <p class="today-text">Continue your A1 course.</p>
+
+        <a href="lesson.html" class="btn btn-primary btn-today">
+          Continue lesson
+        </a>
+
+        <p class="today-estimate">Estimated time: 10–15 minutes</p>
+      </section>
+    
+      <!-- Quick access cards -->
+      <section class="quick-grid">
+        <article class="quick-card">
+          <div class="quick-icon">📚</div>
+          <h3 class="quick-title">Courses</h3>
+          <p class="quick-text">View levels and lessons</p>
+          <a href="courses.html" class="quick-link">Go to course</a>
+        </article>
+
+        <article class="quick-card" onclick="location.href='vocab.html'" style="cursor: pointer;">
+          <div class="quick-icon">🗂</div>
+          <h3 class="quick-title">Vocab practice</h3>
+          <p class="quick-text">Review today's words</p>
+          <div class="quick-tag">15 words due</div>
+        </article>
+
+        <article class="quick-card">
+          <div class="quick-icon">📈</div>
+          <h3 class="quick-title">Progress</h3>
+          <p class="quick-text">See your stats</p>
+          <p class="quick-muted">Current level: A1 · 30% complete</p>
+          <a href="progress.html" class="quick-link">View progress</a>
+        </article>
+      </section>
+
+
+      <!-- Weekly progress -->
+      <section class="weekly-card">
+        <p class="weekly-label">Your weekly progress</p>
+        <p class="weekly-text">Study days this week:</p>
+        <div class="weekly-dots">
+          <span class="dot dot-active"></span>
+          <span class="dot dot-active"></span>
+          <span class="dot dot-active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>DeutschFast</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

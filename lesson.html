@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 1 – Introductions | DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Lesson specific styles -->
+  <link rel="stylesheet" href="css/lesson.css" />
+</head>
+<body>
+  <div class="page lesson-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">DeutschFast</div>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="#" class="nav-link active">Lesson</a>
+        <a href="vocab.html">Vocab</a>
+        <a href="#">Profile</a>
+        <a href="login.html" class="nav-link logout-link">Log out</a>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="lesson-main">
+      <!-- Lesson header -->
+      <section class="lesson-hero">
+        <h1 class="lesson-title">A1 · Basics – Lesson 1: Introductions</h1>
+        <p class="lesson-subtitle">
+          Practice listening, reading, speaking, and writing.
+        </p>
+        <span class="lesson-pill">Lesson 1 of 5</span>
+      </section>
+
+            <!-- Lesson overview / explanation -->
+      <section class="lesson-overview">
+        <h2 class="lesson-overview-title">Today’s focus</h2>
+        <p class="lesson-overview-text">
+          In this lesson, you will practice basic German greetings and
+          introductions. You will learn how to say your name, age, and where
+          you are from using phrases like <em>Ich heiße ...</em>,
+          <em>Ich bin ... Jahre alt</em> and <em>Ich komme aus ...</em>.
+        </p>
+        <p class="lesson-overview-text">
+          Pay attention to how Lukas introduces himself in the listening and
+          reading sections, then use the same patterns in the speaking and
+          writing tasks.
+        </p>
+      </section>
+
+
+      <!-- Two-column grid: Listening + Reading, Speaking + Writing -->
+      <section class="lesson-grid">
+        <!-- Listening -->
+        <article class="lesson-card">
+          <h2 class="lesson-card-title">Listening</h2>
+          <p class="lesson-card-sub">Listen to the dialogue and answer the questions.</p>
+
+          <!-- Fake audio player -->
+          <div class="audio-player">
+            <button class="audio-play-btn">▶</button>
+            <div class="audio-bar">
+              <span class="audio-progress"></span>
+            </div>
+            <span class="audio-time">0:00 / 2:30</span>
+          </div>
+
+          <!-- One-question-at-a-time quiz -->
+          <div id="listening-quiz">
+            <p id="listening-question-text" class="question-text"></p>
+            <div id="listening-options"></div>
+
+            <div class="quiz-nav">
+              <button id="listening-prev" class="btn-quiz" disabled>Previous</button>
+              <span id="listening-progress" class="quiz-progress"></span>
+              <button id="listening-next" class="btn-quiz">Next</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Reading -->
+        <article class="lesson-card">
+          <h2 class="lesson-card-title">Reading</h2>
+          <p class="lesson-card-sub">Read the text and answer the questions.</p>
+
+          <div class="reading-text">
+            Mein Name ist Lukas und ich bin 25 Jahre alt. Ich komme aus Hamburg,
+            Deutschland. Ich lerne Englisch und Spanisch, weil ich gerne reise.
+            In meiner Freizeit lese ich Bücher und spiele Fußball.
+          </div>
+
+          <!-- One-question-at-a-time quiz -->
+          <div id="reading-quiz">
+            <p id="reading-question-text" class="question-text"></p>
+            <div id="reading-options"></div>
+
+            <div class="quiz-nav">
+              <button id="reading-prev" class="btn-quiz" disabled>Previous</button>
+              <span id="reading-progress" class="quiz-progress"></span>
+              <button id="reading-next" class="btn-quiz">Next</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Speaking -->
+        <article class="lesson-card">
+          <h2 class="lesson-card-title">Speaking</h2>
+          <p class="lesson-card-sub">
+            Introduce yourself in German. Say your name, age, and where you are from.
+          </p>
+
+          <div class="record-wrapper">
+            <button class="record-btn">
+              <span class="record-icon">🎙</span>
+            </button>
+            <p class="record-label">Record</p>
+          </div>
+
+          <p class="record-help">
+            Click record and speak for 30–60 seconds.
+          </p>
+        </article>
+
+        <!-- Writing -->
+        <article class="lesson-card">
+          <h2 class="lesson-card-title">Writing</h2>
+          <p class="lesson-card-sub">
+            Write 3–5 sentences about yourself in German. Use the new words you learned.
+          </p>
+
+          <textarea
+            class="writing-textarea"
+            placeholder="Schreiben Sie hier Ihre Antwort..."
+          ></textarea>
+
+          <p class="writing-help">
+            Use at least 3 of today’s new words.
+          </p>
+        </article>
+      </section>
+
+      <!-- Complete button -->
+      <section class="lesson-cta-section">
+        <button class="btn btn-primary lesson-cta-btn">
+          Complete lesson or Next lesson
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>DeutschFast</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Mini-quiz script -->
+  <script>
+  // Listening questions (add up to 10)
+  const listeningQuestions = [
+    {
+      text: "Was sagt der Mann zuerst?",
+      options: ["Guten Morgen.", "Guten Tag.", "Hallo."]
+    },
+    {
+      text: "Wie heißt die Frau?",
+      options: ["Sarah.", "Anna.", "Julia."]
+    },
+    {
+      text: "Woher kommt der Mann?",
+      options: ["Deutschland.", "Österreich.", "Schweiz."]
+    }
+    // add more listening questions here...
+  ];
+
+  // Reading questions (add up to 10)
+  const readingQuestions = [
+    {
+      text: "Lukas ist 25 Jahre alt.",
+      options: ["True", "False"]
+    },
+    {
+      text: "Lukas kommt aus Berlin.",
+      options: ["True", "False"]
+    }
+    // add more reading questions here...
+  ];
+
+  function setupMiniQuiz(config) {
+    const {
+      questions,
+      questionTextEl,
+      optionsContainer,
+      prevBtn,
+      nextBtn,
+      progressEl,
+      namePrefix
+    } = config;
+
+    let index = 0;
+
+    function render() {
+      const q = questions[index];
+      questionTextEl.textContent = q.text;
+
+      optionsContainer.innerHTML = "";
+      q.options.forEach((opt) => {
+        const label = document.createElement("label");
+        label.className = "option";
+
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = namePrefix + index;
+        input.value = opt;
+
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(" " + opt));
+        optionsContainer.appendChild(label);
+      });
+
+      progressEl.textContent = `Question ${index + 1} of ${questions.length}`;
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === questions.length - 1;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (index > 0) {
+        index--;
+        render();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (index < questions.length - 1) {
+        index++;
+        render();
+      }
+    });
+
+    render();
+  }
+
+  // Init Listening quiz
+  setupMiniQuiz({
+    questions: listeningQuestions,
+    questionTextEl: document.getElementById("listening-question-text"),
+    optionsContainer: document.getElementById("listening-options"),
+    prevBtn: document.getElementById("listening-prev"),
+    nextBtn: document.getElementById("listening-next"),
+    progressEl: document.getElementById("listening-progress"),
+    namePrefix: "listen-q-"
+  });
+
+  // Init Reading quiz
+  setupMiniQuiz({
+    questions: readingQuestions,
+    questionTextEl: document.getElementById("reading-question-text"),
+    optionsContainer: document.getElementById("reading-options"),
+    prevBtn: document.getElementById("reading-prev"),
+    nextBtn: document.getElementById("reading-next"),
+    progressEl: document.getElementById("reading-progress"),
+    namePrefix: "read-q-"
+  });
+
+  /* ===== Recording button logic ===== */
+  const recordBtn = document.querySelector(".record-btn");
+  const recordLabel = document.querySelector(".record-label");
+  let mediaRecorder;
+  let chunks = [];
+  let isRecording = false;
+
+  async function initMic() {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    mediaRecorder = new MediaRecorder(stream);
+
+    mediaRecorder.ondataavailable = (e) => {
+      chunks.push(e.data);
+    };
+
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(chunks, { type: "audio/webm" });
+      chunks = [];
+      const url = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audio.play(); // simple playback of the recording
+    };
+  }
+
+  recordBtn.addEventListener("click", async () => {
+    try {
+      if (!mediaRecorder) {
+        await initMic();
+      }
+
+      if (!isRecording) {
+        mediaRecorder.start();
+        isRecording = true;
+        recordLabel.textContent = "Recording...";
+        recordBtn.classList.add("recording");
+      } else {
+        mediaRecorder.stop();
+        isRecording = false;
+        recordLabel.textContent = "Record";
+        recordBtn.classList.remove("recording");
+      }
+    } catch (err) {
+      console.error("Mic error:", err);
+      alert("Could not access microphone.");
+    }
+  });
+  /* ===== End recording logic ===== */
+</script>
+</body>
+</html>

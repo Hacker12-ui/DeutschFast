@@ -1,0 +1,296 @@
+/* Lesson page layout */
+
+.lesson-page {
+  max-width: 1120px;
+}
+
+.lesson-main {
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+/* Hero */
+
+.lesson-hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.lesson-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.lesson-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.lesson-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2f1;
+  color: #047c74;
+  font-size: 12px;
+}
+
+/* Grid of cards */
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.lesson-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 16px 18px 16px;
+}
+
+.lesson-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.lesson-card-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Audio player */
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e0f2f1;
+  border-radius: 999px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+}
+
+.audio-play-btn {
+  border: none;
+  background: #0c9c94;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: #cfe7e4;
+  overflow: hidden;
+}
+
+.audio-progress {
+  display: block;
+  width: 35%;
+  height: 100%;
+  background: #0c9c94;
+}
+
+.audio-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Questions */
+
+.question-block {
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.option {
+  display: block;
+  font-size: 13px;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.option input {
+  margin-right: 6px;
+}
+
+/* Reading text */
+
+.reading-text {
+  background: #edf2ff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Speaking */
+
+.record-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 8px;
+}
+
+.record-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  border: none;
+  background: #e0f2f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.record-icon {
+  font-size: 26px;
+  color: #0c9c94;
+}
+
+.record-label {
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.record-help {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Writing */
+
+.writing-textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 12px;
+  font-size: 13px;
+  resize: vertical;
+  background: #f3faf9;
+  font-family: var(--font-main);
+}
+
+.writing-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.writing-help {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* CTA */
+
+.lesson-cta-section {
+  display: flex;
+  justify-content: center;
+}
+
+.lesson-cta-btn {
+  margin-top: 8px;
+  padding: 11px 24px;
+  min-width: 260px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .lesson-title {
+    font-size: 20px;
+  }
+
+  .lesson-card {
+    padding: 14px 14px 14px;
+  }
+
+  .lesson-main {
+    padding-bottom: 28px;
+  }
+
+  .lesson-cta-btn {
+    width: 100%;
+  }
+}
+
+.quiz-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.btn-quiz {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  cursor: pointer;
+}
+
+.btn-quiz:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.quiz-progress {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.record-btn.recording {
+  background: #f87171;
+  color: #ffffff;
+}
+.lesson-overview {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 14px 18px;
+  margin-bottom: 18px;
+}
+
+.lesson-overview-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.lesson-overview-text {
+  font-size: 13px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}

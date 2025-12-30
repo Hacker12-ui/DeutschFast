@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Progress - DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/progress.css" />
+</head>
+<body>
+  <div class="page progress-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">DeutschFast</div>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="vocab.html">Vocab</a>
+        <a href="#">Profile</a>
+        <a href="login.html" class="nav-link logout-link">Log out</a>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="progress-main">
+      <!-- Page Title -->
+      <section class="progress-hero">
+        <h1 class="progress-title">Your Progress</h1>
+        <p class="progress-subtitle">See how far your German has come.</p>
+      </section>
+
+      <!-- Overall Progress & Study Stats Grid -->
+      <div class="progress-top-grid">
+        <!-- Overall Progress Card -->
+        <article class="progress-card overall-card">
+          <div class="level-badge">A2</div>
+          <h2 class="card-heading">Overall Progress</h2>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+            <span class="progress-percent">65% complete</span>
+          </div>
+          <p class="progress-message">You're on track to finish A1 in 12 days.</p>
+        </article>
+
+        <!-- Study Stats Card -->
+        <article class="progress-card stats-card">
+          <h2 class="card-heading">Study Stats</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">248</div>
+              <div class="stat-label">Words learned</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">73</div>
+              <div class="stat-label">Days studied</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12</div>
+              <div class="stat-label">Current streak</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">146</div>
+              <div class="stat-label">Lessons completed</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Skill Breakdown Section -->
+      <section class="skills-section">
+        <h2 class="section-heading">Skill Breakdown</h2>
+        <div class="skills-grid">
+          <!-- Listening Skill -->
+          <article class="progress-card skill-card">
+            <div class="skill-header">
+              <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+              <span class="skill-name">Listening</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 72%;"></div>
+              </div>
+              <span class="skill-percent">72%</span>
+            </div>
+          </article>
+
+          <!-- Reading Skill -->
+          <article class="progress-card skill-card">
+            <div class="skill-header">
+              <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span class="skill-name">Reading</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%;"></div>
+              </div>
+              <span class="skill-percent">65%</span>
+            </div>
+          </article>
+
+          <!-- Speaking Skill -->
+          <article class="progress-card skill-card">
+            <div class="skill-header">
+              <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span class="skill-name">Speaking</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 58%;"></div>
+              </div>
+              <span class="skill-percent">Strong</span>
+            </div>
+          </article>
+
+          <!-- Writing Skill -->
+          <article class="progress-card skill-card">
+            <div class="skill-header">
+              <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+              </svg>
+              <span class="skill-name">Writing</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 58%;"></div>
+              </div>
+              <span class="skill-percent">58%</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA Button -->
+      <div class="progress-cta">
+        <button class="btn btn-primary btn-cta" onclick="location.href='lesson.html'">
+          Continue today's lesson
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>DeutschFast</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

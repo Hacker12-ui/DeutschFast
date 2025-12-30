@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Courses - DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global styles (buttons, layout, fonts, etc.) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/courses.css" />
+</head>
+<body>
+  <div class="page courses-page">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">DeutschFast</div>
+      <nav class="nav-links">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="courses.html" class="nav-link active">Courses</a>
+  <a href="lesson.html">Lessons</a>
+  <a href="vocab.html">Vocab</a>
+  <a href="#">Profile</a>
+  <a href="login.html" class="nav-link logout-link">Log out</a>
+</nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="courses-main">
+      <!-- Intro -->
+      <section class="courses-hero">
+        <h1 class="courses-title">Courses</h1>
+        <p class="courses-subtitle">Choose your level and start learning.</p>
+      </section>
+
+      <!-- Level selector -->
+      <section class="level-selector">
+        <button class="level-pill level-pill-active">A1</button>
+        <button class="level-pill">A2</button>
+        <button class="level-pill">B1</button>
+        <button class="level-pill">B2</button>
+      </section>
+
+      <!-- Modules grid -->
+      <section class="modules-grid">
+        <!-- Card 1 -->
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-green">🧊</div>
+            <span class="module-tag">A1 · Basics</span>
+          </div>
+          <h2 class="module-title">Basics &amp; Introductions</h2>
+          <p class="module-text">
+            Greetings, introducing yourself, basic questions.
+          </p>
+          <p class="module-progress">0 / 5 lessons completed</p>
+          <button class="btn btn-primary btn-module" onclick="location.href='lesson.html'">
+  Start
+</button>
+
+        </article>
+
+        <!-- Card 2 -->
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-orange">👨‍👩‍👧</div>
+            <span class="module-tag">A1 · Basics</span>
+          </div>
+          <h2 class="module-title">Family &amp; People</h2>
+          <p class="module-text">
+            Greetings, family, names, and family people.
+          </p>
+          <p class="module-progress">0 / 5 lessons completed</p>
+          <button class="btn btn-primary btn-module">Start</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-yellow">🕒</div>
+            <span class="module-tag">A1 · Basics</span>
+          </div>
+          <h2 class="module-title">Daily Life &amp; Routine</h2>
+          <p class="module-text">
+            Routine, seating, daily life, and routine.
+          </p>
+          <p class="module-progress">0 / 5 lessons completed</p>
+          <button class="btn btn-primary btn-module">Start</button>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-red">🛒</div>
+            <span class="module-tag">A1 · Basics</span>
+          </div>
+          <h2 class="module-title">Food &amp; Shopping</h2>
+          <p class="module-text">
+            Greetings, food, shopping, and eating out.
+          </p>
+          <p class="module-progress">0 / 5 lessons completed</p>
+          <button class="btn btn-primary btn-module">Start</button>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-purple">🚉</div>
+            <span class="module-tag">A1 · Basics</span>
+          </div>
+          <h2 class="module-title">Around the City</h2>
+          <p class="module-text">
+            Around the city, directions, and common places.
+          </p>
+          <p class="module-progress">0 / 5 lessons completed</p>
+          <button class="btn btn-primary btn-module">Continue</button>
+        </article>
+      </section>
+
+      <!-- How courses work -->
+      <section class="courses-info">
+        <h3 class="courses-info-title">How courses work</h3>
+        <p class="courses-info-text">
+          Each module has short lessons with listening, reading, speaking, and
+          writing. Start at A1 if you are completely new to German.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>DeutschFast</div>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
