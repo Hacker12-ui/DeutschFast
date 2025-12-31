@@ -1,0 +1,329 @@
+{
+  "lessons": [
+    {
+      "id": "lesson-1-1",
+      "moduleId": "basics-introductions",
+      "lessonNumber": 1,
+      "totalLessons": 5,
+      "title": "Introductions",
+      "level": "A1",
+      "category": "Basics",
+      "focus": "In this lesson, you will practice basic German greetings and introductions. You will learn how to say your name, age, and where you are from using phrases like Ich heiße ..., Ich bin ... Jahre alt and Ich komme aus ....",
+      "instructions": "Pay attention to how Lukas introduces himself in the listening and reading sections, then use the same patterns in the speaking and writing tasks.",
+      "listening": {
+        "audioFile": "audio/lesson-1-1.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Person A: Hallo! Wie heißt du?\nPerson B: Ich heiße Sarah. Und du?\nPerson A: Ich bin Tom. Woher kommst du, Sarah?\nPerson B: Ich komme aus Berlin. Und du?\nPerson A: Ich komme aus München. Wie alt bist du?\nPerson B: Ich bin 23 Jahre alt. Und du?\nPerson A: Ich bin 26.\nPerson B: Schön, dich kennenzulernen!\nPerson A: Ja, freut mich auch!",
+        "questions": [
+          {
+            "text": "Wie heißt Person B?",
+            "options": ["Emma", "Sarah", "Anna"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Woher kommt Tom?",
+            "options": ["Berlin", "Hamburg", "München"],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie alt ist Sarah?",
+            "options": ["22 Jahre alt", "23 Jahre alt", "26 Jahre alt"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Mein Name ist Lukas und ich bin 25 Jahre alt. Ich komme aus Hamburg, Deutschland. Ich lerne Englisch und Spanisch, weil ich gerne reise. In meiner Freizeit lese ich Bücher und spiele Fußball. Ich habe eine Schwester. Sie heißt Emma und ist 22 Jahre alt. Meine Eltern wohnen auch in Hamburg. Ich arbeite in einem Büro. Meine Arbeit ist interessant, aber manchmal stressig.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Lukas ist 25 Jahre alt.",
+            "options": ["True", "False"],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Lukas kommt aus Berlin.",
+            "options": ["True", "False"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Lukas in seiner Freizeit?",
+            "options": ["Er kocht und tanzt", "Er liest Bücher und spielt Fußball", "Er schwimmt und singt"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Introduce yourself in German. Say your name, age, and where you are from.",
+        "prompt": "Click record and speak for 30–60 seconds.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3–5 sentences about yourself in German.",
+        "prompt": "Use at least 3 of today's new words: heiße, bin, komme aus.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-1-2",
+      "moduleId": "basics-introductions",
+      "lessonNumber": 2,
+      "totalLessons": 5,
+      "title": "Greetings & Politeness",
+      "level": "A1",
+      "category": "Basics",
+      "focus": "In this lesson, you will learn formal and informal greetings in German. You will practice saying hello, thank you, please, and goodbye in different situations.",
+      "instructions": "Notice the difference between formal greetings (Guten Tag, Auf Wiedersehen) and informal greetings (Hallo, Tschüss). Use the correct form based on the situation.",
+      "listening": {
+        "audioFile": "audio/lesson-1-2.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Person A: Guten Morgen!\nPerson B: Guten Morgen! Wie geht es Ihnen?\nPerson A: Danke, gut. Und Ihnen?\nPerson B: Auch gut, danke. Wie heißen Sie?\nPerson A: Ich heiße Maria. Und Sie?\nPerson B: Ich bin Thomas. Freut mich!\nPerson A: Freut mich auch. Auf Wiedersehen!\nPerson B: Tschüss!",
+        "questions": [
+          {
+            "text": "Was sagt Person A zuerst?",
+            "options": ["Hallo!", "Guten Morgen!", "Guten Tag!"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie heißt Person A?",
+            "options": ["Thomas", "Anna", "Maria"],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was sagt Person B am Ende?",
+            "options": ["Auf Wiedersehen!", "Gute Nacht!", "Tschüss!"],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Guten Tag! Ich heiße Anna. Wie heißen Sie? Wenn ich Freunde treffe, sage ich Hallo oder Hi. Wenn ich meinen Lehrer treffe, sage ich Guten Tag oder Guten Morgen. Wenn jemand mir hilft, sage ich Danke oder Vielen Dank. Wenn ich etwas möchte, sage ich Bitte. Am Ende sage ich Auf Wiedersehen oder Tschüss. Gute Nacht sage ich nur abends.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Anna sagt Hallo zu ihren Freunden.",
+            "options": ["True", "False"],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Anna sagt Gute Nacht am Morgen.",
+            "options": ["True", "False"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was sagt Anna zu ihrem Lehrer?",
+            "options": ["Hi", "Guten Tag", "Tschüss"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Greet someone formally and introduce yourself. Ask how they are and what their name is. Then say goodbye.",
+        "prompt": "Click record and speak for 30–60 seconds.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3-5 sentences using greetings.",
+        "prompt": "Include: a greeting, your name, asking someone's name, and saying thank you or goodbye.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-1-3",
+      "moduleId": "basics-introductions",
+      "lessonNumber": 3,
+      "totalLessons": 5,
+      "title": "Basic Questions",
+      "level": "A1",
+      "category": "Basics",
+      "focus": "In this lesson, you will learn how to ask and answer basic questions in German. Practice asking about someone's job, hobbies, and where they live using Wie?, Was?, and Wo?.",
+      "instructions": "Pay attention to question words: Wie (how), Was (what), Wo (where). Use these patterns to ask about jobs, hobbies, and places.",
+      "listening": {
+        "audioFile": "audio/lesson-1-3.mp3",
+        "duration": "0:50",
+        "subtitle": "Listen to the conversation and answer the questions.",
+        "transcript": "Person A: Hallo! Wo wohnst du?\nPerson B: Ich wohne in Berlin. Und du?\nPerson A: Ich wohne in Frankfurt. Was machst du beruflich?\nPerson B: Ich bin Lehrerin. Und du?\nPerson A: Ich bin Student. Was machst du gerne in deiner Freizeit?\nPerson B: Ich lese gerne und höre Musik. Und du?\nPerson A: Ich spiele gerne Gitarre und schwimme.",
+        "questions": [
+          {
+            "text": "Wo wohnt Person B?",
+            "options": ["In Frankfurt", "In Berlin", "In Hamburg"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was ist Person B von Beruf?",
+            "options": ["Student", "Lehrerin", "Arzt"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Person A in der Freizeit?",
+            "options": ["Lesen und Musik hören", "Gitarre spielen und schwimmen", "Fußball spielen"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Hallo! Ich heiße Peter. Ich wohne in München. Ich bin Arzt von Beruf. Ich arbeite in einem Krankenhaus. Die Arbeit ist interessant, aber auch sehr schwer. In meiner Freizeit spiele ich Tennis und koche gerne. Am Wochenende besuche ich oft meine Familie. Meine Frau heißt Julia. Sie ist Ingenieurin. Wir haben zwei Kinder.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Peter wohnt in München.",
+            "options": ["True", "False"],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Peter ist Lehrer von Beruf.",
+            "options": ["True", "False"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Peter in seiner Freizeit?",
+            "options": ["Er schwimmt und läuft", "Er spielt Tennis und kocht", "Er liest und malt"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Ask and answer questions about yourself. Include: Where do you live? What is your job? What do you like to do?",
+        "prompt": "Click record and speak for 30–60 seconds.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about yourself.",
+        "prompt": "Answer these questions: Wo wohnst du? Was machst du beruflich? Was machst du gerne?",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-1-4",
+      "moduleId": "basics-introductions",
+      "lessonNumber": 4,
+      "totalLessons": 5,
+      "title": "Numbers & Time",
+      "level": "A1",
+      "category": "Basics",
+      "focus": "In this lesson, you will learn numbers from 0 to 100 in German, how to tell time, and the days of the week. Practice asking and answering questions about time and dates.",
+      "instructions": "Listen carefully to how numbers and time are pronounced. Notice the pattern: Wie viel Uhr ist es? (What time is it?) and Welcher Tag ist heute? (What day is today?).",
+      "listening": {
+        "audioFile": "audio/lesson-1-4.mp3",
+        "duration": "0:55",
+        "subtitle": "Listen to the dialogue about time and days.",
+        "transcript": "Person A: Welcher Tag ist heute?\nPerson B: Heute ist Montag.\nPerson A: Und wie viel Uhr ist es?\nPerson B: Es ist zehn Uhr.\nPerson A: Wann hast du Zeit?\nPerson B: Ich habe am Mittwoch um drei Uhr Zeit.\nPerson A: Perfekt! Wie alt bist du?\nPerson B: Ich bin dreiundzwanzig Jahre alt.",
+        "questions": [
+          {
+            "text": "Welcher Tag ist heute?",
+            "options": ["Dienstag", "Montag", "Mittwoch"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel Uhr ist es?",
+            "options": ["Neun Uhr", "Zehn Uhr", "Elf Uhr"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie alt ist Person B?",
+            "options": ["Zweiundzwanzig", "Dreiundzwanzig", "Vierundzwanzig"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Die Woche hat sieben Tage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag und Sonntag. Ich arbeite von Montag bis Freitag. Am Wochenende habe ich frei. Ich stehe um sieben Uhr auf. Ich frühstücke um acht Uhr. Ich arbeite von neun bis siebzehn Uhr. Am Abend esse ich um neunzehn Uhr. Ich bin sechsundzwanzig Jahre alt und wohne seit drei Jahren in Deutschland.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Die Woche hat sieben Tage.",
+            "options": ["True", "False"],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Die Person arbeitet am Samstag.",
+            "options": ["True", "False"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Um wie viel Uhr steht die Person auf?",
+            "options": ["Um sechs Uhr", "Um sieben Uhr", "Um acht Uhr"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your daily schedule. Say what time you wake up, eat breakfast, and work or study.",
+        "prompt": "Click record and speak for 30–60 seconds. Use numbers and time expressions.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about your week.",
+        "prompt": "Include: days you work/study, what time you wake up, and your age.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-1-5",
+      "moduleId": "basics-introductions",
+      "lessonNumber": 5,
+      "totalLessons": 5,
+      "title": "Countries & Languages",
+      "level": "A1",
+      "category": "Basics",
+      "focus": "In this lesson, you will learn how to talk about countries, nationalities, and languages in German. Practice saying where you are from and which languages you speak.",
+      "instructions": "Pay attention to nationality words: Ich bin Deutscher/Deutsche (I am German), Ich bin Inder/Inderin (I am Indian). Notice how language names work: Ich spreche Deutsch, Englisch, Hindi.",
+      "listening": {
+        "audioFile": "audio/lesson-1-5.mp3",
+        "duration": "0:50",
+        "subtitle": "Listen to people talking about their countries and languages.",
+        "transcript": "Person A: Woher kommst du?\nPerson B: Ich komme aus Indien. Und du?\nPerson A: Ich komme aus Deutschland. Welche Sprachen sprichst du?\nPerson B: Ich spreche Hindi, Englisch und ein bisschen Deutsch. Und du?\nPerson A: Ich spreche Deutsch und Englisch. Lernst du Deutsch?\nPerson B: Ja, ich lerne seit zwei Jahren Deutsch. Es ist nicht einfach, aber interessant!",
+        "questions": [
+          {
+            "text": "Woher kommt Person B?",
+            "options": ["Aus Deutschland", "Aus Indien", "Aus Spanien"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welche Sprachen spricht Person B?",
+            "options": ["Deutsch und Französisch", "Hindi, Englisch und ein bisschen Deutsch", "Nur Englisch"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie lange lernt Person B Deutsch?",
+            "options": ["Ein Jahr", "Zwei Jahre", "Drei Jahre"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich heiße Raj und ich komme aus Indien. Ich bin Inder. Ich spreche Hindi, Englisch und Deutsch. Ich lerne Deutsch seit einem Jahr, weil ich in Deutschland studieren möchte. Meine Freundin heißt Lisa. Sie kommt aus Österreich. Sie ist Österreicherin und spricht Deutsch und Französisch. Wir lernen zusammen. Deutschland, Österreich und die Schweiz sind deutschsprachige Länder. Viele Menschen in Europa sprechen mehrere Sprachen.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Raj kommt aus Indien.",
+            "options": ["True", "False"],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Lisa spricht nur Deutsch.",
+            "options": ["True", "False"],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welche Länder sind deutschsprachig?",
+            "options": ["Deutschland, Frankreich und Italien", "Deutschland, Österreich und die Schweiz", "Indien, China und Japan"],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about where you are from, your nationality, and which languages you speak.",
+        "prompt": "Click record and speak for 30–60 seconds. Say: Ich komme aus..., Ich bin..., Ich spreche...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about yourself and languages.",
+        "prompt": "Include: your country, your nationality, languages you speak, and why you are learning German.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    }
+  ]
+}

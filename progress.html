@@ -35,15 +35,15 @@
       <div class="progress-top-grid">
         <!-- Overall Progress Card -->
         <article class="progress-card overall-card">
-          <div class="level-badge">A2</div>
+          <div class="level-badge" id="level-badge">A1</div>
           <h2 class="card-heading">Overall Progress</h2>
           <div class="progress-bar-wrap">
             <div class="progress-bar">
-              <div class="progress-fill" style="width: 65%;"></div>
+              <div class="progress-fill" id="overall-progress-fill" style="width: 0%;"></div>
             </div>
-            <span class="progress-percent">65% complete</span>
+            <span class="progress-percent" id="overall-progress-percent">0% complete</span>
           </div>
-          <p class="progress-message">You're on track to finish A1 in 12 days.</p>
+          <p class="progress-message" id="progress-message">Start your first lesson to track progress.</p>
         </article>
 
         <!-- Study Stats Card -->
@@ -51,19 +51,19 @@
           <h2 class="card-heading">Study Stats</h2>
           <div class="stats-grid">
             <div class="stat-item">
-              <div class="stat-number">248</div>
+              <div class="stat-number" id="words-learned">0</div>
               <div class="stat-label">Words learned</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">73</div>
+              <div class="stat-number" id="days-studied">0</div>
               <div class="stat-label">Days studied</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">12</div>
+              <div class="stat-number" id="current-streak">0</div>
               <div class="stat-label">Current streak</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">146</div>
+              <div class="stat-number" id="lessons-completed">0</div>
               <div class="stat-label">Lessons completed</div>
             </div>
           </div>
@@ -85,9 +85,9 @@
             </div>
             <div class="skill-progress-wrap">
               <div class="progress-bar">
-                <div class="progress-fill" style="width: 72%;"></div>
+                <div class="progress-fill" id="listening-fill" style="width: 0%;"></div>
               </div>
-              <span class="skill-percent">72%</span>
+              <span class="skill-percent" id="listening-percent">0%</span>
             </div>
           </article>
 
@@ -102,9 +102,9 @@
             </div>
             <div class="skill-progress-wrap">
               <div class="progress-bar">
-                <div class="progress-fill" style="width: 65%;"></div>
+                <div class="progress-fill" id="reading-fill" style="width: 0%;"></div>
               </div>
-              <span class="skill-percent">65%</span>
+              <span class="skill-percent" id="reading-percent">0%</span>
             </div>
           </article>
 
@@ -118,9 +118,9 @@
             </div>
             <div class="skill-progress-wrap">
               <div class="progress-bar">
-                <div class="progress-fill" style="width: 58%;"></div>
+                <div class="progress-fill" id="speaking-fill" style="width: 0%;"></div>
               </div>
-              <span class="skill-percent">Strong</span>
+              <span class="skill-percent" id="speaking-percent">0%</span>
             </div>
           </article>
 
@@ -134,9 +134,9 @@
             </div>
             <div class="skill-progress-wrap">
               <div class="progress-bar">
-                <div class="progress-fill" style="width: 58%;"></div>
+                <div class="progress-fill" id="writing-fill" style="width: 0%;"></div>
               </div>
-              <span class="skill-percent">58%</span>
+              <span class="skill-percent" id="writing-percent">0%</span>
             </div>
           </article>
         </div>
@@ -144,7 +144,7 @@
 
       <!-- CTA Button -->
       <div class="progress-cta">
-        <button class="btn btn-primary btn-cta" onclick="location.href='lesson.html'">
+        <button class="btn btn-primary btn-cta" id="continue-btn" onclick="continueLesson()">
           Continue today's lesson
         </button>
       </div>
@@ -160,5 +160,147 @@
       </div>
     </footer>
   </div>
+
+  <!-- Dynamic Progress Script -->
+  <script>
+    // ========================================
+    // LOAD PROGRESS DATA
+    // ========================================
+
+    // Get module progress from localStorage
+    function getModuleProgress() {
+      const saved = localStorage.getItem('moduleProgress');
+      return saved ? JSON.parse(saved) : {};
+    }
+
+    // Get vocab progress from localStorage
+    function getVocabProgress() {
+      const saved = localStorage.getItem('wordProgress');
+      return saved ? JSON.parse(saved) : {};
+    }
+
+    // Calculate overall statistics
+    function calculateStats() {
+      const moduleProgress = getModuleProgress();
+      const vocabProgress = getVocabProgress();
+
+      // Total lessons completed across all modules
+      let totalLessonsCompleted = 0;
+      Object.values(moduleProgress).forEach(module => {
+        totalLessonsCompleted += module.completedLessons || 0;
+      });
+
+      // Total lessons available (5 modules × 5 lessons = 25)
+      const totalLessons = 25;
+
+      // Overall progress percentage
+      const overallPercent = Math.round((totalLessonsCompleted / totalLessons) * 100);
+
+      // Vocab stats
+      const vocabWords = Object.keys(vocabProgress).length;
+      const masteredWords = Object.values(vocabProgress).filter(w => w.level === 5).length;
+
+      // Calculate days studied (simple version - count unique dates in future can track actual dates)
+      const daysStudied = totalLessonsCompleted > 0 ? Math.max(1, Math.ceil(totalLessonsCompleted / 2)) : 0;
+
+      // Current streak (simplified - in future track actual consecutive days)
+      const currentStreak = daysStudied > 0 ? Math.min(daysStudied, 7) : 0;
+
+      // Skill breakdown (each skill = 25% of each lesson)
+      const listeningPercent = overallPercent;
+      const readingPercent = overallPercent;
+      const speakingPercent = Math.max(0, overallPercent - 5); // Slightly lower
+      const writingPercent = Math.max(0, overallPercent - 10); // Slightly lower
+
+      return {
+        totalLessonsCompleted,
+        totalLessons,
+        overallPercent,
+        vocabWords,
+        masteredWords,
+        daysStudied,
+        currentStreak,
+        listeningPercent,
+        readingPercent,
+        speakingPercent,
+        writingPercent
+      };
+    }
+
+    // Render progress page
+    function renderProgress() {
+      const stats = calculateStats();
+
+      // Overall Progress
+      document.getElementById('overall-progress-fill').style.width = stats.overallPercent + '%';
+      document.getElementById('overall-progress-percent').textContent = stats.overallPercent + '% complete';
+
+      // Progress message
+      if (stats.overallPercent === 0) {
+        document.getElementById('progress-message').textContent = 'Start your first lesson to track progress.';
+      } else if (stats.overallPercent < 100) {
+        const lessonsLeft = stats.totalLessons - stats.totalLessonsCompleted;
+        const daysEstimate = Math.ceil(lessonsLeft / 2);
+        document.getElementById('progress-message').textContent = 
+          `You're on track to finish A1 in ${daysEstimate} days.`;
+      } else {
+        document.getElementById('progress-message').textContent = 'Congratulations! You completed A1!';
+        document.getElementById('level-badge').textContent = 'A2';
+      }
+
+      // Study Stats
+      document.getElementById('words-learned').textContent = stats.vocabWords;
+      document.getElementById('days-studied').textContent = stats.daysStudied;
+      document.getElementById('current-streak').textContent = stats.currentStreak;
+      document.getElementById('lessons-completed').textContent = stats.totalLessonsCompleted;
+
+      // Skill Breakdown
+      document.getElementById('listening-fill').style.width = stats.listeningPercent + '%';
+      document.getElementById('listening-percent').textContent = stats.listeningPercent + '%';
+
+      document.getElementById('reading-fill').style.width = stats.readingPercent + '%';
+      document.getElementById('reading-percent').textContent = stats.readingPercent + '%';
+
+      document.getElementById('speaking-fill').style.width = stats.speakingPercent + '%';
+      document.getElementById('speaking-percent').textContent = stats.speakingPercent + '%';
+
+      document.getElementById('writing-fill').style.width = stats.writingPercent + '%';
+      document.getElementById('writing-percent').textContent = stats.writingPercent + '%';
+    }
+
+    // Continue to next lesson
+    function continueLesson() {
+      const moduleProgress = getModuleProgress();
+      
+      // Find first incomplete module
+      const modules = [
+        { id: 'basics-introductions', totalLessons: 5 },
+        { id: 'family-people', totalLessons: 5 },
+        { id: 'daily-life-routine', totalLessons: 5 },
+        { id: 'food-shopping', totalLessons: 5 },
+        { id: 'around-city', totalLessons: 5 }
+      ];
+
+      for (let i = 0; i < modules.length; i++) {
+        const module = modules[i];
+        const progress = moduleProgress[module.id] || { completedLessons: 0 };
+        
+        if (progress.completedLessons < module.totalLessons) {
+          // Found incomplete module - go to next lesson
+          const nextLessonNum = progress.completedLessons + 1;
+          const lessonId = `lesson-${i + 1}-${nextLessonNum}`;
+          window.location.href = `lesson.html?id=${lessonId}`;
+          return;
+        }
+      }
+
+      // All lessons completed
+      alert('Congratulations! You completed all A1 lessons! 🎉');
+      window.location.href = 'courses.html';
+    }
+
+    // Initialize progress page
+    renderProgress();
+  </script>
 </body>
 </html>

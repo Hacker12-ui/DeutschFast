@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Lesson 1 – Introductions | DeutschFast</title>
+  <title>Lesson – DeutschFast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Global styles -->
   <link rel="stylesheet" href="css/style.css" />
@@ -26,47 +26,45 @@
 
     <!-- Main content -->
     <main class="lesson-main">
-      <!-- Lesson header -->
+      <!-- Lesson header (will be populated dynamically) -->
       <section class="lesson-hero">
-        <h1 class="lesson-title">A1 · Basics – Lesson 1: Introductions</h1>
-        <p class="lesson-subtitle">
+        <h1 class="lesson-title" id="lesson-title">Loading...</h1>
+        <p class="lesson-subtitle" id="lesson-subtitle">
           Practice listening, reading, speaking, and writing.
         </p>
-        <span class="lesson-pill">Lesson 1 of 5</span>
+        <span class="lesson-pill" id="lesson-pill">Lesson 1 of 5</span>
       </section>
 
-            <!-- Lesson overview / explanation -->
+      <!-- Lesson overview / explanation -->
       <section class="lesson-overview">
-        <h2 class="lesson-overview-title">Today’s focus</h2>
-        <p class="lesson-overview-text">
-          In this lesson, you will practice basic German greetings and
-          introductions. You will learn how to say your name, age, and where
-          you are from using phrases like <em>Ich heiße ...</em>,
-          <em>Ich bin ... Jahre alt</em> and <em>Ich komme aus ...</em>.
+        <h2 class="lesson-overview-title">Today's focus</h2>
+        <p class="lesson-overview-text" id="lesson-focus">
+          Loading lesson content...
         </p>
-        <p class="lesson-overview-text">
-          Pay attention to how Lukas introduces himself in the listening and
-          reading sections, then use the same patterns in the speaking and
-          writing tasks.
+        <p class="lesson-overview-text" id="lesson-instructions">
         </p>
       </section>
-
 
       <!-- Two-column grid: Listening + Reading, Speaking + Writing -->
       <section class="lesson-grid">
         <!-- Listening -->
         <article class="lesson-card">
           <h2 class="lesson-card-title">Listening</h2>
-          <p class="lesson-card-sub">Listen to the dialogue and answer the questions.</p>
+          <p class="lesson-card-sub" id="listening-subtitle">Listen to the dialogue and answer the questions.</p>
 
-          <!-- Fake audio player -->
+          <!-- Audio player -->
           <div class="audio-player">
-            <button class="audio-play-btn">▶</button>
+            <button class="audio-play-btn" id="audio-play-btn">▶</button>
             <div class="audio-bar">
-              <span class="audio-progress"></span>
+              <span class="audio-progress" id="audio-progress"></span>
             </div>
-            <span class="audio-time">0:00 / 2:30</span>
+            <span class="audio-time" id="audio-time">0:00 / 0:00</span>
           </div>
+          
+          <!-- Hidden audio element -->
+          <audio id="lesson-audio" style="display: none;">
+            <source id="audio-source" src="" type="audio/mpeg">
+          </audio>
 
           <!-- One-question-at-a-time quiz -->
           <div id="listening-quiz">
@@ -84,12 +82,10 @@
         <!-- Reading -->
         <article class="lesson-card">
           <h2 class="lesson-card-title">Reading</h2>
-          <p class="lesson-card-sub">Read the text and answer the questions.</p>
+          <p class="lesson-card-sub" id="reading-subtitle">Read the text and answer the questions.</p>
 
-          <div class="reading-text">
-            Mein Name ist Lukas und ich bin 25 Jahre alt. Ich komme aus Hamburg,
-            Deutschland. Ich lerne Englisch und Spanisch, weil ich gerne reise.
-            In meiner Freizeit lese ich Bücher und spiele Fußball.
+          <div class="reading-text" id="reading-text">
+            Loading text...
           </div>
 
           <!-- One-question-at-a-time quiz -->
@@ -108,7 +104,7 @@
         <!-- Speaking -->
         <article class="lesson-card">
           <h2 class="lesson-card-title">Speaking</h2>
-          <p class="lesson-card-sub">
+          <p class="lesson-card-sub" id="speaking-subtitle">
             Introduce yourself in German. Say your name, age, and where you are from.
           </p>
 
@@ -119,7 +115,7 @@
             <p class="record-label">Record</p>
           </div>
 
-          <p class="record-help">
+          <p class="record-help" id="speaking-prompt">
             Click record and speak for 30–60 seconds.
           </p>
         </article>
@@ -127,25 +123,26 @@
         <!-- Writing -->
         <article class="lesson-card">
           <h2 class="lesson-card-title">Writing</h2>
-          <p class="lesson-card-sub">
+          <p class="lesson-card-sub" id="writing-subtitle">
             Write 3–5 sentences about yourself in German. Use the new words you learned.
           </p>
 
           <textarea
             class="writing-textarea"
+            id="writing-textarea"
             placeholder="Schreiben Sie hier Ihre Antwort..."
           ></textarea>
 
-          <p class="writing-help">
-            Use at least 3 of today’s new words.
+          <p class="writing-help" id="writing-prompt">
+            Use at least 3 of today's new words.
           </p>
         </article>
       </section>
 
       <!-- Complete button -->
       <section class="lesson-cta-section">
-        <button class="btn btn-primary lesson-cta-btn">
-          Complete lesson or Next lesson
+        <button class="btn btn-primary lesson-cta-btn" id="complete-lesson-btn">
+          Complete Lesson
         </button>
       </section>
     </main>
@@ -161,37 +158,109 @@
     </footer>
   </div>
 
-  <!-- Mini-quiz script -->
+  <!-- Dynamic lesson script -->
   <script>
-  // Listening questions (add up to 10)
-  const listeningQuestions = [
-    {
-      text: "Was sagt der Mann zuerst?",
-      options: ["Guten Morgen.", "Guten Tag.", "Hallo."]
-    },
-    {
-      text: "Wie heißt die Frau?",
-      options: ["Sarah.", "Anna.", "Julia."]
-    },
-    {
-      text: "Woher kommt der Mann?",
-      options: ["Deutschland.", "Österreich.", "Schweiz."]
-    }
-    // add more listening questions here...
-  ];
+  // ========================================
+  // LESSON LOADER
+  // ========================================
 
-  // Reading questions (add up to 10)
-  const readingQuestions = [
-    {
-      text: "Lukas ist 25 Jahre alt.",
-      options: ["True", "False"]
-    },
-    {
-      text: "Lukas kommt aus Berlin.",
-      options: ["True", "False"]
+  let currentLesson = null;
+  let listeningQuestions = [];
+  let readingQuestions = [];
+
+  // Get lesson ID from URL parameter
+  function getLessonId() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('id') || 'lesson-1-1'; // Default to first lesson
+  }
+
+  // Load lesson data from JSON
+  async function loadLesson() {
+    const lessonId = getLessonId();
+    
+    try {
+      const response = await fetch('data/lessons.json');
+      const data = await response.json();
+      const lesson = data.lessons.find(l => l.id === lessonId);
+      
+      if (!lesson) {
+        alert('Lesson not found');
+        window.location.href = 'courses.html';
+        return;
+      }
+      
+      currentLesson = lesson;
+      renderLesson(lesson);
+      
+    } catch (error) {
+      console.error('Error loading lesson:', error);
+      alert('Error loading lesson. Please try again.');
     }
-    // add more reading questions here...
-  ];
+  }
+
+  // Render lesson content
+  function renderLesson(lesson) {
+    // Update header
+    document.getElementById('lesson-title').textContent = 
+      `${lesson.level} · ${lesson.category} – Lesson ${lesson.lessonNumber}: ${lesson.title}`;
+    document.getElementById('lesson-pill').textContent = 
+      `Lesson ${lesson.lessonNumber} of ${lesson.totalLessons}`;
+    
+    // Update focus section
+    document.getElementById('lesson-focus').textContent = lesson.focus;
+    document.getElementById('lesson-instructions').textContent = lesson.instructions;
+    
+    // Update listening section
+    document.getElementById('listening-subtitle').textContent = lesson.listening.subtitle;
+    document.getElementById('audio-source').src = lesson.listening.audioFile;
+    document.getElementById('audio-time').textContent = `0:00 / ${lesson.listening.duration}`;
+    document.getElementById('lesson-audio').load();
+    listeningQuestions = lesson.listening.questions;
+    
+    // Update reading section
+    document.getElementById('reading-subtitle').textContent = lesson.reading.subtitle;
+    document.getElementById('reading-text').textContent = lesson.reading.text;
+    readingQuestions = lesson.reading.questions;
+    
+    // Update speaking section
+    document.getElementById('speaking-subtitle').textContent = lesson.speaking.subtitle;
+    document.getElementById('speaking-prompt').textContent = lesson.speaking.prompt;
+    
+    // Update writing section
+    document.getElementById('writing-subtitle').textContent = lesson.writing.subtitle;
+    document.getElementById('writing-prompt').textContent = lesson.writing.prompt;
+    document.getElementById('writing-textarea').placeholder = lesson.writing.placeholder;
+    
+    // Initialize quizzes
+    initQuizzes();
+  }
+
+  // Initialize quizzes after lesson loads
+  function initQuizzes() {
+    setupMiniQuiz({
+      questions: listeningQuestions,
+      questionTextEl: document.getElementById("listening-question-text"),
+      optionsContainer: document.getElementById("listening-options"),
+      prevBtn: document.getElementById("listening-prev"),
+      nextBtn: document.getElementById("listening-next"),
+      progressEl: document.getElementById("listening-progress"),
+      namePrefix: "listen-q-"
+    });
+
+    setupMiniQuiz({
+      questions: readingQuestions,
+      questionTextEl: document.getElementById("reading-question-text"),
+      optionsContainer: document.getElementById("reading-options"),
+      prevBtn: document.getElementById("reading-prev"),
+      nextBtn: document.getElementById("reading-next"),
+      progressEl: document.getElementById("reading-progress"),
+      namePrefix: "read-q-"
+    });
+  }
+
+  // ========================================
+  // QUIZ LOGIC (PRESERVED FROM ORIGINAL)
+  // ========================================
 
   function setupMiniQuiz(config) {
     const {
@@ -247,29 +316,46 @@
     render();
   }
 
-  // Init Listening quiz
-  setupMiniQuiz({
-    questions: listeningQuestions,
-    questionTextEl: document.getElementById("listening-question-text"),
-    optionsContainer: document.getElementById("listening-options"),
-    prevBtn: document.getElementById("listening-prev"),
-    nextBtn: document.getElementById("listening-next"),
-    progressEl: document.getElementById("listening-progress"),
-    namePrefix: "listen-q-"
+  // ========================================
+  // AUDIO PLAYER LOGIC
+  // ========================================
+
+  const audioElement = document.getElementById('lesson-audio');
+  const playBtn = document.getElementById('audio-play-btn');
+  const progressBar = document.getElementById('audio-progress');
+  const timeDisplay = document.getElementById('audio-time');
+
+  playBtn.addEventListener('click', () => {
+    if (audioElement.paused) {
+      audioElement.play();
+      playBtn.textContent = '⏸';
+    } else {
+      audioElement.pause();
+      playBtn.textContent = '▶';
+    }
   });
 
-  // Init Reading quiz
-  setupMiniQuiz({
-    questions: readingQuestions,
-    questionTextEl: document.getElementById("reading-question-text"),
-    optionsContainer: document.getElementById("reading-options"),
-    prevBtn: document.getElementById("reading-prev"),
-    nextBtn: document.getElementById("reading-next"),
-    progressEl: document.getElementById("reading-progress"),
-    namePrefix: "read-q-"
+  audioElement.addEventListener('timeupdate', () => {
+    const percent = (audioElement.currentTime / audioElement.duration) * 100;
+    progressBar.style.width = percent + '%';
+    
+    const currentMin = Math.floor(audioElement.currentTime / 60);
+    const currentSec = Math.floor(audioElement.currentTime % 60).toString().padStart(2, '0');
+    const durationMin = Math.floor(audioElement.duration / 60);
+    const durationSec = Math.floor(audioElement.duration % 60).toString().padStart(2, '0');
+    
+    timeDisplay.textContent = `${currentMin}:${currentSec} / ${durationMin}:${durationSec}`;
   });
 
-  /* ===== Recording button logic ===== */
+  audioElement.addEventListener('ended', () => {
+    playBtn.textContent = '▶';
+    progressBar.style.width = '0%';
+  });
+
+  // ========================================
+  // RECORDING LOGIC (PRESERVED FROM ORIGINAL)
+  // ========================================
+
   const recordBtn = document.querySelector(".record-btn");
   const recordLabel = document.querySelector(".record-label");
   let mediaRecorder;
@@ -289,7 +375,7 @@
       chunks = [];
       const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
-      audio.play(); // simple playback of the recording
+      audio.play();
     };
   }
 
@@ -315,7 +401,51 @@
       alert("Could not access microphone.");
     }
   });
-  /* ===== End recording logic ===== */
-</script>
+
+  // ========================================
+  // COMPLETE LESSON LOGIC
+  // ========================================
+
+  document.getElementById('complete-lesson-btn').addEventListener('click', () => {
+    if (!currentLesson) return;
+    
+    // Get or create progress
+    const progress = JSON.parse(localStorage.getItem('moduleProgress')) || {};
+    const moduleId = currentLesson.moduleId;
+    
+    if (!progress[moduleId]) {
+      progress[moduleId] = { completedLessons: 0 };
+    }
+    
+    // Update progress (only if this lesson number is the next one to complete)
+    if (progress[moduleId].completedLessons < currentLesson.lessonNumber) {
+      progress[moduleId].completedLessons = currentLesson.lessonNumber;
+    }
+    
+    // Save progress
+    localStorage.setItem('moduleProgress', JSON.stringify(progress));
+    
+    // Check if there's a next lesson
+    if (currentLesson.lessonNumber < currentLesson.totalLessons) {
+      const nextLessonNum = currentLesson.lessonNumber + 1;
+      const nextLessonId = `lesson-${currentLesson.moduleId.split('-')[1]}-${nextLessonNum}`;
+      
+      if (confirm('Lesson completed! Go to next lesson?')) {
+        window.location.href = `lesson.html?id=${nextLessonId}`;
+      } else {
+        window.location.href = 'courses.html';
+      }
+    } else {
+      alert('Module completed! 🎉');
+      window.location.href = 'courses.html';
+    }
+  });
+
+  // ========================================
+  // INITIALIZE LESSON ON PAGE LOAD
+  // ========================================
+
+  loadLesson();
+  </script>
 </body>
 </html>

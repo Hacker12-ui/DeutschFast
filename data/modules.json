@@ -1,0 +1,54 @@
+{
+  "modules": [
+    {
+      "id": "basics-introductions",
+      "title": "Basics & Introductions",
+      "description": "Greetings, introducing yourself, basic questions.",
+      "icon": "👋",
+      "level": "A1",
+      "category": "Basics",
+      "totalLessons": 5,
+      "lessons": ["lesson-1-1", "lesson-1-2", "lesson-1-3", "lesson-1-4", "lesson-1-5"]
+    },
+    {
+      "id": "family-people",
+      "title": "Family & People",
+      "description": "Greetings, family, names, and family people.",
+      "icon": "👨‍👩‍👧",
+      "level": "A1",
+      "category": "Basics",
+      "totalLessons": 5,
+      "lessons": ["lesson-2-1", "lesson-2-2", "lesson-2-3", "lesson-2-4", "lesson-2-5"]
+    },
+    {
+      "id": "daily-life-routine",
+      "title": "Daily Life & Routine",
+      "description": "Routine, seating, daily life, and routine.",
+      "icon": "🕒",
+      "level": "A1",
+      "category": "Basics",
+      "totalLessons": 5,
+      "lessons": ["lesson-3-1", "lesson-3-2", "lesson-3-3", "lesson-3-4", "lesson-3-5"]
+    },
+    {
+      "id": "food-shopping",
+      "title": "Food & Shopping",
+      "description": "Greetings, food, shopping, and eating out.",
+      "icon": "🛒",
+      "level": "A1",
+      "category": "Basics",
+      "totalLessons": 5,
+      "lessons": ["lesson-4-1", "lesson-4-2", "lesson-4-3", "lesson-4-4", "lesson-4-5"]
+    },
+    {
+      "id": "around-city",
+      "title": "Around the City",
+      "description": "Around the city, directions, and common places.",
+      "icon": "🚉",
+      "level": "A1",
+      "category": "Basics",
+      "totalLessons": 5,
+      "lessons": ["lesson-5-1", "lesson-5-2", "lesson-5-3", "lesson-5-4", "lesson-5-5"]
+    }
+  ]
+}
