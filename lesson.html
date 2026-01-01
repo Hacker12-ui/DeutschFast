@@ -161,12 +161,24 @@
   <!-- Dynamic lesson script -->
   <script>
   // ========================================
-  // LESSON LOADER
+  // GLOBAL VARIABLES
   // ========================================
 
   let currentLesson = null;
   let listeningQuestions = [];
   let readingQuestions = [];
+  
+  // ✅ FIX: Declare sectionCompletion BEFORE validation functions
+  let sectionCompletion = {
+    listening: false,
+    reading: false,
+    speaking: false,
+    writing: false
+  };
+
+  // ========================================
+  // LESSON LOADER
+  // ========================================
 
   // Get lesson ID from URL parameter
   function getLessonId() {
@@ -233,6 +245,10 @@
     
     // Initialize quizzes
     initQuizzes();
+    
+    // ✅ FIX: Initialize audio, recording, and writing validation AFTER DOM is populated
+    initAudioAndRecording();
+    initWritingValidation();
   }
 
   // Initialize quizzes after lesson loads
@@ -259,7 +275,7 @@
   }
 
   // ========================================
-  // QUIZ LOGIC (PRESERVED FROM ORIGINAL)
+  // QUIZ LOGIC
   // ========================================
 
   function setupMiniQuiz(config) {
@@ -310,106 +326,192 @@
       if (index < questions.length - 1) {
         index++;
         render();
+      } else {
+        // Last question - check if section is complete
+        if (namePrefix === 'listen-q-') {
+          checkListeningComplete();
+        } else if (namePrefix === 'read-q-') {
+          checkReadingComplete();
+        }
       }
     });
 
+    // Initial render
     render();
   }
 
   // ========================================
-  // AUDIO PLAYER LOGIC
+  // SECTION VALIDATION FUNCTIONS
   // ========================================
 
-  const audioElement = document.getElementById('lesson-audio');
-  const playBtn = document.getElementById('audio-play-btn');
-  const progressBar = document.getElementById('audio-progress');
-  const timeDisplay = document.getElementById('audio-time');
-
-  playBtn.addEventListener('click', () => {
-    if (audioElement.paused) {
-      audioElement.play();
-      playBtn.textContent = '⏸';
-    } else {
-      audioElement.pause();
-      playBtn.textContent = '▶';
+  // Mark listening section as complete when all questions answered
+  function checkListeningComplete() {
+    const totalQuestions = listeningQuestions.length;
+    let answeredCount = 0;
+    
+    for (let i = 0; i < totalQuestions; i++) {
+      const answered = document.querySelector(`input[name="listen-q-${i}"]:checked`);
+      if (answered) answeredCount++;
     }
-  });
-
-  audioElement.addEventListener('timeupdate', () => {
-    const percent = (audioElement.currentTime / audioElement.duration) * 100;
-    progressBar.style.width = percent + '%';
     
-    const currentMin = Math.floor(audioElement.currentTime / 60);
-    const currentSec = Math.floor(audioElement.currentTime % 60).toString().padStart(2, '0');
-    const durationMin = Math.floor(audioElement.duration / 60);
-    const durationSec = Math.floor(audioElement.duration % 60).toString().padStart(2, '0');
-    
-    timeDisplay.textContent = `${currentMin}:${currentSec} / ${durationMin}:${durationSec}`;
-  });
-
-  audioElement.addEventListener('ended', () => {
-    playBtn.textContent = '▶';
-    progressBar.style.width = '0%';
-  });
-
-  // ========================================
-  // RECORDING LOGIC (PRESERVED FROM ORIGINAL)
-  // ========================================
-
-  const recordBtn = document.querySelector(".record-btn");
-  const recordLabel = document.querySelector(".record-label");
-  let mediaRecorder;
-  let chunks = [];
-  let isRecording = false;
-
-  async function initMic() {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    mediaRecorder = new MediaRecorder(stream);
-
-    mediaRecorder.ondataavailable = (e) => {
-      chunks.push(e.data);
-    };
-
-    mediaRecorder.onstop = () => {
-      const blob = new Blob(chunks, { type: "audio/webm" });
-      chunks = [];
-      const url = URL.createObjectURL(blob);
-      const audio = new Audio(url);
-      audio.play();
-    };
+    if (answeredCount === totalQuestions) {
+      sectionCompletion.listening = true;
+      document.querySelector('.lesson-card:nth-child(1) .lesson-card-title').textContent = 'Listening ✓';
+      console.log('✅ Listening section completed');
+    }
   }
 
-  recordBtn.addEventListener("click", async () => {
-    try {
-      if (!mediaRecorder) {
-        await initMic();
-      }
-
-      if (!isRecording) {
-        mediaRecorder.start();
-        isRecording = true;
-        recordLabel.textContent = "Recording...";
-        recordBtn.classList.add("recording");
-      } else {
-        mediaRecorder.stop();
-        isRecording = false;
-        recordLabel.textContent = "Record";
-        recordBtn.classList.remove("recording");
-      }
-    } catch (err) {
-      console.error("Mic error:", err);
-      alert("Could not access microphone.");
+  // Mark reading section as complete when all questions answered
+  function checkReadingComplete() {
+    const totalQuestions = readingQuestions.length;
+    let answeredCount = 0;
+    
+    for (let i = 0; i < totalQuestions; i++) {
+      const answered = document.querySelector(`input[name="read-q-${i}"]:checked`);
+      if (answered) answeredCount++;
     }
-  });
+    
+    if (answeredCount === totalQuestions) {
+      sectionCompletion.reading = true;
+      document.querySelector('.lesson-card:nth-child(2) .lesson-card-title').textContent = 'Reading ✓';
+      console.log('✅ Reading section completed');
+    }
+  }
+
+  // Mark speaking as complete when recording is made
+  function markSpeakingComplete() {
+    sectionCompletion.speaking = true;
+    document.querySelector('.lesson-card:nth-child(3) .lesson-card-title').textContent = 'Speaking ✓';
+    console.log('✅ Speaking section completed');
+  }
+
+  // Mark writing as complete when text is entered
+  function checkWritingComplete() {
+    const text = document.getElementById('writing-textarea').value.trim();
+    if (text.length >= 20) {
+      sectionCompletion.writing = true;
+      document.querySelector('.lesson-card:nth-child(4) .lesson-card-title').textContent = 'Writing ✓';
+      console.log('✅ Writing section completed');
+      return true;
+    }
+    return false;
+  }
+
+  // ✅ FIX: Initialize writing validation AFTER DOM loads
+  function initWritingValidation() {
+    document.getElementById('writing-textarea').addEventListener('input', checkWritingComplete);
+  }
 
   // ========================================
-  // COMPLETE LESSON LOGIC
+  // AUDIO PLAYER & RECORDING LOGIC
+  // ========================================
+
+  function initAudioAndRecording() {
+    // Audio player setup
+    const audioElement = document.getElementById('lesson-audio');
+    const playBtn = document.getElementById('audio-play-btn');
+    const progressBar = document.getElementById('audio-progress');
+    const timeDisplay = document.getElementById('audio-time');
+
+    playBtn.addEventListener('click', () => {
+      if (audioElement.paused) {
+        audioElement.play();
+        playBtn.textContent = '⏸';
+      } else {
+        audioElement.pause();
+        playBtn.textContent = '▶';
+      }
+    });
+
+    audioElement.addEventListener('timeupdate', () => {
+      const percent = (audioElement.currentTime / audioElement.duration) * 100;
+      progressBar.style.width = percent + '%';
+      
+      const currentMin = Math.floor(audioElement.currentTime / 60);
+      const currentSec = Math.floor(audioElement.currentTime % 60).toString().padStart(2, '0');
+      const durationMin = Math.floor(audioElement.duration / 60);
+      const durationSec = Math.floor(audioElement.duration % 60).toString().padStart(2, '0');
+      
+      timeDisplay.textContent = `${currentMin}:${currentSec} / ${durationMin}:${durationSec}`;
+    });
+
+    audioElement.addEventListener('ended', () => {
+      playBtn.textContent = '▶';
+      progressBar.style.width = '0%';
+    });
+
+    // Recording setup
+    const recordBtn = document.querySelector(".record-btn");
+    const recordLabel = document.querySelector(".record-label");
+    let mediaRecorder;
+    let chunks = [];
+    let isRecording = false;
+
+    async function initMic() {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      mediaRecorder = new MediaRecorder(stream);
+
+      mediaRecorder.ondataavailable = (e) => {
+        chunks.push(e.data);
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunks, { type: "audio/webm" });
+        chunks = [];
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        audio.play();
+      };
+    }
+
+    recordBtn.addEventListener("click", async () => {
+      try {
+        if (!mediaRecorder) {
+          await initMic();
+        }
+
+        if (!isRecording) {
+          mediaRecorder.start();
+          isRecording = true;
+          recordLabel.textContent = "Recording...";
+          recordBtn.classList.add("recording");
+        } else {
+          mediaRecorder.stop();
+          isRecording = false;
+          recordLabel.textContent = "Recorded ✓";
+          recordBtn.classList.remove("recording");
+          markSpeakingComplete();
+        }
+      } catch (err) {
+        console.error("Mic error:", err);
+        alert("Could not access microphone.");
+      }
+    });
+  }
+
+  // ========================================
+  // COMPLETE LESSON LOGIC WITH VALIDATION
   // ========================================
 
   document.getElementById('complete-lesson-btn').addEventListener('click', () => {
     if (!currentLesson) return;
     
-    // Get or create progress
+    // Check if all sections are completed
+    const completedSections = Object.values(sectionCompletion).filter(v => v).length;
+    const totalSections = 4;
+    
+    if (completedSections < totalSections) {
+      const missing = [];
+      if (!sectionCompletion.listening) missing.push('Listening');
+      if (!sectionCompletion.reading) missing.push('Reading');
+      if (!sectionCompletion.speaking) missing.push('Speaking');
+      if (!sectionCompletion.writing) missing.push('Writing');
+      
+      alert(`⚠️ Please complete all sections before finishing the lesson!\n\nMissing: ${missing.join(', ')}`);
+      return;
+    }
+    
+    // All sections completed - proceed
     const progress = JSON.parse(localStorage.getItem('moduleProgress')) || {};
     const moduleId = currentLesson.moduleId;
     
@@ -417,32 +519,30 @@
       progress[moduleId] = { completedLessons: 0 };
     }
     
-    // Update progress (only if this lesson number is the next one to complete)
     if (progress[moduleId].completedLessons < currentLesson.lessonNumber) {
       progress[moduleId].completedLessons = currentLesson.lessonNumber;
     }
     
-    // Save progress
     localStorage.setItem('moduleProgress', JSON.stringify(progress));
     
-    // Check if there's a next lesson
     if (currentLesson.lessonNumber < currentLesson.totalLessons) {
       const nextLessonNum = currentLesson.lessonNumber + 1;
-      const nextLessonId = `lesson-${currentLesson.moduleId.split('-')[1]}-${nextLessonNum}`;
+      const moduleNum = currentLesson.moduleId.split('-')[1] || '1';
+      const nextLessonId = `lesson-${moduleNum}-${nextLessonNum}`;
       
-      if (confirm('Lesson completed! Go to next lesson?')) {
+      if (confirm('✅ Lesson completed! Go to next lesson?')) {
         window.location.href = `lesson.html?id=${nextLessonId}`;
       } else {
         window.location.href = 'courses.html';
       }
     } else {
-      alert('Module completed! 🎉');
+      alert('🎉 Module completed! Great job!');
       window.location.href = 'courses.html';
     }
   });
 
   // ========================================
-  // INITIALIZE LESSON ON PAGE LOAD
+  // INITIALIZE ON PAGE LOAD
   // ========================================
 
   loadLesson();
