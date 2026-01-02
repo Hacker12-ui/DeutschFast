@@ -18,17 +18,29 @@
         "questions": [
           {
             "text": "Wie heißt Person B?",
-            "options": ["Emma", "Sarah", "Anna"],
+            "options": [
+              "Emma",
+              "Sarah",
+              "Anna"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Woher kommt Tom?",
-            "options": ["Berlin", "Hamburg", "München"],
+            "options": [
+              "Berlin",
+              "Hamburg",
+              "München"
+            ],
             "correctAnswer": 2
           },
           {
             "text": "Wie alt ist Sarah?",
-            "options": ["22 Jahre alt", "23 Jahre alt", "26 Jahre alt"],
+            "options": [
+              "22 Jahre alt",
+              "23 Jahre alt",
+              "26 Jahre alt"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -39,17 +51,27 @@
         "questions": [
           {
             "text": "Lukas ist 25 Jahre alt.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 0
           },
           {
             "text": "Lukas kommt aus Berlin.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Was macht Lukas in seiner Freizeit?",
-            "options": ["Er kocht und tanzt", "Er liest Bücher und spielt Fußball", "Er schwimmt und singt"],
+            "options": [
+              "Er kocht und tanzt",
+              "Er liest Bücher und spielt Fußball",
+              "Er schwimmt und singt"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -83,17 +105,29 @@
         "questions": [
           {
             "text": "Was sagt Person A zuerst?",
-            "options": ["Hallo!", "Guten Morgen!", "Guten Tag!"],
+            "options": [
+              "Hallo!",
+              "Guten Morgen!",
+              "Guten Tag!"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Wie heißt Person A?",
-            "options": ["Thomas", "Anna", "Maria"],
+            "options": [
+              "Thomas",
+              "Anna",
+              "Maria"
+            ],
             "correctAnswer": 2
           },
           {
             "text": "Was sagt Person B am Ende?",
-            "options": ["Auf Wiedersehen!", "Gute Nacht!", "Tschüss!"],
+            "options": [
+              "Auf Wiedersehen!",
+              "Gute Nacht!",
+              "Tschüss!"
+            ],
             "correctAnswer": 2
           }
         ]
@@ -104,17 +138,27 @@
         "questions": [
           {
             "text": "Anna sagt Hallo zu ihren Freunden.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 0
           },
           {
             "text": "Anna sagt Gute Nacht am Morgen.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Was sagt Anna zu ihrem Lehrer?",
-            "options": ["Hi", "Guten Tag", "Tschüss"],
+            "options": [
+              "Hi",
+              "Guten Tag",
+              "Tschüss"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -148,17 +192,29 @@
         "questions": [
           {
             "text": "Wo wohnt Person B?",
-            "options": ["In Frankfurt", "In Berlin", "In Hamburg"],
+            "options": [
+              "In Frankfurt",
+              "In Berlin",
+              "In Hamburg"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Was ist Person B von Beruf?",
-            "options": ["Student", "Lehrerin", "Arzt"],
+            "options": [
+              "Student",
+              "Lehrerin",
+              "Arzt"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Was macht Person A in der Freizeit?",
-            "options": ["Lesen und Musik hören", "Gitarre spielen und schwimmen", "Fußball spielen"],
+            "options": [
+              "Lesen und Musik hören",
+              "Gitarre spielen und schwimmen",
+              "Fußball spielen"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -169,17 +225,27 @@
         "questions": [
           {
             "text": "Peter wohnt in München.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 0
           },
           {
             "text": "Peter ist Lehrer von Beruf.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Was macht Peter in seiner Freizeit?",
-            "options": ["Er schwimmt und läuft", "Er spielt Tennis und kocht", "Er liest und malt"],
+            "options": [
+              "Er schwimmt und läuft",
+              "Er spielt Tennis und kocht",
+              "Er liest und malt"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -213,17 +279,29 @@
         "questions": [
           {
             "text": "Welcher Tag ist heute?",
-            "options": ["Dienstag", "Montag", "Mittwoch"],
+            "options": [
+              "Dienstag",
+              "Montag",
+              "Mittwoch"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Wie viel Uhr ist es?",
-            "options": ["Neun Uhr", "Zehn Uhr", "Elf Uhr"],
+            "options": [
+              "Neun Uhr",
+              "Zehn Uhr",
+              "Elf Uhr"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Wie alt ist Person B?",
-            "options": ["Zweiundzwanzig", "Dreiundzwanzig", "Vierundzwanzig"],
+            "options": [
+              "Zweiundzwanzig",
+              "Dreiundzwanzig",
+              "Vierundzwanzig"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -234,17 +312,27 @@
         "questions": [
           {
             "text": "Die Woche hat sieben Tage.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 0
           },
           {
             "text": "Die Person arbeitet am Samstag.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Um wie viel Uhr steht die Person auf?",
-            "options": ["Um sechs Uhr", "Um sieben Uhr", "Um acht Uhr"],
+            "options": [
+              "Um sechs Uhr",
+              "Um sieben Uhr",
+              "Um acht Uhr"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -278,17 +366,29 @@
         "questions": [
           {
             "text": "Woher kommt Person B?",
-            "options": ["Aus Deutschland", "Aus Indien", "Aus Spanien"],
+            "options": [
+              "Aus Deutschland",
+              "Aus Indien",
+              "Aus Spanien"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Welche Sprachen spricht Person B?",
-            "options": ["Deutsch und Französisch", "Hindi, Englisch und ein bisschen Deutsch", "Nur Englisch"],
+            "options": [
+              "Deutsch und Französisch",
+              "Hindi, Englisch und ein bisschen Deutsch",
+              "Nur Englisch"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Wie lange lernt Person B Deutsch?",
-            "options": ["Ein Jahr", "Zwei Jahre", "Drei Jahre"],
+            "options": [
+              "Ein Jahr",
+              "Zwei Jahre",
+              "Drei Jahre"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -299,17 +399,27 @@
         "questions": [
           {
             "text": "Raj kommt aus Indien.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 0
           },
           {
             "text": "Lisa spricht nur Deutsch.",
-            "options": ["True", "False"],
+            "options": [
+              "True",
+              "False"
+            ],
             "correctAnswer": 1
           },
           {
             "text": "Welche Länder sind deutschsprachig?",
-            "options": ["Deutschland, Frankreich und Italien", "Deutschland, Österreich und die Schweiz", "Indien, China und Japan"],
+            "options": [
+              "Deutschland, Frankreich und Italien",
+              "Deutschland, Österreich und die Schweiz",
+              "Indien, China und Japan"
+            ],
             "correctAnswer": 1
           }
         ]
@@ -322,6 +432,481 @@
       "writing": {
         "subtitle": "Write 4-5 sentences about yourself and languages.",
         "prompt": "Include: your country, your nationality, languages you speak, and why you are learning German.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-2-1",
+      "moduleId": "family-people",
+      "lessonNumber": 1,
+      "totalLessons": 5,
+      "title": "Greetings and Family Introduction",
+      "level": "A1",
+      "category": "Family",
+      "focus": "Learn how to greet people and introduce your family members. You will practice basic family vocabulary and simple introductions.",
+      "instructions": "Pay attention to possessive pronouns like mein (my), meine (my), and how to ask Wer ist das? (Who is that?).",
+      "listening": {
+        "audioFile": "audio/lesson-2-1.mp3",
+        "duration": "0:35",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Anna: Hallo! Ich heiße Anna. Wie heißt du?\nTom: Guten Tag! Ich bin Tom. Das ist meine Familie.\nAnna: Freut mich! Wer ist das?\nTom: Das ist mein Vater und das ist meine Mutter.\nAnna: Sehr schön! Habt ihr Geschwister?\nTom: Ja, ich habe einen Bruder und eine Schwester.",
+        "questions": [
+          {
+            "text": "Wie heißt der Mann?",
+            "options": [
+              "Anna",
+              "Tom",
+              "Peter",
+              "Max"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was zeigt Tom Anna?",
+            "options": [
+              "Seine Schule",
+              "Seine Familie",
+              "Sein Haus",
+              "Seine Freunde"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viele Geschwister hat Tom?",
+            "options": [
+              "Eins",
+              "Zwei",
+              "Drei",
+              "Keine"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Mein Name ist Lisa. Ich bin 25 Jahre alt. Ich komme aus Deutschland. Meine Familie ist klein. Mein Vater heißt Michael und meine Mutter heißt Sarah. Ich habe eine Schwester. Sie heißt Emma und ist 22 Jahre alt. Wir wohnen zusammen in Berlin. Meine Familie ist sehr freundlich und lustig.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie alt ist Lisa?",
+            "options": [
+              "22 Jahre alt",
+              "25 Jahre alt",
+              "30 Jahre alt",
+              "18 Jahre alt"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie heißt Lisas Mutter?",
+            "options": [
+              "Emma",
+              "Lisa",
+              "Sarah",
+              "Anna"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wo wohnt Lisas Familie?",
+            "options": [
+              "München",
+              "Hamburg",
+              "Berlin",
+              "Frankfurt"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Introduce your family in German. Say your family members' names.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Das ist mein Vater... Das ist meine Mutter...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3-5 sentences about your family.",
+        "prompt": "Include: family members' names and how many siblings you have.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-2-2",
+      "moduleId": "family-people",
+      "lessonNumber": 2,
+      "totalLessons": 5,
+      "title": "Immediate Family Members",
+      "level": "A1",
+      "category": "Family",
+      "focus": "Learn vocabulary for immediate family members and how to talk about their professions and ages.",
+      "instructions": "Practice using possessive pronouns (mein Vater, meine Mutter, meine Schwester, mein Bruder) and describing people.",
+      "listening": {
+        "audioFile": "audio/lesson-2-2.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Maria: Das sind meine Eltern. Mein Vater ist Lehrer.\nPaul: Interessant! Was macht deine Mutter?\nMaria: Meine Mutter ist Ärztin. Und das ist mein Bruder, Felix.\nPaul: Wie alt ist Felix?\nMaria: Er ist 15 Jahre alt. Ich habe auch eine kleine Schwester.\nPaul: Oh! Wie heißt sie?\nMaria: Sie heißt Sophie. Sie ist 8 Jahre alt.",
+        "questions": [
+          {
+            "text": "Was ist Marias Vater von Beruf?",
+            "options": [
+              "Arzt",
+              "Lehrer",
+              "Student",
+              "Koch"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie heißt Marias Bruder?",
+            "options": [
+              "Paul",
+              "Felix",
+              "Sophie",
+              "Tom"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie alt ist Sophie?",
+            "options": [
+              "15 Jahre",
+              "10 Jahre",
+              "8 Jahre",
+              "12 Jahre"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich heiße Max und ich bin 20 Jahre alt. Meine Familie hat fünf Personen. Mein Vater heißt Thomas und er ist 48 Jahre alt. Meine Mutter heißt Julia und sie ist 45 Jahre alt. Ich habe zwei Schwestern. Die ältere Schwester heißt Laura. Sie ist 23 Jahre alt und studiert Medizin. Meine jüngere Schwester heißt Nina. Sie ist 16 Jahre alt und geht noch zur Schule. Wir sind eine glückliche Familie.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie viele Personen hat Max' Familie?",
+            "options": [
+              "Drei",
+              "Vier",
+              "Fünf",
+              "Sechs"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was studiert Laura?",
+            "options": [
+              "Informatik",
+              "Medizin",
+              "Kunst",
+              "Geschichte"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wer ist die jüngste Person in der Familie?",
+            "options": [
+              "Max",
+              "Laura",
+              "Nina",
+              "Julia"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your family members. Talk about their ages and jobs.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Mein Vater ist... Jahre alt. Er ist... von Beruf.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3-5 sentences describing your parents.",
+        "prompt": "Include: their names, ages, and professions.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-2-3",
+      "moduleId": "family-people",
+      "lessonNumber": 3,
+      "totalLessons": 5,
+      "title": "Extended Family",
+      "level": "A1",
+      "category": "Family",
+      "focus": "Learn about extended family: grandparents, aunts, uncles, and cousins. Practice talking about where they live.",
+      "instructions": "Notice the vocabulary: Großeltern (grandparents), Tante (aunt), Onkel (uncle), Cousin/Cousine (cousin).",
+      "listening": {
+        "audioFile": "audio/lesson-2-3.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Julia: Kommst du am Sonntag zu meiner Großmutter?\nLeon: Ja, gerne! Wo wohnt deine Oma?\nJulia: Sie wohnt mit meinem Opa in Hamburg. Sie sind 75 Jahre alt.\nLeon: Hast du auch Tanten und Onkel?\nJulia: Ja! Meine Tante heißt Petra und mein Onkel heißt Klaus.\nLeon: Haben sie Kinder?\nJulia: Ja, ich habe drei Cousins. Sie heißen Tim, Max und Anna.",
+        "questions": [
+          {
+            "text": "Wo wohnen Julias Großeltern?",
+            "options": [
+              "Berlin",
+              "München",
+              "Hamburg",
+              "Frankfurt"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie alt sind die Großeltern?",
+            "options": [
+              "65 Jahre",
+              "70 Jahre",
+              "75 Jahre",
+              "80 Jahre"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie viele Cousins hat Julia?",
+            "options": [
+              "Zwei",
+              "Drei",
+              "Vier",
+              "Fünf"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Meine Familie ist sehr groß. Ich habe nicht nur Eltern und Geschwister, sondern auch viele Verwandte. Meine Großeltern wohnen in der Nähe. Mein Großvater ist 78 Jahre alt und meine Großmutter ist 76 Jahre alt. Ich besuche sie jeden Samstag. Meine Mutter hat zwei Schwestern. Das sind meine Tanten. Eine Tante heißt Sabine und die andere heißt Karin. Mein Vater hat einen Bruder. Das ist mein Onkel Robert. Meine Tante Sabine hat zwei Kinder. Das sind meine Cousine Lisa und mein Cousin Daniel. Ich spiele oft mit meinen Cousins.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie oft besucht der/die Autor/in die Großeltern?",
+            "options": [
+              "Jeden Tag",
+              "Jeden Samstag",
+              "Jeden Sonntag",
+              "Jeden Monat"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viele Tanten hat der/die Autor/in?",
+            "options": [
+              "Eine",
+              "Zwei",
+              "Drei",
+              "Keine"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie heißt der Onkel?",
+            "options": [
+              "Daniel",
+              "Robert",
+              "Sabine",
+              "Karin"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your extended family: grandparents, aunts, uncles, and cousins.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Meine Großeltern heißen...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3-5 sentences about your extended family.",
+        "prompt": "Include: grandparents' names, where they live, and if you have aunts or uncles.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-2-4",
+      "moduleId": "family-people",
+      "lessonNumber": 4,
+      "totalLessons": 5,
+      "title": "Describing Family Members",
+      "level": "A1",
+      "category": "Family",
+      "focus": "Learn adjectives to describe people's appearance and personality. Practice describing family members.",
+      "instructions": "Use adjectives like groß (tall), klein (small), nett (nice), freundlich (friendly), lustig (funny).",
+      "listening": {
+        "audioFile": "audio/lesson-2-4.mp3",
+        "duration": "0:35",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Sarah: Wie ist deine Familie?\nDavid: Meine Familie ist sehr nett. Mein Vater ist groß und stark.\nSarah: Und deine Mutter?\nDavid: Meine Mutter ist klein und freundlich. Sie ist auch sehr lustig.\nSarah: Hast du Geschwister?\nDavid: Ja, meine Schwester ist jung und intelligent. Mein Bruder ist sportlich.\nSarah: Deine Familie klingt toll!",
+        "questions": [
+          {
+            "text": "Wie ist Davids Vater?",
+            "options": [
+              "Klein und schwach",
+              "Groß und stark",
+              "Jung und lustig",
+              "Alt und müde"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welche Eigenschaft hat Davids Mutter NICHT?",
+            "options": [
+              "Klein",
+              "Freundlich",
+              "Lustig",
+              "Sportlich"
+            ],
+            "correctAnswer": 3
+          },
+          {
+            "text": "Wie ist Davids Bruder?",
+            "options": [
+              "Intelligent",
+              "Sportlich",
+              "Lustig",
+              "Klein"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Meine Familie ist wunderbar. Mein Vater ist 50 Jahre alt. Er ist groß und hat kurze, graue Haare. Er ist sehr fleißig und arbeitet viel. Meine Mutter ist 48 Jahre alt. Sie hat lange, blonde Haare und blaue Augen. Sie ist sehr freundlich und hilfsbereit. Mein Bruder Jonas ist 22 Jahre alt. Er ist sportlich und spielt gerne Fußball. Er ist auch sehr lustig und macht immer Witze. Meine Schwester Anna ist 18 Jahre alt. Sie ist intelligent und lernt gerne. Sie hat braune Haare und grüne Augen. Sie ist ruhig, aber sehr nett. Ich liebe meine Familie sehr!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Welche Haarfarbe hat die Mutter?",
+            "options": [
+              "Braun",
+              "Schwarz",
+              "Blond",
+              "Rot"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was macht Jonas gerne?",
+            "options": [
+              "Lesen",
+              "Fußball spielen",
+              "Kochen",
+              "Malen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie ist Anna?",
+            "options": [
+              "Laut und lustig",
+              "Sportlich und groß",
+              "Ruhig und nett",
+              "Klein und freundlich"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe one of your family members. Talk about their appearance and personality.",
+        "prompt": "Click record and speak for 30–60 seconds. Use adjectives like groß, klein, nett, freundlich.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 3-5 sentences describing a family member.",
+        "prompt": "Include: physical appearance (hair color, eyes) and personality traits.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-2-5",
+      "moduleId": "family-people",
+      "lessonNumber": 5,
+      "totalLessons": 5,
+      "title": "Family Activities and Relationships",
+      "level": "A1",
+      "category": "Family",
+      "focus": "Learn to talk about what families do together. Practice using verbs like besuchen (visit), essen (eat), spielen (play).",
+      "instructions": "Notice time expressions: am Wochenende (on the weekend), am Samstag (on Saturday), jeden Tag (every day).",
+      "listening": {
+        "audioFile": "audio/lesson-2-5.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to the dialogue and answer the questions.",
+        "transcript": "Emma: Was machst du am Wochenende mit deiner Familie?\nLukas: Am Samstag besuchen wir meine Großeltern. Wir essen zusammen.\nEmma: Das ist schön! Und am Sonntag?\nLukas: Am Sonntag spielen wir im Park. Mein Vater und ich spielen Fußball.\nEmma: Macht deine Mutter auch mit?\nLukas: Nein, meine Mutter liest gerne Bücher. Meine Schwester spielt mit dem Hund.\nEmma: Das klingt nach einem tollen Wochenende!",
+        "questions": [
+          {
+            "text": "Was macht Lukas am Samstag?",
+            "options": [
+              "Er spielt Fußball",
+              "Er besucht seine Großeltern",
+              "Er liest Bücher",
+              "Er geht einkaufen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Lukas mit seinem Vater?",
+            "options": [
+              "Sie lesen zusammen",
+              "Sie kochen zusammen",
+              "Sie spielen Fußball",
+              "Sie besuchen die Großeltern"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was macht Lukas' Mutter gerne?",
+            "options": [
+              "Fußball spielen",
+              "Bücher lesen",
+              "Mit dem Hund spielen",
+              "Kochen"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Meine Familie verbringt gerne Zeit zusammen. Jeden Sonntag frühstücken wir gemeinsam. Mein Vater macht Kaffee und meine Mutter kocht Eier. Nach dem Frühstück gehen wir oft spazieren. Im Sommer fahren wir manchmal mit dem Fahrrad. Mein Bruder und ich lieben das! Am Abend sehen wir zusammen einen Film oder spielen Brettspiele. Meine Schwester gewinnt immer! Am Montag gehen wir wieder zur Arbeit und zur Schule, aber wir freuen uns schon auf das nächste Wochenende. Familie ist sehr wichtig für mich.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wann frühstückt die Familie zusammen?",
+            "options": [
+              "Jeden Tag",
+              "Jeden Samstag",
+              "Jeden Sonntag",
+              "Jeden Montag"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was macht die Familie nach dem Frühstück?",
+            "options": [
+              "Sie geht spazieren",
+              "Sie sieht einen Film",
+              "Sie spielt Brettspiele",
+              "Sie geht einkaufen"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Wer gewinnt immer bei Brettspielen?",
+            "options": [
+              "Der Vater",
+              "Die Mutter",
+              "Der Bruder",
+              "Die Schwester"
+            ],
+            "correctAnswer": 3
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about what you do with your family on weekends.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Am Wochenende..., Wir...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about family activities.",
+        "prompt": "Include: what you do together, when, and what you enjoy most.",
         "placeholder": "Schreiben Sie hier Ihre Antwort..."
       }
     }

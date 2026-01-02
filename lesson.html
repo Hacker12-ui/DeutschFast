@@ -168,7 +168,11 @@
   let listeningQuestions = [];
   let readingQuestions = [];
   
-  // ✅ FIX: Declare sectionCompletion BEFORE validation functions
+  // ✅ Track answers for each quiz
+  let listeningAnswers = {};
+  let readingAnswers = {};
+  
+  // Track section completion
   let sectionCompletion = {
     listening: false,
     reading: false,
@@ -246,7 +250,7 @@
     // Initialize quizzes
     initQuizzes();
     
-    // ✅ FIX: Initialize audio, recording, and writing validation AFTER DOM is populated
+    // Initialize audio, recording, and writing validation
     initAudioAndRecording();
     initWritingValidation();
   }
@@ -260,7 +264,9 @@
       prevBtn: document.getElementById("listening-prev"),
       nextBtn: document.getElementById("listening-next"),
       progressEl: document.getElementById("listening-progress"),
-      namePrefix: "listen-q-"
+      namePrefix: "listen-q-",
+      answersStorage: listeningAnswers,
+      checkFunction: checkListeningComplete
     });
 
     setupMiniQuiz({
@@ -270,12 +276,14 @@
       prevBtn: document.getElementById("reading-prev"),
       nextBtn: document.getElementById("reading-next"),
       progressEl: document.getElementById("reading-progress"),
-      namePrefix: "read-q-"
+      namePrefix: "read-q-",
+      answersStorage: readingAnswers,
+      checkFunction: checkReadingComplete
     });
   }
 
   // ========================================
-  // QUIZ LOGIC
+  // QUIZ LOGIC - FIXED VERSION
   // ========================================
 
   function setupMiniQuiz(config) {
@@ -286,7 +294,9 @@
       prevBtn,
       nextBtn,
       progressEl,
-      namePrefix
+      namePrefix,
+      answersStorage,
+      checkFunction
     } = config;
 
     let index = 0;
@@ -304,6 +314,18 @@
         input.type = "radio";
         input.name = namePrefix + index;
         input.value = opt;
+
+        // ✅ Restore previously selected answer
+        if (answersStorage[index] === opt) {
+          input.checked = true;
+        }
+
+        // ✅ Save answer when selected
+        input.addEventListener('change', () => {
+          answersStorage[index] = opt;
+          console.log(`${namePrefix}${index} answered:`, opt);
+          checkFunction();
+        });
 
         label.appendChild(input);
         label.appendChild(document.createTextNode(" " + opt));
@@ -326,13 +348,6 @@
       if (index < questions.length - 1) {
         index++;
         render();
-      } else {
-        // Last question - check if section is complete
-        if (namePrefix === 'listen-q-') {
-          checkListeningComplete();
-        } else if (namePrefix === 'read-q-') {
-          checkReadingComplete();
-        }
       }
     });
 
@@ -341,40 +356,40 @@
   }
 
   // ========================================
-  // SECTION VALIDATION FUNCTIONS
+  // SECTION VALIDATION FUNCTIONS - FIXED
   // ========================================
 
-  // Mark listening section as complete when all questions answered
+  // Check listening completion based on stored answers
   function checkListeningComplete() {
     const totalQuestions = listeningQuestions.length;
-    let answeredCount = 0;
+    const answeredCount = Object.keys(listeningAnswers).length;
     
-    for (let i = 0; i < totalQuestions; i++) {
-      const answered = document.querySelector(`input[name="listen-q-${i}"]:checked`);
-      if (answered) answeredCount++;
-    }
+    console.log(`Listening: ${answeredCount}/${totalQuestions} answered`);
     
     if (answeredCount === totalQuestions) {
       sectionCompletion.listening = true;
       document.querySelector('.lesson-card:nth-child(1) .lesson-card-title').textContent = 'Listening ✓';
       console.log('✅ Listening section completed');
+    } else {
+      sectionCompletion.listening = false;
+      document.querySelector('.lesson-card:nth-child(1) .lesson-card-title').textContent = 'Listening';
     }
   }
 
-  // Mark reading section as complete when all questions answered
+  // Check reading completion based on stored answers
   function checkReadingComplete() {
     const totalQuestions = readingQuestions.length;
-    let answeredCount = 0;
+    const answeredCount = Object.keys(readingAnswers).length;
     
-    for (let i = 0; i < totalQuestions; i++) {
-      const answered = document.querySelector(`input[name="read-q-${i}"]:checked`);
-      if (answered) answeredCount++;
-    }
+    console.log(`Reading: ${answeredCount}/${totalQuestions} answered`);
     
     if (answeredCount === totalQuestions) {
       sectionCompletion.reading = true;
       document.querySelector('.lesson-card:nth-child(2) .lesson-card-title').textContent = 'Reading ✓';
       console.log('✅ Reading section completed');
+    } else {
+      sectionCompletion.reading = false;
+      document.querySelector('.lesson-card:nth-child(2) .lesson-card-title').textContent = 'Reading';
     }
   }
 
@@ -393,11 +408,14 @@
       document.querySelector('.lesson-card:nth-child(4) .lesson-card-title').textContent = 'Writing ✓';
       console.log('✅ Writing section completed');
       return true;
+    } else {
+      sectionCompletion.writing = false;
+      document.querySelector('.lesson-card:nth-child(4) .lesson-card-title').textContent = 'Writing';
     }
     return false;
   }
 
-  // ✅ FIX: Initialize writing validation AFTER DOM loads
+  // Initialize writing validation
   function initWritingValidation() {
     document.getElementById('writing-textarea').addEventListener('input', checkWritingComplete);
   }
@@ -495,6 +513,11 @@
 
   document.getElementById('complete-lesson-btn').addEventListener('click', () => {
     if (!currentLesson) return;
+    
+    console.log('=== VALIDATION CHECK ===');
+    console.log('Listening answers:', listeningAnswers);
+    console.log('Reading answers:', readingAnswers);
+    console.log('Section completion:', sectionCompletion);
     
     // Check if all sections are completed
     const completedSections = Object.values(sectionCompletion).filter(v => v).length;
