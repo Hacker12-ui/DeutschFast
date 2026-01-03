@@ -909,6 +909,1431 @@
         "prompt": "Include: what you do together, when, and what you enjoy most.",
         "placeholder": "Schreiben Sie hier Ihre Antwort..."
       }
+    },
+    {
+      "id": "lesson-3-1",
+      "moduleId": "daily-life-routine",
+      "lessonNumber": 1,
+      "totalLessons": 5,
+      "title": "Daily Activities",
+      "level": "A1",
+      "category": "Daily Life",
+      "focus": "Learn vocabulary for common daily activities. Practice talking about what you do every day using present tense verbs.",
+      "instructions": "Pay attention to verb conjugations in present tense: ich mache (I do), ich esse (I eat), ich gehe (I go).",
+      "listening": {
+        "audioFile": "audio/lesson-3-1.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the dialogue about daily activities.",
+        "transcript": "Tom: Was machst du jeden Tag?\nSara: Ich stehe um 7 Uhr auf. Dann dusche ich und frühstücke.\nTom: Wann gehst du zur Arbeit?\nSara: Ich gehe um 8 Uhr zur Arbeit. Ich arbeite bis 17 Uhr.\nTom: Was machst du am Abend?\nSara: Am Abend koche ich Abendessen und sehe fern. Dann gehe ich um 22 Uhr schlafen.",
+        "questions": [
+          {
+            "text": "Wann steht Sara auf?",
+            "options": [
+              "Um 6 Uhr",
+              "Um 7 Uhr",
+              "Um 8 Uhr",
+              "Um 9 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann geht Sara zur Arbeit?",
+            "options": [
+              "Um 7 Uhr",
+              "Um 8 Uhr",
+              "Um 9 Uhr",
+              "Um 10 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Sara am Abend?",
+            "options": [
+              "Sie arbeitet",
+              "Sie schläft",
+              "Sie kocht und sieht fern",
+              "Sie liest"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Mein Tag beginnt früh. Ich stehe jeden Morgen um 6:30 Uhr auf. Zuerst dusche ich und putze meine Zähne. Dann frühstücke ich. Ich esse meistens Brot mit Käse und trinke Kaffee. Um 8 Uhr verlasse ich das Haus und fahre mit dem Bus zur Universität. Ich habe Unterricht von 9 bis 14 Uhr. Nach dem Unterricht gehe ich in die Bibliothek und lerne. Am Abend komme ich nach Hause, esse Abendessen und mache meine Hausaufgaben. Vor dem Schlafengehen lese ich ein Buch. Ich schlafe um 23 Uhr.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wann steht die Person auf?",
+            "options": [
+              "Um 6:00 Uhr",
+              "Um 6:30 Uhr",
+              "Um 7:00 Uhr",
+              "Um 7:30 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie fährt die Person zur Universität?",
+            "options": [
+              "Mit dem Auto",
+              "Mit dem Bus",
+              "Mit dem Fahrrad",
+              "Zu Fuß"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht die Person vor dem Schlafengehen?",
+            "options": [
+              "Fernsehen",
+              "Lernen",
+              "Ein Buch lesen",
+              "Kochen"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your daily routine in German.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich stehe auf... Ich gehe... Ich mache...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about your typical day.",
+        "prompt": "Include: what time you wake up, what you do in the morning, afternoon, and evening.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-3-2",
+      "moduleId": "daily-life-routine",
+      "lessonNumber": 2,
+      "totalLessons": 5,
+      "title": "Time Expressions",
+      "level": "A1",
+      "category": "Daily Life",
+      "focus": "Learn how to express time in German. Practice talking about when you do activities using time phrases.",
+      "instructions": "Notice expressions: am Morgen (in the morning), am Nachmittag (in the afternoon), am Abend (in the evening), um ... Uhr (at ... o'clock).",
+      "listening": {
+        "audioFile": "audio/lesson-3-2.mp3",
+        "duration": "0:35",
+        "subtitle": "Listen to the dialogue about time and schedule.",
+        "transcript": "Lisa: Wann stehst du normalerweise auf?\nMark: Normalerweise stehe ich um 7 Uhr auf. Und du?\nLisa: Ich stehe früher auf, um 6 Uhr. Wann isst du zu Mittag?\nMark: Ich esse gegen 12 Uhr zu Mittag. Am Nachmittag arbeite ich.\nLisa: Und am Abend? Was machst du?\nMark: Am Abend treffe ich oft Freunde. Manchmal gehe ich ins Kino.",
+        "questions": [
+          {
+            "text": "Wann steht Mark auf?",
+            "options": [
+              "Um 6 Uhr",
+              "Um 7 Uhr",
+              "Um 8 Uhr",
+              "Um 9 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann steht Lisa auf?",
+            "options": [
+              "Um 5 Uhr",
+              "Um 6 Uhr",
+              "Um 7 Uhr",
+              "Um 8 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Mark am Abend?",
+            "options": [
+              "Er arbeitet",
+              "Er schläft",
+              "Er trifft Freunde",
+              "Er kocht"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich habe einen strukturierten Tagesablauf. Am Morgen stehe ich früh auf und gehe joggen. Das mache ich jeden Tag um 6 Uhr. Nach dem Joggen dusche ich und frühstücke. Am Vormittag arbeite ich im Büro. Ich beginne um 9 Uhr und arbeite bis 13 Uhr. Gegen 13 Uhr esse ich zu Mittag in der Kantine. Am Nachmittag habe ich Meetings oder arbeite an Projekten. Um 17 Uhr ist mein Arbeitstag zu Ende. Am Abend habe ich Freizeit. Manchmal gehe ich schwimmen oder treffe Freunde. In der Nacht schlafe ich gut.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was macht die Person um 6 Uhr?",
+            "options": [
+              "Schlafen",
+              "Frühstücken",
+              "Joggen",
+              "Arbeiten"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wann isst die Person zu Mittag?",
+            "options": [
+              "Um 12 Uhr",
+              "Gegen 13 Uhr",
+              "Um 14 Uhr",
+              "Um 11 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann endet der Arbeitstag?",
+            "options": [
+              "Um 16 Uhr",
+              "Um 17 Uhr",
+              "Um 18 Uhr",
+              "Um 19 Uhr"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your schedule using time expressions.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Am Morgen... Am Nachmittag... Am Abend... Um ... Uhr...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about when you do different activities.",
+        "prompt": "Use time expressions: am Morgen, am Nachmittag, am Abend, um ... Uhr.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-3-3",
+      "moduleId": "daily-life-routine",
+      "lessonNumber": 3,
+      "totalLessons": 5,
+      "title": "Weekend Activities",
+      "level": "A1",
+      "category": "Daily Life",
+      "focus": "Learn vocabulary for weekend activities and hobbies. Practice talking about what you like to do on weekends.",
+      "instructions": "Notice phrases: am Wochenende (on the weekend), am Samstag/Sonntag (on Saturday/Sunday), gerne (gladly/like to).",
+      "listening": {
+        "audioFile": "audio/lesson-3-3.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to people talking about weekend plans.",
+        "transcript": "Nina: Was machst du am Wochenende?\nPeter: Am Samstag gehe ich ins Fitnessstudio und treffe Freunde. Am Sonntag bleibe ich zu Hause und entspanne mich.\nNina: Das klingt schön! Ich gehe am Samstag einkaufen.\nPeter: Gehst du auch ins Kino?\nNina: Ja, am Samstagabend sehe ich einen Film. Am Sonntag besuche ich meine Familie.\nPeter: Toll! Viel Spaß!",
+        "questions": [
+          {
+            "text": "Was macht Peter am Samstag?",
+            "options": [
+              "Einkaufen",
+              "Ins Fitnessstudio gehen",
+              "Arbeiten",
+              "Schlafen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Nina am Samstag?",
+            "options": [
+              "Sie bleibt zu Hause",
+              "Sie geht einkaufen",
+              "Sie arbeitet",
+              "Sie schläft"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann besucht Nina ihre Familie?",
+            "options": [
+              "Am Samstag",
+              "Am Sonntag",
+              "Am Freitag",
+              "Am Montag"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich liebe Wochenenden! Am Wochenende habe ich keine Arbeit und kann machen, was ich will. Am Samstagmorgen schlafe ich lange. Dann frühstücke ich gemütlich. Am Samstagnachmittag gehe ich oft in die Stadt. Ich treffe Freunde im Café oder gehe ins Kino. Manchmal gehe ich auch ins Museum. Am Samstagabend koche ich ein schönes Abendessen oder gehe in ein Restaurant. Am Sonntag entspanne ich mich. Ich lese Bücher, höre Musik oder gehe spazieren. Manchmal fahre ich mit dem Fahrrad in den Park. Das Wochenende vergeht immer zu schnell!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was macht die Person am Samstagmorgen?",
+            "options": [
+              "Sport",
+              "Lange schlafen",
+              "Arbeiten",
+              "Einkaufen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wohin geht die Person am Samstagnachmittag?",
+            "options": [
+              "Zur Arbeit",
+              "Nach Hause",
+              "In die Stadt",
+              "Ins Bett"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was macht die Person am Sonntag?",
+            "options": [
+              "Sie arbeitet",
+              "Sie entspannt sich",
+              "Sie geht einkaufen",
+              "Sie kocht"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your weekend activities.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Am Wochenende... Am Samstag... Am Sonntag...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about what you do on weekends.",
+        "prompt": "Include activities for Saturday and Sunday.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-3-4",
+      "moduleId": "daily-life-routine",
+      "lessonNumber": 4,
+      "totalLessons": 5,
+      "title": "Hobbies and Free Time",
+      "level": "A1",
+      "category": "Daily Life",
+      "focus": "Learn vocabulary for hobbies and leisure activities. Practice talking about what you like and don't like to do.",
+      "instructions": "Use phrases: Ich spiele gerne... (I like to play...), Ich mache gerne... (I like to do...), In meiner Freizeit... (In my free time...).",
+      "listening": {
+        "audioFile": "audio/lesson-3-4.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the conversation about hobbies.",
+        "transcript": "Anna: Was sind deine Hobbys?\nLukas: Ich spiele gerne Gitarre und Fußball. Und du?\nAnna: Ich male gerne und tanze. Ich gehe auch gerne ins Theater.\nLukas: Das ist interessant! Wie oft gehst du ins Theater?\nAnna: Einmal im Monat. Spielst du in einer Fußballmannschaft?\nLukas: Ja, ich spiele zweimal pro Woche. Sport ist sehr wichtig für mich.",
+        "questions": [
+          {
+            "text": "Was sind Lukas' Hobbys?",
+            "options": [
+              "Malen und Tanzen",
+              "Gitarre und Fußball",
+              "Theater und Kino",
+              "Lesen und Schreiben"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht Anna gerne?",
+            "options": [
+              "Fußball spielen",
+              "Malen und Tanzen",
+              "Gitarre spielen",
+              "Schwimmen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie oft spielt Lukas Fußball?",
+            "options": [
+              "Einmal pro Woche",
+              "Zweimal pro Woche",
+              "Jeden Tag",
+              "Einmal im Monat"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich habe viele Hobbys. In meiner Freizeit mache ich gerne Sport. Ich schwimme dreimal pro Woche im Schwimmbad. Das ist gut für die Gesundheit. Am Wochenende spiele ich Tennis mit meinen Freunden. Ich interessiere mich auch für Musik. Ich spiele Klavier seit zehn Jahren. Jeden Abend übe ich eine Stunde. Außerdem lese ich gerne Bücher. Mein Lieblingsgenre ist Krimi. Ich lese jeden Monat zwei oder drei Bücher. Im Sommer reise ich gerne. Ich besuche neue Städte und lerne andere Kulturen kennen. Hobbys machen das Leben interessant!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie oft schwimmt die Person?",
+            "options": [
+              "Einmal pro Woche",
+              "Zweimal pro Woche",
+              "Dreimal pro Woche",
+              "Jeden Tag"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was spielt die Person?",
+            "options": [
+              "Gitarre",
+              "Klavier",
+              "Geige",
+              "Schlagzeug"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was ist das Lieblingsgenre?",
+            "options": [
+              "Roman",
+              "Krimi",
+              "Biografie",
+              "Fantasy"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your hobbies and free time activities.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich spiele gerne... In meiner Freizeit...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about your hobbies.",
+        "prompt": "Include: what hobbies you have, how often you do them, and why you like them.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-3-5",
+      "moduleId": "daily-life-routine",
+      "lessonNumber": 5,
+      "totalLessons": 5,
+      "title": "Describing Your Day",
+      "level": "A1",
+      "category": "Daily Life",
+      "focus": "Practice putting together everything you learned about daily routines. Describe a complete day from morning to night.",
+      "instructions": "Use sequencing words: zuerst (first), dann (then), danach (after that), später (later), schließlich (finally).",
+      "listening": {
+        "audioFile": "audio/lesson-3-5.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to someone describing their day.",
+        "transcript": "Heute war ein typischer Tag. Zuerst bin ich um 7 Uhr aufgestanden. Dann habe ich gefrühstückt und mich angezogen. Danach bin ich zur Arbeit gefahren. Ich war um 9 Uhr im Büro. Am Vormittag hatte ich viele Meetings. Gegen 13 Uhr habe ich zu Mittag gegessen. Am Nachmittag habe ich E-Mails geschrieben und an einem Projekt gearbeitet. Um 18 Uhr bin ich nach Hause gegangen. Später habe ich Sport gemacht und Abendessen gekocht. Schließlich habe ich ferngesehen und bin um 23 Uhr ins Bett gegangen.",
+        "questions": [
+          {
+            "text": "Wann ist die Person aufgestanden?",
+            "options": [
+              "Um 6 Uhr",
+              "Um 7 Uhr",
+              "Um 8 Uhr",
+              "Um 9 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was hat die Person am Vormittag gemacht?",
+            "options": [
+              "Sport",
+              "Meetings",
+              "Gekocht",
+              "Geschlafen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann ist die Person ins Bett gegangen?",
+            "options": [
+              "Um 22 Uhr",
+              "Um 23 Uhr",
+              "Um 24 Uhr",
+              "Um 21 Uhr"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Gestern hatte ich einen interessanten Tag. Am Morgen bin ich früh aufgewacht, weil ich einen wichtigen Termin hatte. Zuerst habe ich geduscht und mich fertig gemacht. Dann habe ich schnell gefrühstückt. Danach bin ich zur Universität gefahren. Ich hatte eine Prüfung um 10 Uhr. Die Prüfung war schwierig, aber ich denke, ich habe gut gemacht. Nach der Prüfung habe ich mich mit Freunden getroffen. Wir haben zusammen zu Mittag gegessen und über die Prüfung gesprochen. Am Nachmittag bin ich in die Bibliothek gegangen und habe für die nächste Woche gelernt. Am Abend bin ich nach Hause gekommen und war sehr müde. Ich habe etwas gegessen und bin früh schlafen gegangen.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Warum ist die Person früh aufgewacht?",
+            "options": [
+              "Zum Einkaufen",
+              "Für einen Termin",
+              "Zum Sport",
+              "Zum Arbeiten"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wann war die Prüfung?",
+            "options": [
+              "Um 9 Uhr",
+              "Um 10 Uhr",
+              "Um 11 Uhr",
+              "Um 12 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was hat die Person am Nachmittag gemacht?",
+            "options": [
+              "Geschlafen",
+              "Gekocht",
+              "In der Bibliothek gelernt",
+              "Sport gemacht"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your day yesterday from morning to evening.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Zuerst... Dann... Danach... Später... Schließlich...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 5-6 sentences describing your day yesterday.",
+        "prompt": "Use sequencing words and describe activities from morning to night.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-4-1",
+      "moduleId": "food-shopping",
+      "lessonNumber": 1,
+      "totalLessons": 5,
+      "title": "Food and Drinks",
+      "level": "A1",
+      "category": "Food",
+      "focus": "Learn vocabulary for common foods and drinks. Practice talking about what you like and don't like to eat.",
+      "instructions": "Use phrases: Ich mag... (I like...), Ich esse gerne... (I like to eat...), Ich trinke gerne... (I like to drink...).",
+      "listening": {
+        "audioFile": "audio/lesson-4-1.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the conversation about food preferences.",
+        "transcript": "Maria: Was isst du gerne zum Frühstück?\nTom: Ich esse gerne Brot mit Marmelade und trinke Kaffee. Und du?\nMaria: Ich esse Müsli mit Joghurt und Obst. Ich trinke Orangensaft.\nTom: Magst du Käse?\nMaria: Ja, ich mag Käse sehr. Ich esse oft Käsebrot.\nTom: Ich auch! Am Wochenende esse ich auch Eier und Schinken.",
+        "questions": [
+          {
+            "text": "Was isst Tom zum Frühstück?",
+            "options": [
+              "Müsli",
+              "Brot mit Marmelade",
+              "Eier",
+              "Obst"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was trinkt Maria?",
+            "options": [
+              "Kaffee",
+              "Tee",
+              "Orangensaft",
+              "Milch"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Mag Maria Käse?",
+            "options": [
+              "Ja",
+              "Nein",
+              "Manchmal",
+              "Nicht erwähnt"
+            ],
+            "correctAnswer": 0
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich esse gerne gesund. Zum Frühstück esse ich meistens Vollkornbrot mit Butter und Honig. Dazu trinke ich grünen Tee. Manchmal esse ich auch Obst wie Äpfel oder Bananen. Zum Mittagessen esse ich oft Salat mit Hähnchen oder Fisch. Ich mag auch Gemüse wie Tomaten, Gurken und Paprika. Am Abend esse ich etwas Leichtes. Oft koche ich Suppe oder esse Joghurt mit Nüssen. Ich trinke viel Wasser, mindestens zwei Liter pro Tag. Am Wochenende gönne ich mir manchmal etwas Süßes wie Kuchen oder Schokolade. Aber ich versuche, nicht zu viel Zucker zu essen.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was isst die Person zum Frühstück?",
+            "options": [
+              "Müsli",
+              "Vollkornbrot mit Butter und Honig",
+              "Eier",
+              "Käse"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was isst die Person zum Mittagessen?",
+            "options": [
+              "Suppe",
+              "Salat mit Hähnchen oder Fisch",
+              "Pizza",
+              "Brot"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel Wasser trinkt die Person?",
+            "options": [
+              "Ein Liter",
+              "Zwei Liter",
+              "Drei Liter",
+              "Vier Liter"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your food and drink preferences.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich esse gerne... Ich trinke gerne... Ich mag...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about what you eat and drink.",
+        "prompt": "Include: breakfast, lunch, dinner, and your favorite foods.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-4-2",
+      "moduleId": "food-shopping",
+      "lessonNumber": 2,
+      "totalLessons": 5,
+      "title": "At the Supermarket",
+      "level": "A1",
+      "category": "Shopping",
+      "focus": "Learn vocabulary for shopping and supermarket items. Practice asking for products and quantities.",
+      "instructions": "Use phrases: Ich brauche... (I need...), Ich möchte... (I would like...), Wo finde ich...? (Where do I find...?).",
+      "listening": {
+        "audioFile": "audio/lesson-4-2.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the shopping conversation.",
+        "transcript": "Kunde: Entschuldigung, wo finde ich Milch?\nVerkäufer: Die Milch finden Sie im Kühlregal hinten rechts.\nKunde: Danke! Und wo ist das Brot?\nVerkäufer: Das Brot ist in der Bäckerei-Abteilung, gleich hier vorne.\nKunde: Haben Sie auch frisches Obst?\nVerkäufer: Ja, natürlich. Das Obst ist links neben dem Gemüse.\nKunde: Vielen Dank für Ihre Hilfe!",
+        "questions": [
+          {
+            "text": "Wo findet man die Milch?",
+            "options": [
+              "Vorne links",
+              "Hinten rechts",
+              "In der Mitte",
+              "Draußen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wo ist das Brot?",
+            "options": [
+              "Im Kühlregal",
+              "In der Bäckerei-Abteilung",
+              "Beim Obst",
+              "Beim Gemüse"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wo ist das Obst?",
+            "options": [
+              "Rechts neben dem Gemüse",
+              "Links neben dem Gemüse",
+              "Hinten",
+              "Vorne"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich gehe zweimal pro Woche einkaufen. Meistens gehe ich am Mittwoch und am Samstag zum Supermarkt. Ich mache immer eine Einkaufsliste, bevor ich gehe. Heute brauche ich viele Sachen: Milch, Brot, Käse, Eier, Obst und Gemüse. Ich kaufe auch Fleisch für das Wochenende. Im Supermarkt nehme ich einen Einkaufswagen. Zuerst gehe ich zur Obst- und Gemüseabteilung. Ich kaufe Äpfel, Bananen, Tomaten und Salat. Dann hole ich Milch und Joghurt aus dem Kühlregal. Danach gehe ich zur Fleischtheke. An der Kasse bezahle ich mit meiner Kreditkarte. Der Einkauf kostet heute 45 Euro.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie oft geht die Person einkaufen?",
+            "options": [
+              "Einmal pro Woche",
+              "Zweimal pro Woche",
+              "Jeden Tag",
+              "Einmal im Monat"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was macht die Person vor dem Einkaufen?",
+            "options": [
+              "Sie kocht",
+              "Sie macht eine Liste",
+              "Sie schläft",
+              "Sie arbeitet"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel kostet der Einkauf?",
+            "options": [
+              "35 Euro",
+              "45 Euro",
+              "55 Euro",
+              "65 Euro"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about shopping at the supermarket.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich brauche... Ich kaufe... Wo finde ich...?",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about your shopping routine.",
+        "prompt": "Include: how often you shop, what you buy, and where you go.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-4-3",
+      "moduleId": "food-shopping",
+      "lessonNumber": 3,
+      "totalLessons": 5,
+      "title": "At the Restaurant",
+      "level": "A1",
+      "category": "Food",
+      "focus": "Learn how to order food in a restaurant. Practice polite phrases and menu vocabulary.",
+      "instructions": "Use polite phrases: Ich hätte gerne... (I would like...), Können Sie mir... empfehlen? (Can you recommend...?), Die Rechnung, bitte (The bill, please).",
+      "listening": {
+        "audioFile": "audio/lesson-4-3.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to the restaurant conversation.",
+        "transcript": "Kellner: Guten Abend! Was möchten Sie trinken?\nGast: Ich hätte gerne ein Wasser, bitte.\nKellner: Natürlich. Möchten Sie schon bestellen?\nGast: Ja. Was können Sie mir empfehlen?\nKellner: Unser Schnitzel mit Pommes ist sehr beliebt.\nGast: Das klingt gut. Ich nehme das Schnitzel.\nKellner: Gerne. Möchten Sie einen Salat dazu?\nGast: Ja, bitte. Und später hätte ich gerne die Rechnung.\nKellner: Sehr gerne!",
+        "questions": [
+          {
+            "text": "Was möchte der Gast trinken?",
+            "options": [
+              "Bier",
+              "Wein",
+              "Wasser",
+              "Saft"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was bestellt der Gast?",
+            "options": [
+              "Pizza",
+              "Pasta",
+              "Schnitzel",
+              "Fisch"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Möchte der Gast einen Salat?",
+            "options": [
+              "Ja",
+              "Nein",
+              "Vielleicht",
+              "Nicht erwähnt"
+            ],
+            "correctAnswer": 0
+          }
+        ]
+      },
+      "reading": {
+        "text": "Gestern war ich mit meinen Freunden in einem Restaurant. Wir haben einen Tisch für vier Personen reserviert. Das Restaurant war sehr schön und gemütlich. Der Kellner war sehr freundlich. Er hat uns die Speisekarte gebracht. Ich habe lange überlegt, was ich essen möchte. Es gab viele leckere Gerichte. Schließlich habe ich Pasta mit Tomatensoße bestellt. Meine Freunde haben Pizza, Schnitzel und Salat bestellt. Als Getränk haben wir Wasser und Wein bestellt. Das Essen war ausgezeichnet! Nach dem Essen haben wir noch Dessert gegessen. Ich hatte Tiramisu. Am Ende haben wir die Rechnung bezahlt und 10% Trinkgeld gegeben.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Für wie viele Personen war der Tisch?",
+            "options": [
+              "Zwei",
+              "Drei",
+              "Vier",
+              "Fünf"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was hat die Person gegessen?",
+            "options": [
+              "Pizza",
+              "Pasta",
+              "Schnitzel",
+              "Salat"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welches Dessert hatte die Person?",
+            "options": [
+              "Kuchen",
+              "Eis",
+              "Tiramisu",
+              "Pudding"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Practice ordering food at a restaurant.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich hätte gerne... Ich nehme... Die Rechnung, bitte.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about a restaurant visit.",
+        "prompt": "Include: what you ordered, what you drank, and if the food was good.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-4-4",
+      "moduleId": "food-shopping",
+      "lessonNumber": 4,
+      "totalLessons": 5,
+      "title": "Prices and Money",
+      "level": "A1",
+      "category": "Shopping",
+      "focus": "Learn how to talk about prices and handle money in German. Practice asking 'How much?' and understanding costs.",
+      "instructions": "Use phrases: Wie viel kostet...? (How much does... cost?), Das macht... Euro (That's... euros), Kann ich mit Karte zahlen? (Can I pay by card?).",
+      "listening": {
+        "audioFile": "audio/lesson-4-4.mp3",
+        "duration": "0:35",
+        "subtitle": "Listen to the shopping conversation about prices.",
+        "transcript": "Kunde: Wie viel kostet dieses Brot?\nVerkäufer: Das Brot kostet 2 Euro 50.\nKunde: Und die Äpfel?\nVerkäufer: Die Äpfel kosten 3 Euro pro Kilo.\nKunde: Okay, ich nehme ein Brot und zwei Kilo Äpfel.\nVerkäufer: Das macht zusammen 8 Euro 50.\nKunde: Kann ich mit Karte zahlen?\nVerkäufer: Ja, natürlich. Hier ist das Kartengerät.",
+        "questions": [
+          {
+            "text": "Wie viel kostet das Brot?",
+            "options": [
+              "2 Euro",
+              "2 Euro 50",
+              "3 Euro",
+              "3 Euro 50"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel kosten die Äpfel pro Kilo?",
+            "options": [
+              "2 Euro",
+              "3 Euro",
+              "4 Euro",
+              "5 Euro"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel kostet alles zusammen?",
+            "options": [
+              "7 Euro 50",
+              "8 Euro 50",
+              "9 Euro 50",
+              "10 Euro"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Heute war ich auf dem Wochenmarkt. Der Markt findet jeden Samstag statt. Dort gibt es frisches Obst, Gemüse, Fleisch und Käse. Die Preise sind gut und die Qualität ist ausgezeichnet. Ich habe verschiedene Sachen gekauft. Tomaten kosten 2 Euro 50 pro Kilo. Ich habe zwei Kilo gekauft, das sind 5 Euro. Dann habe ich Bananen gekauft. Ein Kilo Bananen kostet 1 Euro 80. Ich habe auch Käse gekauft. Der Käse war etwas teuer: 12 Euro pro Kilo. Ich habe 200 Gramm gekauft, das kostet 2 Euro 40. Insgesamt habe ich 20 Euro ausgegeben. Ich habe bar bezahlt. Der Verkäufer war sehr nett und hat mir 50 Cent Rabatt gegeben!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie viel kosten Tomaten pro Kilo?",
+            "options": [
+              "2 Euro",
+              "2 Euro 50",
+              "3 Euro",
+              "3 Euro 50"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel hat die Person für Käse bezahlt?",
+            "options": [
+              "2 Euro",
+              "2 Euro 40",
+              "2 Euro 80",
+              "3 Euro"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie hat die Person bezahlt?",
+            "options": [
+              "Mit Karte",
+              "Bar",
+              "Mit Scheck",
+              "Online"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Practice asking about prices and paying.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Wie viel kostet...? Das macht... Kann ich mit Karte zahlen?",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about shopping and prices.",
+        "prompt": "Include: what you bought, how much it cost, and how you paid.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-4-5",
+      "moduleId": "food-shopping",
+      "lessonNumber": 5,
+      "totalLessons": 5,
+      "title": "Cooking and Recipes",
+      "level": "A1",
+      "category": "Food",
+      "focus": "Learn vocabulary for cooking and kitchen activities. Practice describing simple recipes and cooking steps.",
+      "instructions": "Use verbs: schneiden (to cut), kochen (to cook), braten (to fry), mischen (to mix), würzen (to season).",
+      "listening": {
+        "audioFile": "audio/lesson-4-5.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to a simple recipe explanation.",
+        "transcript": "Heute koche ich Spaghetti Bolognese. Das ist einfach! Zuerst schneide ich Zwiebeln und Knoblauch klein. Dann brate ich das Hackfleisch in einer Pfanne. Danach gebe ich die Zwiebeln und den Knoblauch dazu. Ich koche alles zusammen für fünf Minuten. Dann füge ich Tomatensoße hinzu und würze mit Salz und Pfeffer. Die Soße kocht 20 Minuten. In der Zwischenzeit koche ich die Spaghetti in Salzwasser. Nach 10 Minuten sind die Nudeln fertig. Ich gieße das Wasser ab. Schließlich mische ich die Spaghetti mit der Soße. Fertig! Guten Appetit!",
+        "questions": [
+          {
+            "text": "Was schneidet man zuerst?",
+            "options": [
+              "Tomaten",
+              "Zwiebeln und Knoblauch",
+              "Paprika",
+              "Fleisch"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie lange kocht die Soße?",
+            "options": [
+              "10 Minuten",
+              "15 Minuten",
+              "20 Minuten",
+              "30 Minuten"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie lange kochen die Spaghetti?",
+            "options": [
+              "5 Minuten",
+              "10 Minuten",
+              "15 Minuten",
+              "20 Minuten"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich koche sehr gerne. Mein Lieblingsgericht ist Gemüsecurry. Das Rezept ist einfach und gesund. Ich brauche verschiedene Gemüsesorten: Kartoffeln, Karotten, Zwiebeln und Paprika. Zuerst wasche und schneide ich das Gemüse in kleine Stücke. Dann erhitze ich Öl in einem Topf. Ich brate die Zwiebeln an, bis sie glasig sind. Danach gebe ich die Kartoffeln und Karotten dazu. Nach fünf Minuten füge ich Paprika hinzu. Jetzt kommt die Currypaste und Kokosmilch dazu. Ich würze mit Salz und lasse alles 15 Minuten köcheln. Am Ende schmecke ich ab und gebe frische Kräuter dazu. Ich serviere das Curry mit Reis. Es schmeckt fantastisch!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was ist das Lieblingsgericht?",
+            "options": [
+              "Pasta",
+              "Pizza",
+              "Gemüsecurry",
+              "Schnitzel"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was brät man zuerst an?",
+            "options": [
+              "Kartoffeln",
+              "Zwiebeln",
+              "Paprika",
+              "Karotten"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Womit serviert man das Curry?",
+            "options": [
+              "Brot",
+              "Nudeln",
+              "Reis",
+              "Kartoffeln"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe how to cook a simple dish.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Zuerst... Dann... Danach...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about cooking a simple meal.",
+        "prompt": "Include: ingredients, cooking steps, and how long it takes.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-5-1",
+      "moduleId": "around-city",
+      "lessonNumber": 1,
+      "totalLessons": 5,
+      "title": "Places in the City",
+      "level": "A1",
+      "category": "City",
+      "focus": "Learn vocabulary for common places in a city. Practice talking about where places are located.",
+      "instructions": "Use phrases: Wo ist...? (Where is...?), Es gibt... (There is...), in der Nähe von... (near...), neben... (next to...).",
+      "listening": {
+        "audioFile": "audio/lesson-5-1.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the conversation about city places.",
+        "transcript": "Tourist: Entschuldigung, wo ist die Post?\nEinwohner: Die Post ist in der Hauptstraße, neben der Bank.\nTourist: Und wo finde ich ein gutes Restaurant?\nEinwohner: Es gibt viele Restaurants in der Altstadt. Das ist nicht weit von hier.\nTourist: Gibt es auch eine Apotheke in der Nähe?\nEinwohner: Ja, die Apotheke ist gegenüber vom Supermarkt, gleich hier um die Ecke.\nTourist: Vielen Dank für Ihre Hilfe!",
+        "questions": [
+          {
+            "text": "Wo ist die Post?",
+            "options": [
+              "In der Altstadt",
+              "Neben der Bank",
+              "Gegenüber vom Supermarkt",
+              "Um die Ecke"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wo gibt es viele Restaurants?",
+            "options": [
+              "In der Hauptstraße",
+              "In der Altstadt",
+              "Neben der Post",
+              "Am Bahnhof"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wo ist die Apotheke?",
+            "options": [
+              "Neben der Bank",
+              "In der Altstadt",
+              "Gegenüber vom Supermarkt",
+              "Weit weg"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich wohne in einer schönen Stadt. Meine Stadt hat alles, was man braucht. Im Zentrum gibt es viele Geschäfte und Restaurants. Die Fußgängerzone ist besonders schön. Dort kann man gut einkaufen. Es gibt auch einen großen Park mit einem See. Viele Menschen gehen dort spazieren oder joggen. In meiner Nachbarschaft gibt es einen Supermarkt, eine Bäckerei und eine Apotheke. Das ist sehr praktisch. Die Post ist fünf Minuten zu Fuß von meiner Wohnung. Es gibt auch eine Bibliothek, wo ich oft lerne. Der Bahnhof ist nicht weit. Mit dem Bus erreiche ich ihn in zehn Minuten. Ich mag meine Stadt sehr!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was gibt es im Zentrum?",
+            "options": [
+              "Nur Geschäfte",
+              "Geschäfte und Restaurants",
+              "Nur einen Park",
+              "Nur Wohnungen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was gibt es im Park?",
+            "options": [
+              "Einen See",
+              "Geschäfte",
+              "Ein Restaurant",
+              "Eine Bibliothek"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "text": "Wie weit ist die Post?",
+            "options": [
+              "2 Minuten",
+              "5 Minuten",
+              "10 Minuten",
+              "20 Minuten"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about places in your city or town.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Es gibt... Die... ist... In meiner Stadt...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about your city.",
+        "prompt": "Include: what places there are, where they are located, and what you like about your city.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-5-2",
+      "moduleId": "around-city",
+      "lessonNumber": 2,
+      "totalLessons": 5,
+      "title": "Giving and Following Directions",
+      "level": "A1",
+      "category": "City",
+      "focus": "Learn how to give and understand directions. Practice using prepositions and direction words.",
+      "instructions": "Use phrases: Gehen Sie geradeaus (Go straight), Biegen Sie links/rechts ab (Turn left/right), Es ist auf der linken/rechten Seite (It's on the left/right side).",
+      "listening": {
+        "audioFile": "audio/lesson-5-2.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to directions being given.",
+        "transcript": "Person A: Entschuldigung, wie komme ich zum Bahnhof?\nPerson B: Gehen Sie geradeaus bis zur Ampel. Dann biegen Sie rechts ab.\nPerson A: Rechts ab, okay. Und dann?\nPerson B: Gehen Sie die Straße entlang, etwa 200 Meter. Der Bahnhof ist auf der linken Seite.\nPerson A: Ist das weit?\nPerson B: Nein, zu Fuß sind es nur fünf Minuten.\nPerson A: Vielen Dank!",
+        "questions": [
+          {
+            "text": "Was soll Person A an der Ampel machen?",
+            "options": [
+              "Links abbiegen",
+              "Rechts abbiegen",
+              "Geradeaus gehen",
+              "Stehen bleiben"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Auf welcher Seite ist der Bahnhof?",
+            "options": [
+              "Auf der rechten Seite",
+              "Auf der linken Seite",
+              "In der Mitte",
+              "Gegenüber"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie lange dauert der Weg zu Fuß?",
+            "options": [
+              "3 Minuten",
+              "5 Minuten",
+              "10 Minuten",
+              "15 Minuten"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Gestern musste ich zu einem neuen Arzt gehen. Ich kannte die Adresse, aber ich wusste nicht, wie ich dorthin komme. Ich habe jemanden auf der Straße gefragt. Die Person war sehr freundlich und hat mir den Weg erklärt. Ich sollte zuerst geradeaus gehen, bis ich eine Kirche sehe. Dann sollte ich links abbiegen und die Straße überqueren. Nach etwa 100 Metern sollte ich noch einmal rechts abbiegen. Die Arztpraxis ist in einem gelben Gebäude auf der rechten Seite. Ich habe die Wegbeschreibung befolgt und die Praxis problemlos gefunden. Es hat nur zehn Minuten gedauert. Ich war pünktlich zum Termin!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Was soll die Person bei der Kirche machen?",
+            "options": [
+              "Rechts abbiegen",
+              "Links abbiegen",
+              "Geradeaus gehen",
+              "Umdrehen"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welche Farbe hat das Gebäude?",
+            "options": [
+              "Rot",
+              "Blau",
+              "Gelb",
+              "Grün"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie lange hat der Weg gedauert?",
+            "options": [
+              "5 Minuten",
+              "10 Minuten",
+              "15 Minuten",
+              "20 Minuten"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Give directions from your home to a nearby place.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Gehen Sie geradeaus... Biegen Sie ab... Es ist auf der... Seite.",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences giving directions.",
+        "prompt": "Describe how to get from one place to another in your city.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-5-3",
+      "moduleId": "around-city",
+      "lessonNumber": 3,
+      "totalLessons": 5,
+      "title": "Public Transportation",
+      "level": "A1",
+      "category": "City",
+      "focus": "Learn vocabulary for public transport: bus, train, tram, metro. Practice buying tickets and asking about schedules.",
+      "instructions": "Use phrases: Wann fährt...? (When does... leave?), Wie viel kostet eine Fahrkarte? (How much is a ticket?), Welche Linie...? (Which line...?).",
+      "listening": {
+        "audioFile": "audio/lesson-5-3.mp3",
+        "duration": "0:40",
+        "subtitle": "Listen to the conversation about public transport.",
+        "transcript": "Fahrgast: Entschuldigung, wann fährt der nächste Bus zum Hauptbahnhof?\nMitarbeiter: Der nächste Bus fährt um 14:30 Uhr, in zehn Minuten.\nFahrgast: Welche Linie muss ich nehmen?\nMitarbeiter: Nehmen Sie die Linie 5. Die Haltestelle ist direkt vor dem Gebäude.\nFahrgast: Wie viel kostet eine Fahrkarte?\nMitarbeiter: Eine Einzelfahrkarte kostet 2 Euro 80. Sie können auch eine Tageskarte für 7 Euro kaufen.\nFahrgast: Ich nehme die Einzelfahrkarte. Danke!",
+        "questions": [
+          {
+            "text": "Wann fährt der nächste Bus?",
+            "options": [
+              "Um 14:20 Uhr",
+              "Um 14:30 Uhr",
+              "Um 14:40 Uhr",
+              "Um 15:00 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Welche Buslinie muss man nehmen?",
+            "options": [
+              "Linie 3",
+              "Linie 4",
+              "Linie 5",
+              "Linie 6"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie viel kostet eine Einzelfahrkarte?",
+            "options": [
+              "2 Euro",
+              "2 Euro 80",
+              "3 Euro",
+              "7 Euro"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "reading": {
+        "text": "Ich fahre jeden Tag mit öffentlichen Verkehrsmitteln zur Arbeit. Zuerst gehe ich zur Bushaltestelle. Das ist nur zwei Minuten von meiner Wohnung. Ich nehme den Bus Linie 12. Die Fahrt dauert 15 Minuten. Dann steige ich um und nehme die U-Bahn. Ich fahre drei Stationen. Die U-Bahn kommt alle fünf Minuten, deshalb muss ich nie lange warten. Von der U-Bahn-Station gehe ich noch fünf Minuten zu Fuß zu meinem Büro. Die gesamte Fahrt dauert etwa 35 Minuten. Ich habe eine Monatskarte. Sie kostet 80 Euro, aber das ist günstiger als mit dem Auto zu fahren. Außerdem ist es umweltfreundlicher und ich kann während der Fahrt lesen.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Welchen Bus nimmt die Person?",
+            "options": [
+              "Linie 10",
+              "Linie 11",
+              "Linie 12",
+              "Linie 13"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wie viele U-Bahn-Stationen fährt die Person?",
+            "options": [
+              "Zwei",
+              "Drei",
+              "Vier",
+              "Fünf"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel kostet die Monatskarte?",
+            "options": [
+              "60 Euro",
+              "70 Euro",
+              "80 Euro",
+              "90 Euro"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about how you use public transportation.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich fahre mit... Ich nehme... Die Fahrt dauert...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about public transport in your city.",
+        "prompt": "Include: what transport you use, how often, and how much it costs.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-5-4",
+      "moduleId": "around-city",
+      "lessonNumber": 4,
+      "totalLessons": 5,
+      "title": "At the Train Station",
+      "level": "A1",
+      "category": "City",
+      "focus": "Learn vocabulary for train travel. Practice buying train tickets and understanding departure/arrival information.",
+      "instructions": "Use phrases: Einmal nach... (One ticket to...), Hin und zurück (Round trip), Von welchem Gleis...? (From which platform...?).",
+      "listening": {
+        "audioFile": "audio/lesson-5-4.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to the conversation at the ticket counter.",
+        "transcript": "Kunde: Guten Tag. Ich möchte eine Fahrkarte nach Berlin kaufen.\nSchalter: Möchten Sie eine einfache Fahrt oder hin und zurück?\nKunde: Hin und zurück, bitte. Wann fährt der nächste Zug?\nSchalter: Der nächste Zug fährt um 15:45 Uhr. Er kommt um 18:30 Uhr in Berlin an.\nKunde: Perfekt. Muss ich umsteigen?\nSchalter: Nein, das ist eine direkte Verbindung. Der Zug fährt von Gleis 7.\nKunde: Wie viel kostet die Fahrkarte?\nSchalter: 89 Euro für hin und zurück.\nKunde: Okay, ich nehme die Fahrkarte.",
+        "questions": [
+          {
+            "text": "Wohin möchte der Kunde fahren?",
+            "options": [
+              "München",
+              "Hamburg",
+              "Berlin",
+              "Köln"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wann fährt der Zug ab?",
+            "options": [
+              "Um 15:30 Uhr",
+              "Um 15:45 Uhr",
+              "Um 16:00 Uhr",
+              "Um 18:30 Uhr"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Von welchem Gleis fährt der Zug?",
+            "options": [
+              "Gleis 5",
+              "Gleis 6",
+              "Gleis 7",
+              "Gleis 8"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Letzte Woche bin ich mit dem Zug nach Hamburg gefahren. Ich habe die Fahrkarte online gekauft. Das war sehr praktisch. Am Tag der Reise bin ich früh zum Bahnhof gefahren. Ich wollte nicht den Zug verpassen. Ich habe auf dem Bahnsteig gewartet. Der Zug hatte fünf Minuten Verspätung, aber das war kein Problem. Die Fahrt war angenehm. Ich saß am Fenster und konnte die schöne Landschaft sehen. Der Zug hatte WLAN, deshalb konnte ich arbeiten. Es gab auch ein Bordrestaurant, wo ich Kaffee und ein Sandwich gekauft habe. Nach drei Stunden sind wir in Hamburg angekommen. Die Reise war sehr entspannt.",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie hat die Person die Fahrkarte gekauft?",
+            "options": [
+              "Am Schalter",
+              "Online",
+              "Im Zug",
+              "Per Telefon"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie viel Verspätung hatte der Zug?",
+            "options": [
+              "Keine",
+              "5 Minuten",
+              "10 Minuten",
+              "20 Minuten"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wie lange dauerte die Fahrt?",
+            "options": [
+              "Zwei Stunden",
+              "Drei Stunden",
+              "Vier Stunden",
+              "Fünf Stunden"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Practice buying a train ticket and asking questions.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich möchte eine Fahrkarte nach... Wann fährt...? Von welchem Gleis...?",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 4-5 sentences about a train journey.",
+        "prompt": "Include: where you went, how long it took, and what you did during the journey.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
+    },
+    {
+      "id": "lesson-5-5",
+      "moduleId": "around-city",
+      "lessonNumber": 5,
+      "totalLessons": 5,
+      "title": "Exploring the City",
+      "level": "A1",
+      "category": "City",
+      "focus": "Practice putting together all city vocabulary. Talk about visiting attractions, asking for information, and describing experiences.",
+      "instructions": "Use phrases: Ich möchte... besuchen (I would like to visit...), Wo kann ich...? (Where can I...?), Es war... (It was...).",
+      "listening": {
+        "audioFile": "audio/lesson-5-5.mp3",
+        "duration": "0:45",
+        "subtitle": "Listen to tourists talking about their day.",
+        "transcript": "Anna: Wie war dein Tag? Was hast du gemacht?\nMartin: Es war toll! Ich war im Museum und habe viele interessante Dinge gesehen.\nAnna: Welches Museum?\nMartin: Das Kunstmuseum in der Innenstadt. Die Ausstellung war fantastisch! Und du?\nAnna: Ich war im Zoo. Die Tiere waren süß. Danach bin ich durch den Park spaziert.\nMartin: Klingt schön! Hast du auch das Schloss besucht?\nAnna: Nein, leider nicht. Ich hatte keine Zeit. Aber morgen möchte ich dorthin gehen.\nMartin: Gute Idee! Vielleicht komme ich mit.",
+        "questions": [
+          {
+            "text": "Wo war Martin?",
+            "options": [
+              "Im Zoo",
+              "Im Museum",
+              "Im Park",
+              "Im Schloss"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Wo war Anna?",
+            "options": [
+              "Im Museum",
+              "Im Zoo",
+              "Im Schloss",
+              "Im Kino"
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "text": "Was möchte Anna morgen besuchen?",
+            "options": [
+              "Das Museum",
+              "Den Zoo",
+              "Das Schloss",
+              "Den Park"
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      },
+      "reading": {
+        "text": "Am Wochenende hatte ich Besuch von meiner Freundin. Sie kam aus einer anderen Stadt. Ich habe ihr meine Stadt gezeigt. Am Samstagmorgen sind wir zuerst ins Stadtzentrum gefahren. Wir haben die berühmte Kirche besichtigt. Sie ist 500 Jahre alt und sehr schön. Danach sind wir ins historische Museum gegangen. Dort haben wir viel über die Geschichte der Stadt gelernt. Zum Mittagessen sind wir in ein traditionelles Restaurant gegangen. Das Essen war lecker! Am Nachmittag sind wir durch die Altstadt gebummelt. Wir haben Souvenirs gekauft und Fotos gemacht. Am Abend waren wir im Theater. Wir haben ein Theaterstück gesehen. Es war sehr interessant. Meine Freundin war begeistert von meiner Stadt!",
+        "subtitle": "Read the text and answer the questions.",
+        "questions": [
+          {
+            "text": "Wie alt ist die Kirche?",
+            "options": [
+              "300 Jahre",
+              "400 Jahre",
+              "500 Jahre",
+              "600 Jahre"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Wo haben sie zu Mittag gegessen?",
+            "options": [
+              "Im Museum",
+              "Im Park",
+              "In einem traditionellen Restaurant",
+              "Zu Hause"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "text": "Was haben sie am Abend gemacht?",
+            "options": [
+              "Ins Kino gegangen",
+              "Ins Theater gegangen",
+              "Zu Hause geblieben",
+              "Sport gemacht"
+            ],
+            "correctAnswer": 1
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe a day exploring a city.",
+        "prompt": "Click record and speak for 30–60 seconds. Use: Ich habe besucht... Ich bin gegangen... Es war...",
+        "duration": 60
+      },
+      "writing": {
+        "subtitle": "Write 5-6 sentences about exploring your city or another city.",
+        "prompt": "Include: what places you visited, what you did, and what you thought about it.",
+        "placeholder": "Schreiben Sie hier Ihre Antwort..."
+      }
     }
   ]
 }
