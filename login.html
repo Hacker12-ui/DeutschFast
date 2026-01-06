@@ -92,20 +92,20 @@
 
   if (loginForm) {
     loginForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
+  e.preventDefault(); // first line
 
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value;
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
 
-      try {
-        await signInWithEmailAndPassword(auth, email, password);
-        alert("Logged in successfully ✅");
-        window.location.href = "index.html"; // instead of dashboard.html for now
-      } catch (error) {
-        console.error(error);
-        alert(error.message);
-      }
-    });
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    alert("Logged in successfully ✅");
+    window.location.href = "index.html";   // <- make sure this is NOT dashboard.html
+  } catch (error) {
+    console.error(error);
+    alert(error.message);
+  }
+});
   }
 
   if (googleBtn) {
