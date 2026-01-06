@@ -10,15 +10,22 @@
   <div class="page">
     <!-- Header -->
     <header class="header">
-      <div class="logo">DeutschFast<span></span></div>
-      <nav class="nav-links">
-  <a href="#">Courses</a>
-  <a href="#">How it works</a>
-  <a href="login.html">Login</a>
-  <a href="signup.html" class="btn btn-primary">Get started</a>
-</nav>
-    </header>
+  <div class="logo">DeutschFast<span></span></div>
+  <nav class="nav-links">
+    <a href="#">Courses</a>
+    <a href="#">How it works</a>
 
+    <!-- use these as your main auth links -->
+    <a href="login.html" class="when-logged-out">Login</a>
+    <a href="signup.html" class="btn btn-primary when-logged-out">Get started</a>
+
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+
+    <button id="logout-btn" class="when-logged-in" style="display:none;">Logout</button>
+    <span id="user-email" class="when-logged-in" style="display:none;"></span>
+  </nav>
+</header>
     <!-- Hero -->
     <section class="hero">
       <div>
@@ -141,6 +148,24 @@
     </footer>
   </div>
 
-  <!-- Later we can add: <script src="js/main.js"></script> -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+    authDomain: "deutschfast-prod.firebaseapp.com",
+    projectId: "deutschfast-prod",
+    storageBucket: "deutschfast-prod.firebasestorage.app",
+    messagingSenderId: "505440472870",
+    appId: "1:505440472870:web:e438916302530e2d5f3be7"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
