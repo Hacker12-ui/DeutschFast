@@ -64,15 +64,8 @@
     </div>
   </div>
   <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
-  import {
-    getAuth,
-    signInWithEmailAndPassword,
-    GoogleAuthProvider,
-    signInWithPopup,
-    onAuthStateChanged,
-    signOut
-  } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js';
+  import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js';
 
   const firebaseConfig = {
     apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
@@ -85,66 +78,26 @@
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
-  const provider = new GoogleAuthProvider();
 
   const loginForm = document.getElementById("loginForm");
-  const googleBtn = document.querySelector(".btn-google");
 
   if (loginForm) {
     loginForm.addEventListener("submit", async (e) => {
-  e.preventDefault(); // first line
+      e.preventDefault();
+      
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
 
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-
-  try {
-    await signInWithEmailAndPassword(auth, email, password);
-    alert("Logged in successfully ✅");
-    window.location.href = "index.html";   // <- make sure this is NOT dashboard.html
-  } catch (error) {
-    console.error(error);
-    alert(error.message);
-  }
-});
-  }
-
-  if (googleBtn) {
-  googleBtn.addEventListener("click", async (e) => {
-    e.preventDefault(); // add this line
-
-    try {
-      await signInWithPopup(auth, provider);
-      window.location.href = "index.html";
-    } catch (error) {
-      console.error(error);
-      alert(error.message);
-    }
-  });
-}
-
-  onAuthStateChanged(auth, (user) => {
-    const loggedInEls = document.querySelectorAll(".when-logged-in");
-    const loggedOutEls = document.querySelectorAll(".when-logged-out");
-    const userEmailSpan = document.getElementById("user-email");
-    const logoutBtn = document.getElementById("logout-btn");
-
-    if (user) {
-      loggedInEls.forEach(el => el.style.display = "inline-block");
-      loggedOutEls.forEach(el => el.style.display = "none");
-      if (userEmailSpan) userEmailSpan.textContent = user.email;
-
-      if (logoutBtn) {
-        logoutBtn.onclick = async () => {
-          await signOut(auth);
-          window.location.href = "index.html";
-        };
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        alert("Logged in successfully ✅");
+        window.location.href = "index.html";
+      } catch (error) {
+        console.error("Login error:", error);
+        alert("Login failed: " + error.message);
       }
-    } else {
-      loggedInEls.forEach(el => el.style.display = "none");
-      loggedOutEls.forEach(el => el.style.display = "inline-block");
-    }
-  });
+    });
+  }
 </script>
-
 </body>
 </html>
