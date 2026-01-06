@@ -103,11 +103,14 @@
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
 
+  console.log("Signup script loaded");
+
   const signupForm = document.getElementById("signupForm");
   const googleBtn = document.querySelector(".btn-google");
 
   signupForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+    console.log("Signup form submitted");
 
     const fullName = document.getElementById("fullName").value.trim();
     const email = document.getElementById("email").value.trim();
