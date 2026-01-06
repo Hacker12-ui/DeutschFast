@@ -81,5 +81,71 @@
 </p>
     </div>
   </div>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup
+  } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+    authDomain: "deutschfast-prod.firebaseapp.com",
+    projectId: "deutschfast-prod",
+    storageBucket: "deutschfast-prod.firebasestorage.app",
+    messagingSenderId: "505440472870",
+    appId: "1:505440472870:web:e438916302530e2d5f3be7"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  const signupForm = document.getElementById("signupForm");
+  const googleBtn = document.querySelector(".btn-google");
+
+  signupForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+
+      // optional: set displayName locally for now
+      user.displayName = fullName;
+
+      alert("Account created successfully! 🎉");
+      window.location.href = "index.html"; // redirect after signup
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
+  });
+
+  if (googleBtn) {
+    googleBtn.addEventListener("click", async () => {
+      try {
+        await signInWithPopup(auth, provider);
+        window.location.href = "index.html";
+      } catch (error) {
+        console.error(error);
+        alert(error.message);
+      }
+    });
+  }
+</script>
+
 </body>
 </html>
