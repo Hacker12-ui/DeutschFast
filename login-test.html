@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Test - DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h1>Login Test</h1>
+
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Log in</button>
+  </form>
+
+  <button type="button" id="googleBtn">Continue with Google</button>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+    import {
+      getAuth,
+      signInWithEmailAndPassword,
+      GoogleAuthProvider,
+      signInWithPopup
+    } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+      authDomain: "deutschfast-prod.firebaseapp.com",
+      projectId: "deutschfast-prod",
+      storageBucket: "deutschfast-prod.firebasestorage.app",
+      messagingSenderId: "505440472870",
+      appId: "1:505440472870:web:e438916302530e2d5f3be7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    const loginForm = document.getElementById("loginForm");
+    const googleBtn = document.getElementById("googleBtn");
+
+    loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        alert("Logged in (test) ✅");
+        window.location.href = "index.html";
+      } catch (err) {
+        alert(err.message);
+      }
+    });
+
+    googleBtn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      try {
+        await signInWithPopup(auth, provider);
+        alert("Google login (test) ✅");
+        window.location.href = "index.html";
+      } catch (err) {
+        alert(err.message);
+      }
+    });
+  </script>
+</body>
+</html>
