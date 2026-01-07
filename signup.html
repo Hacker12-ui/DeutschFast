@@ -36,7 +36,7 @@
       
       <div class="divider"><span>or</span></div>
       
-      <button type="button" class="btn btn-google">
+      <button type="button" class="btn btn-google" id="googleBtn">
         <svg width="18" height="18" viewBox="0 0 18 18">
           <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/>
           <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
@@ -53,14 +53,15 @@
   </div>
 
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
     import {
       getAuth,
       createUserWithEmailAndPassword,
       GoogleAuthProvider,
       signInWithPopup,
-      updateProfile
-    } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
+      updateProfile,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
@@ -76,13 +77,14 @@
     const provider = new GoogleAuthProvider();
 
     const signupForm = document.getElementById("signupForm");
-    const googleBtn = document.querySelector(".btn-google");
+    const googleBtn = document.getElementById("googleBtn");
 
-    // helper function to handle redirect
-    const goToCourses = () => {
-      // replace() is better than href because it prevents the user from clicking "back" into the signup page
-      window.location.replace("courses.html");
-    };
+    // ONE CENTRAL REDIRECT: If user is logged in, always send to courses
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        window.location.replace("courses.html");
+      }
+    });
 
     // --- Email and Password Signup ---
     if (signupForm) {
@@ -101,13 +103,12 @@
 
         try {
           const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+          // Update the user's display name
           await updateProfile(userCredential.user, { displayName: fullName });
-          
-          alert("Account created successfully! 🎉");
-          goToCourses();
+          // onAuthStateChanged will handle the redirect
         } catch (error) {
           console.error("Signup error:", error);
-          alert(error.message);
+          alert("Signup failed: " + error.message);
         }
       });
     }
@@ -116,28 +117,16 @@
     if (googleBtn) {
       googleBtn.addEventListener("click", async () => {
         try {
-          // Explicitly clear any existing session before popup
           await signInWithPopup(auth, provider);
-          
-          // Successful login, now redirect
-          goToCourses();
+          // onAuthStateChanged will handle the redirect
         } catch (error) {
           console.error("Google Auth error:", error);
-          // Only alert if the user didn't just close the popup manually
-          if (error.code !== 'auth/cancelled-popup-request') {
-            alert(error.message);
+          if (error.code !== 'auth/popup-closed-by-user') {
+            alert("Google Signup failed: " + error.message);
           }
         }
       });
     }
   </script>
-  <script type="module">
-  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-  import { auth } from "./js/firebase.js";
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) window.location.replace("index.html");
-  });
-</script>
 </body>
 </html>
