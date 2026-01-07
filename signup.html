@@ -131,5 +131,13 @@
       });
     }
   </script>
+  <script type="module">
+  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+  import { auth } from "./js/firebase.js";
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) window.location.replace("index.html");
+  });
+</script>
 </body>
 </html>
