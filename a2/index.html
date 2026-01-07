@@ -1,113 +1,111 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A2 - DeutschFast</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <title>A2 Courses - DeutschFast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/courses.css" />
 </head>
 <body>
-  <!-- Header (copy from courses.html) -->
-  <header class="header">
-    <div class="logo">DeutschFast</div>
-    <nav class="nav-links">
-  <a href="../dashboard.html">Dashboard</a>
-  <a href="../courses.html" class="nav-link">Courses</a>
-  <a href="../lesson.html">Lessons</a>
-  <a href="../vocab.html">Vocab</a>
-  <a href="#">Profile</a>
-  <a href="#" id="logoutBtn" class="nav-link logout-link">Log out</a>
-</nav>
-  </header>
+  <div class="page courses-page">
+    <header class="header">
+      <div class="logo">DeutschFast</div>
+      <nav class="nav-links">
+        <a href="../dashboard.html">Dashboard</a>
+        <a href="../courses.html" class="nav-link active">Courses</a>
+        <a href="../lesson.html">Lessons</a>
+        <a href="../vocab.html">Vocab</a>
+        <a href="#">Profile</a>
+        <a href="#" id="logoutBtn" class="nav-link logout-link">Log out</a>
+      </nav>
+    </header>
 
-  <main class="courses-main">
-    <!-- Level Selector (A2 active) -->
-    <section class="level-selector">
-      <button class="level-pill">A1</button>
-      <button class="level-pill level-pill-active">A2</button>
-      <button class="level-pill">B1</button>
-      <button class="level-pill">B2</button>
-    </section>
+    <main class="courses-main">
+      <section class="courses-hero">
+        <h1 class="courses-title">A2 Level</h1>
+        <p class="courses-subtitle">Choose your module and continue learning.</p>
+      </section>
 
-    <!-- 6 A2 Module Cards (2x3 grid) -->
-    <section class="module-grid">
-      <!-- Past & Biography -->
-      <div class="module-card">
-        <div class="module-icon">📖</div>
-        <h3>Past & Biography</h3>
-        <p>Talking about your childhood, school years, and professional background.</p>
-        <button class="start-btn" onclick="location.href='past/'">6 Lessons → Start</button>
-      </div>
+      <section class="level-selector">
+        <button class="level-pill" onclick="location.href='../courses.html'">A1</button>
+        <button class="level-pill level-pill-active">A2</button>
+        <button class="level-pill">B1</button>
+        <button class="level-pill">B2</button>
+      </section>
 
-      <!-- Travel & Directions -->
-      <div class="module-card">
-        <div class="module-icon">🗺️</div>
-        <h3>Travel & Directions</h3>
-        <p>Booking hotels, reading transport schedules, and describing vacation experiences.</p>
-        <button class="start-btn" onclick="location.href='travel/'">6 Lessons → Start</button>
-      </div>
+      <section class="modules-grid">
+        
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-green">📖</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Past & Biography</h2>
+          <p class="module-text">Talking about your childhood, school years, and professional background.</p>
+          <button class="btn btn-primary btn-module">6 Lessons →</button>
+        </article>
 
-      <!-- Work & Office -->
-      <div class="module-card">
-        <div class="module-icon">💼</div>
-        <h3>Work & Office</h3>
-        <p>Making appointments, talking about professional tasks, and handling basic phone calls.</p>
-        <button class="start-btn" onclick="location.href='work/'">6 Lessons → Start</button>
-      </div>
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-orange">🗺️</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Travel & Directions</h2>
+          <p class="module-text">Booking hotels, reading transport schedules, and describing vacation experiences.</p>
+          <button class="btn btn-primary btn-module">6 Lessons →</button>
+        </article>
 
-      <!-- Health & Body -->
-      <div class="module-card">
-        <div class="module-icon">🏥</div>
-        <h3>Health & Body</h3>
-        <p>Describing symptoms to a doctor, giving advice on a healthy lifestyle, and naming body parts.</p>
-        <button class="start-btn" onclick="location.href='health/'">6 Lessons → Start</button>
-      </div>
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-yellow">💼</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Work & Office</h2>
+          <p class="module-text">Making appointments, talking about professional tasks, and handling basic phone calls.</p>
+          <button class="btn btn-primary btn-module">6 Lessons →</button>
+        </article>
 
-      <!-- Living & City -->
-      <div class="module-card">
-        <div class="module-icon">🏠</div>
-        <h3>Living & City</h3>
-        <p>Describing your home, looking for an apartment, and comparing life in the city vs. the country.</p>
-        <button class="start-btn" onclick="location.href='living/'">6 Lessons → Start</button>
-      </div>
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-red">🏥</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Health & Body</h2>
+          <p class="module-text">Describing symptoms to a doctor and naming body parts.</p>
+          <button class="btn btn-primary btn-module">6 Lessons →</button>
+        </article>
 
-      <!-- Social Life -->
-      <div class="module-card">
-        <div class="module-icon">👥</div>
-        <h3>Social Life</h3>
-        <p>Making plans with friends, inviting people to events, and discussing hobbies like sports or media.</p>
-        <button class="start-btn" onclick="location.href='social/'">6 Lessons → Start</button>
-      </div>
-    </section>
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-purple">🏠</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Living & City</h2>
+          <p class="module-text">Describing your home, looking for an apartment, and comparing life styles.</p>
+          <button class="btn btn-primary btn-module">6 Lessons →</button>
+        </article>
 
-    <!-- Footer Text -->
-    <div class="footer-text">
-      Each module works lessons with listening, reading, speaking, writing
-    </div>
-  </main>
+        <article class="module-card">
+          <div class="module-top">
+            <div class="module-icon module-icon-green">👥</div>
+            <span class="module-tag">A2 · Basics</span>
+          </div>
+          <h2 class="module-title">Social Life</h2>
+          <p class="module-text">Making plans with friends and discussing hobbies like sports or media.</p>
+          <button class="btn btn-primary btn-module">Start</button>
+        </article>
 
-  <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+      </section>
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
-    authDomain: "deutschfast-prod.firebaseapp.com",
-    projectId: "deutschfast-prod",
-    storageBucket: "deutschfast-prod.firebasestorage.app",
-    messagingSenderId: "505440472870",
-    appId: "1:505440472870:web:e438916302530e2d5f3be7"
-  };
+      <section class="courses-info">
+        <h3 class="courses-info-title">How courses work</h3>
+        <p class="courses-info-text">
+          Each module has short lessons with listening, reading, speaking, and writing.
+        </p>
+      </section>
+    </main>
+  </div>
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-
-  onAuthStateChanged(auth, (user) => {
-    if (!user) {
-      // Points back to root login
-      window.location.replace("../login.html");
-    }
-  });
-</script>
-</body>
+  </body>
 </html>
