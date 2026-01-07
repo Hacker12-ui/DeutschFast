@@ -104,37 +104,57 @@
   </div>
 
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
-      authDomain: "deutschfast-prod.firebaseapp.com",
-      projectId: "deutschfast-prod",
-      storageBucket: "deutschfast-prod.firebasestorage.app",
-      messagingSenderId: "505440472870",
-      appId: "1:505440472870:web:e438916302530e2d5f3be7"
-    };
+  // Configuration must stay consistent with root files
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+    authDomain: "deutschfast-prod.firebaseapp.com",
+    projectId: "deutschfast-prod",
+    storageBucket: "deutschfast-prod.firebasestorage.app",
+    messagingSenderId: "505440472870",
+    appId: "1:505440472870:web:e438916302530e2d5f3be7"
+  };
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
 
-    onAuthStateChanged(auth, (user) => {
-      if (!user) window.location.replace("../login.html");
-    });
-
-    const logoutBtn = document.getElementById("logoutBtn");
-    if (logoutBtn) {
-      logoutBtn.addEventListener("click", async (e) => {
-        e.preventDefault();
-        try {
-          await signOut(auth);
-          window.location.replace("../login.html");
-        } catch (error) {
-          console.error("Logout Error:", error);
-        }
-      });
+  /**
+   * Auth Guard with Redirect Prevention
+   * We use onAuthStateChanged to listen for the definitive user state.
+   */
+  onAuthStateChanged(auth, (user) => {
+    if (!user) {
+      console.warn("No active session found. Redirecting to login...");
+      // Using replace prevents the user from getting stuck in a back-button loop.
+      window.location.replace("../login.html");
+    } else {
+      console.log("A2 Session verified for:", user.email);
+      // Optional: Update A2 UI with user name if you add a welcome title
+      const title = document.querySelector('.courses-title');
+      if (title && user.displayName) {
+        title.textContent = `A2 Level - Willkommen, ${user.displayName.split(' ')[0]}!`;
+      }
     }
-  </script>
+  });
+
+  /**
+   * Standardized Logout Logic
+   * Ensure the logoutBtn ID matches your HTML nav.
+   */
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      try {
+        await signOut(auth);
+        window.location.replace("../login.html");
+      } catch (error) {
+        console.error("Logout Error:", error);
+      }
+    });
+  }
+</script>
 </body>
 </html>

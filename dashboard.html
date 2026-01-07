@@ -5,6 +5,7 @@
   <title>Dashboard - DeutschFast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/courses.css" />
 </head>
 <body>
   <div class="page dashboard-page">
@@ -12,10 +13,10 @@
       <div class="logo">DeutschFast</div>
       <nav class="nav-links">
         <a href="dashboard.html" class="nav-link active">Dashboard</a>
-        <a href="courses.html">Courses</a>
-        <a href="lesson.html">Lessons</a>
-        <a href="vocab.html">Vocab</a>
-        <a href="#">Profile</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="lesson.html" class="nav-link">Lessons</a>
+        <a href="vocab.html" class="nav-link">Vocab</a>
+        <a href="#" class="nav-link">Profile</a>
         <a href="#" id="logoutBtn" class="nav-link logout-link">Log out</a>
       </nav>
     </header>
@@ -23,24 +24,18 @@
     <main class="dashboard-main">
       <section class="dashboard-hero">
         <h1 class="dashboard-title" id="welcome-user">Welcome back!</h1>
-        <p class="dashboard-subtitle">
-          Here's your progress and today's next step.
-        </p>
+        <p class="dashboard-subtitle">Here's your progress and today's next step.</p>
       </section>
 
       <section class="today-card">
         <h2 class="today-title">Today's focus</h2>
         <p class="today-text">Continue your German course.</p>
-
-        <a href="courses.html" class="btn btn-primary btn-today">
-          Continue learning
-        </a>
-
+        <a href="courses.html" class="btn btn-primary btn-today">Continue learning</a>
         <p class="today-estimate">Estimated time: 10–15 minutes</p>
       </section>
     
       <section class="quick-grid">
-        <article class="quick-card">
+        <article class="quick-card" onclick="location.href='courses.html'" style="cursor: pointer;">
           <div class="quick-icon">📚</div>
           <h3 class="quick-title">Courses</h3>
           <p class="quick-text">View levels and lessons</p>
@@ -104,22 +99,17 @@
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
-    // Auth Guard
     onAuthStateChanged(auth, (user) => {
       if (!user) {
         window.location.replace("login.html");
       } else {
-        // Personalize the name
         const welcomeTitle = document.getElementById('welcome-user');
         if (user.displayName) {
           welcomeTitle.textContent = `Welcome back, ${user.displayName.split(' ')[0]}!`;
-        } else {
-          welcomeTitle.textContent = `Welcome back!`;
         }
       }
     });
 
-    // Logout
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", async (e) => {

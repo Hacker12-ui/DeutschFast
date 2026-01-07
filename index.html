@@ -126,51 +126,60 @@
   </div>
 
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
-      authDomain: "deutschfast-prod.firebaseapp.com",
-      projectId: "deutschfast-prod",
-      storageBucket: "deutschfast-prod.firebasestorage.app",
-      messagingSenderId: "505440472870",
-      appId: "1:505440472870:web:e438916302530e2d5f3be7"
-    };
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+    authDomain: "deutschfast-prod.firebaseapp.com",
+    projectId: "deutschfast-prod",
+    storageBucket: "deutschfast-prod.firebasestorage.app",
+    messagingSenderId: "505440472870",
+    appId: "1:505440472870:web:e438916302530e2d5f3be7"
+  };
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
 
-    const loggedOutElements = document.querySelectorAll('.when-logged-out');
-    const loggedInElements = document.querySelectorAll('.when-logged-in');
-    const userEmailSpan = document.getElementById('user-email');
-    const logoutBtn = document.getElementById('logout-btn');
+  const loggedOutElements = document.querySelectorAll('.when-logged-out');
+  const loggedInElements = document.querySelectorAll('.when-logged-in');
+  const userEmailSpan = document.getElementById('user-email');
+  const logoutBtn = document.getElementById('logout-btn');
 
-    // UI Toggle Logic
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is logged in
-        loggedOutElements.forEach(el => el.style.display = 'none');
-        loggedInElements.forEach(el => el.style.display = 'inline-block');
-        userEmailSpan.textContent = user.email;
-      } else {
-        // User is logged out
-        loggedOutElements.forEach(el => el.style.display = 'inline-block');
-        loggedInElements.forEach(el => el.style.display = 'none');
+  /**
+   * UI Toggle & Session Management
+   * This logic ensures that if a session exists, we show the Dashboard link
+   * and hide the Login/Signup buttons immediately.
+   */
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is logged in: update UI state
+      loggedOutElements.forEach(el => el.style.display = 'none');
+      loggedInElements.forEach(el => el.style.display = 'inline-block');
+      
+      if (userEmailSpan) {
+        userEmailSpan.textContent = user.email; //
+      }
+    } else {
+      // User is logged out: update UI state
+      loggedOutElements.forEach(el => el.style.display = 'inline-block');
+      loggedInElements.forEach(el => el.style.display = 'none');
+    }
+  });
+
+  // Logout functionality with explicit redirect to prevent loops
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      try {
+        await signOut(auth); //
+        // Instead of reload, redirect to home to clear all auth states
+        window.location.replace("index.html"); 
+      } catch (error) {
+        console.error("Error signing out:", error);
       }
     });
-
-    // Logout functionality
-    if (logoutBtn) {
-      logoutBtn.addEventListener('click', async () => {
-        try {
-          await signOut(auth);
-          window.location.reload(); // Refresh the home page to show login links again
-        } catch (error) {
-          console.error("Error signing out:", error);
-        }
-      });
-    }
-  </script>
+  }
+</script>
 </body>
 </html>
