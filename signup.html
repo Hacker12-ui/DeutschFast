@@ -87,7 +87,8 @@
     getAuth,
     createUserWithEmailAndPassword,
     GoogleAuthProvider,
-    signInWithPopup
+    signInWithPopup,
+    updateProfile
   } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js";
 
   const firebaseConfig = {
@@ -103,47 +104,51 @@
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
 
-  console.log("Signup script loaded");
-
   const signupForm = document.getElementById("signupForm");
   const googleBtn = document.querySelector(".btn-google");
 
-  signupForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    console.log("Signup form submitted");
+  // --- Email and Password Signup ---
+  if (signupForm) {
+    signupForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-    const fullName = document.getElementById("fullName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+      const fullName = document.getElementById("fullName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (password !== confirmPassword) {
-      alert("Passwords do not match.");
-      return;
-    }
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+      }
 
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user;
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        
+        // Save the user's name to their Firebase profile
+        await updateProfile(userCredential.user, {
+          displayName: fullName
+        });
 
-      // optional: set displayName locally for now
-      user.displayName = fullName;
+        alert("Account created successfully! 🎉");
+        // REDIRECT TO COURSES PAGE
+        window.location.href = "courses.html"; 
+      } catch (error) {
+        console.error("Signup error:", error);
+        alert(error.message);
+      }
+    });
+  }
 
-      alert("Account created successfully! 🎉");
-      window.location.href = "index.html"; // redirect after signup
-    } catch (error) {
-      console.error(error);
-      alert(error.message);
-    }
-  });
-
+  // --- Google Signup/Login ---
   if (googleBtn) {
     googleBtn.addEventListener("click", async () => {
       try {
         await signInWithPopup(auth, provider);
-        window.location.href = "index.html";
+        // REDIRECT TO COURSES PAGE
+        window.location.href = "courses.html";
       } catch (error) {
-        console.error(error);
+        console.error("Google Auth error:", error);
         alert(error.message);
       }
     });

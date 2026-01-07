@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <title>Courses - DeutschFast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Global styles (buttons, layout, fonts, etc.) -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Page-specific styles -->
   <link rel="stylesheet" href="css/courses.css" />
 </head>
 <body>
   <div class="page courses-page">
-    <!-- Header -->
     <header class="header">
       <div class="logo">DeutschFast</div>
       <nav class="nav-links">
@@ -20,19 +17,16 @@
         <a href="lesson.html">Lessons</a>
         <a href="vocab.html">Vocab</a>
         <a href="#">Profile</a>
-        <a href="login.html" class="nav-link logout-link">Log out</a>
+        <a href="#" id="logoutBtn" class="nav-link logout-link">Log out</a>
       </nav>
     </header>
 
-    <!-- Main content -->
     <main class="courses-main">
-      <!-- Intro -->
       <section class="courses-hero">
-        <h1 class="courses-title">Courses</h1>
+        <h1 class="courses-title" id="welcome-title">Courses</h1>
         <p class="courses-subtitle">Choose your level and start learning.</p>
       </section>
 
-      <!-- Level selector -->
       <section class="level-selector">
         <button class="level-pill level-pill-active">A1</button>
         <button class="level-pill">A2</button>
@@ -40,12 +34,9 @@
         <button class="level-pill">B2</button>
       </section>
 
-      <!-- Modules grid (will be populated dynamically) -->
       <section class="modules-grid" id="modules-container">
-        <!-- Module cards will be inserted here by JavaScript -->
-      </section>
+        </section>
 
-      <!-- How courses work -->
       <section class="courses-info">
         <h3 class="courses-info-title">How courses work</h3>
         <p class="courses-info-text">
@@ -55,7 +46,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div>DeutschFast</div>
       <div class="footer-links">
@@ -66,22 +56,64 @@
     </footer>
   </div>
 
-  <!-- JavaScript for dynamic module loading -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+      authDomain: "deutschfast-prod.firebaseapp.com",
+      projectId: "deutschfast-prod",
+      storageBucket: "deutschfast-prod.firebasestorage.app",
+      messagingSenderId: "505440472870",
+      appId: "1:505440472870:web:e438916302530e2d5f3be7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // 1. Auth Guard: Check if user is logged in
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        // If not logged in, redirect to login
+        window.location.href = "login.html";
+      } else {
+        // Optional: Personalize the title with the user's name
+        const title = document.getElementById('welcome-title');
+        if (user.displayName) {
+          title.textContent = `Willkommen, ${user.displayName.split(' ')[0]}!`;
+        }
+      }
+    });
+
+    // 2. Logout functionality
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        try {
+          await signOut(auth);
+          window.location.href = "login.html";
+        } catch (error) {
+          console.error("Logout Error:", error);
+        }
+      });
+    }
+  </script>
+
   <script>
     // ========================================
-    // MODULE LOADER
+    // MODULE LOADER (Your existing logic)
     // ========================================
 
     let allModules = [];
     const iconColors = ['green', 'orange', 'yellow', 'red', 'purple'];
 
-    // Get user progress from localStorage
     function getUserProgress() {
       const saved = localStorage.getItem('moduleProgress');
       return saved ? JSON.parse(saved) : {};
     }
 
-    // Load modules from JSON
     async function loadModules() {
       try {
         const response = await fetch('data/modules.json');
@@ -95,21 +127,18 @@
       }
     }
 
-    // Render module cards
     function renderModules(modules) {
       const container = document.getElementById('modules-container');
       const progress = getUserProgress();
       
-      container.innerHTML = ''; // Clear existing cards
+      container.innerHTML = ''; 
 
       modules.forEach((module, index) => {
-        // Get progress for this module
         const moduleProgress = progress[module.id] || { completedLessons: 0 };
         const completed = moduleProgress.completedLessons || 0;
         const buttonText = completed > 0 ? 'Continue' : 'Start';
         const colorClass = iconColors[index % iconColors.length];
 
-        // Create card HTML
         const card = `
           <article class="module-card">
             <div class="module-top">
@@ -124,12 +153,10 @@
             </button>
           </article>
         `;
-
         container.innerHTML += card;
       });
     }
 
-    // Start or continue a module
     function startModule(moduleId) {
       const module = allModules.find(m => m.id === moduleId);
       if (!module) {
@@ -139,16 +166,12 @@
 
       const progress = getUserProgress();
       const moduleProgress = progress[moduleId] || { completedLessons: 0 };
-      
-      // Get next lesson to open
       const nextLessonIndex = moduleProgress.completedLessons || 0;
       const nextLessonId = module.lessons[nextLessonIndex];
 
-      // Navigate to lesson page
       window.location.href = `lesson.html?id=${nextLessonId}`;
     }
 
-    // Initialize on page load
     loadModules();
   </script>
 </body>

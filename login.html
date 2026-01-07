@@ -65,7 +65,12 @@
   </div>
   <script type="module">
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js';
-  import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js';
+  import { 
+    getAuth, 
+    signInWithEmailAndPassword, 
+    GoogleAuthProvider, 
+    signInWithPopup 
+  } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js';
 
   const firebaseConfig = {
     apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
@@ -78,23 +83,37 @@
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
 
   const loginForm = document.getElementById("loginForm");
+  const googleBtn = document.querySelector(".btn-google");
 
+  // 1. Email/Password Login
   if (loginForm) {
     loginForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      
       const email = document.getElementById("email").value.trim();
       const password = document.getElementById("password").value;
 
       try {
         await signInWithEmailAndPassword(auth, email, password);
-        alert("Logged in successfully ✅");
-        window.location.href = "index.html";
+        // REDIRECT TO COURSES
+        window.location.href = "courses.html"; 
       } catch (error) {
-        console.error("Login error:", error);
         alert("Login failed: " + error.message);
+      }
+    });
+  }
+
+  // 2. Google Login
+  if (googleBtn) {
+    googleBtn.addEventListener("click", async () => {
+      try {
+        await signInWithPopup(auth, provider);
+        // REDIRECT TO COURSES
+        window.location.href = "courses.html";
+      } catch (error) {
+        alert("Google Login failed: " + error.message);
       }
     });
   }
