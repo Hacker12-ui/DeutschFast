@@ -24,26 +24,25 @@
     <main class="courses-main">
       <section class="courses-hero">
         <h1 class="courses-title">A2 Level</h1>
-        <p class="courses-subtitle">Choose your module and continue learning.</p>
+        <p class="courses-subtitle">Choose your level and start learning.</p>
       </section>
 
       <section class="level-selector">
         <button class="level-pill" onclick="location.href='../courses.html'">A1</button>
         <button class="level-pill level-pill-active">A2</button>
-        <button class="level-pill">B1</button>
-        <button class="level-pill">B2</button>
+        <button class="level-pill" disabled>B1</button>
+        <button class="level-pill" disabled>B2</button>
       </section>
 
       <section class="modules-grid">
-        
         <article class="module-card">
           <div class="module-top">
-            <div class="module-icon module-icon-green">📖</div>
+            <div class="module-icon module-icon-yellow">📖</div>
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Past & Biography</h2>
           <p class="module-text">Talking about your childhood, school years, and professional background.</p>
-          <button class="btn btn-primary btn-module">6 Lessons →</button>
+          <button class="btn btn-primary btn-module" onclick="location.href='../lesson.html?id=a2_past_1'">6 Lessons →</button>
         </article>
 
         <article class="module-card">
@@ -52,27 +51,27 @@
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Travel & Directions</h2>
-          <p class="module-text">Booking hotels, reading transport schedules, and describing vacation experiences.</p>
+          <p class="module-text">Booking hotels and transport schedules.</p>
           <button class="btn btn-primary btn-module">6 Lessons →</button>
         </article>
 
         <article class="module-card">
           <div class="module-top">
-            <div class="module-icon module-icon-yellow">💼</div>
+            <div class="module-icon module-icon-red">💼</div>
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Work & Office</h2>
-          <p class="module-text">Making appointments, talking about professional tasks, and handling basic phone calls.</p>
+          <p class="module-text">Making appointments and professional tasks.</p>
           <button class="btn btn-primary btn-module">6 Lessons →</button>
         </article>
 
         <article class="module-card">
           <div class="module-top">
-            <div class="module-icon module-icon-red">🏥</div>
+            <div class="module-icon module-icon-green">🏥</div>
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Health & Body</h2>
-          <p class="module-text">Describing symptoms to a doctor and naming body parts.</p>
+          <p class="module-text">Describing symptoms to a doctor.</p>
           <button class="btn btn-primary btn-module">6 Lessons →</button>
         </article>
 
@@ -82,30 +81,60 @@
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Living & City</h2>
-          <p class="module-text">Describing your home, looking for an apartment, and comparing life styles.</p>
+          <p class="module-text">Describing your home and apartment searching.</p>
           <button class="btn btn-primary btn-module">6 Lessons →</button>
         </article>
 
         <article class="module-card">
           <div class="module-top">
-            <div class="module-icon module-icon-green">👥</div>
+            <div class="module-icon module-icon-yellow">👥</div>
             <span class="module-tag">A2 · Basics</span>
           </div>
           <h2 class="module-title">Social Life</h2>
-          <p class="module-text">Making plans with friends and discussing hobbies like sports or media.</p>
+          <p class="module-text">Making plans and discussing hobbies.</p>
           <button class="btn btn-primary btn-module">Start</button>
         </article>
-
       </section>
 
       <section class="courses-info">
         <h3 class="courses-info-title">How courses work</h3>
-        <p class="courses-info-text">
-          Each module has short lessons with listening, reading, speaking, and writing.
-        </p>
+        <p class="courses-info-text">Each module has short lessons with listening, reading, speaking, and writing.</p>
       </section>
     </main>
   </div>
 
-  </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+      authDomain: "deutschfast-prod.firebaseapp.com",
+      projectId: "deutschfast-prod",
+      storageBucket: "deutschfast-prod.firebasestorage.app",
+      messagingSenderId: "505440472870",
+      appId: "1:505440472870:web:e438916302530e2d5f3be7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) window.location.replace("../login.html");
+    });
+
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        try {
+          await signOut(auth);
+          window.location.replace("../login.html");
+        } catch (error) {
+          console.error("Logout Error:", error);
+        }
+      });
+    }
+  </script>
+</body>
 </html>
