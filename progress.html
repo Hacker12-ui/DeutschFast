@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <title>Progress - DeutschFast</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Global styles -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Page-specific styles -->
   <link rel="stylesheet" href="css/progress.css" />
 </head>
 <body>
   <div class="page progress-page">
-    <!-- Header -->
     <header class="header">
       <div class="logo">DeutschFast</div>
       <nav class="nav-links">
@@ -19,21 +16,17 @@
         <a href="courses.html">Courses</a>
         <a href="vocab.html">Vocab</a>
         <a href="#">Profile</a>
-        <a href="login.html" class="nav-link logout-link">Log out</a>
+        <a href="#" id="logoutBtn" class="nav-link logout-link">Log out</a>
       </nav>
     </header>
 
-    <!-- Main content -->
     <main class="progress-main">
-      <!-- Page Title -->
       <section class="progress-hero">
         <h1 class="progress-title">Your Progress</h1>
         <p class="progress-subtitle">See how far your German has come.</p>
       </section>
 
-      <!-- Overall Progress & Study Stats Grid -->
       <div class="progress-top-grid">
-        <!-- Overall Progress Card -->
         <article class="progress-card overall-card">
           <div class="level-badge" id="level-badge">A1</div>
           <h2 class="card-heading">Overall Progress</h2>
@@ -46,7 +39,6 @@
           <p class="progress-message" id="progress-message">Start your first lesson to track progress.</p>
         </article>
 
-        <!-- Study Stats Card -->
         <article class="progress-card stats-card">
           <h2 class="card-heading">Study Stats</h2>
           <div class="stats-grid">
@@ -70,11 +62,9 @@
         </article>
       </div>
 
-      <!-- Skill Breakdown Section -->
       <section class="skills-section">
         <h2 class="section-heading">Skill Breakdown</h2>
         <div class="skills-grid">
-          <!-- Listening Skill -->
           <article class="progress-card skill-card">
             <div class="skill-header">
               <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -91,7 +81,6 @@
             </div>
           </article>
 
-          <!-- Reading Skill -->
           <article class="progress-card skill-card">
             <div class="skill-header">
               <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -108,7 +97,6 @@
             </div>
           </article>
 
-          <!-- Speaking Skill -->
           <article class="progress-card skill-card">
             <div class="skill-header">
               <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -124,7 +112,6 @@
             </div>
           </article>
 
-          <!-- Writing Skill -->
           <article class="progress-card skill-card">
             <div class="skill-header">
               <svg class="skill-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -142,7 +129,6 @@
         </div>
       </section>
 
-      <!-- CTA Button -->
       <div class="progress-cta">
         <button class="btn btn-primary btn-cta" id="continue-btn" onclick="continueLesson()">
           Continue today's lesson
@@ -150,7 +136,6 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div>DeutschFast</div>
       <div class="footer-links">
@@ -161,81 +146,90 @@
     </footer>
   </div>
 
-  <!-- Dynamic Progress Script -->
-  <script>
-    // ========================================
-    // LOAD PROGRESS DATA
-    // ========================================
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
-    // Get module progress from localStorage
+    const firebaseConfig = {
+      apiKey: "AIzaSyD3siGsp0yRzdypymFTUWKLbMDQMJ7VBds",
+      authDomain: "deutschfast-prod.firebaseapp.com",
+      projectId: "deutschfast-prod",
+      storageBucket: "deutschfast-prod.firebasestorage.app",
+      messagingSenderId: "505440472870",
+      appId: "1:505440472870:web:e438916302530e2d5f3be7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Auth Guard
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        window.location.replace("login.html");
+      }
+    });
+
+    // Logout Functionality
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        try {
+          await signOut(auth);
+          window.location.replace("login.html");
+        } catch (error) {
+          console.error("Logout Error:", error);
+        }
+      });
+    }
+  </script>
+
+  <script>
     function getModuleProgress() {
       const saved = localStorage.getItem('moduleProgress');
       return saved ? JSON.parse(saved) : {};
     }
 
-    // Get vocab progress from localStorage
     function getVocabProgress() {
       const saved = localStorage.getItem('wordProgress');
       return saved ? JSON.parse(saved) : {};
     }
 
-    // Calculate overall statistics
     function calculateStats() {
       const moduleProgress = getModuleProgress();
       const vocabProgress = getVocabProgress();
 
-      // Total lessons completed across all modules
       let totalLessonsCompleted = 0;
       Object.values(moduleProgress).forEach(module => {
         totalLessonsCompleted += module.completedLessons || 0;
       });
 
-      // Total lessons available (5 modules × 5 lessons = 25)
       const totalLessons = 25;
-
-      // Overall progress percentage
       const overallPercent = Math.round((totalLessonsCompleted / totalLessons) * 100);
-
-      // Vocab stats
       const vocabWords = Object.keys(vocabProgress).length;
-      const masteredWords = Object.values(vocabProgress).filter(w => w.level === 5).length;
-
-      // Calculate days studied (simple version - count unique dates in future can track actual dates)
       const daysStudied = totalLessonsCompleted > 0 ? Math.max(1, Math.ceil(totalLessonsCompleted / 2)) : 0;
-
-      // Current streak (simplified - in future track actual consecutive days)
       const currentStreak = daysStudied > 0 ? Math.min(daysStudied, 7) : 0;
-
-      // Skill breakdown (each skill = 25% of each lesson)
-      const listeningPercent = overallPercent;
-      const readingPercent = overallPercent;
-      const speakingPercent = Math.max(0, overallPercent - 5); // Slightly lower
-      const writingPercent = Math.max(0, overallPercent - 10); // Slightly lower
 
       return {
         totalLessonsCompleted,
         totalLessons,
         overallPercent,
         vocabWords,
-        masteredWords,
         daysStudied,
         currentStreak,
-        listeningPercent,
-        readingPercent,
-        speakingPercent,
-        writingPercent
+        listeningPercent: overallPercent,
+        readingPercent: overallPercent,
+        speakingPercent: Math.max(0, overallPercent - 5),
+        writingPercent: Math.max(0, overallPercent - 10)
       };
     }
 
-    // Render progress page
     function renderProgress() {
       const stats = calculateStats();
 
-      // Overall Progress
       document.getElementById('overall-progress-fill').style.width = stats.overallPercent + '%';
       document.getElementById('overall-progress-percent').textContent = stats.overallPercent + '% complete';
 
-      // Progress message
       if (stats.overallPercent === 0) {
         document.getElementById('progress-message').textContent = 'Start your first lesson to track progress.';
       } else if (stats.overallPercent < 100) {
@@ -248,31 +242,23 @@
         document.getElementById('level-badge').textContent = 'A2';
       }
 
-      // Study Stats
       document.getElementById('words-learned').textContent = stats.vocabWords;
       document.getElementById('days-studied').textContent = stats.daysStudied;
       document.getElementById('current-streak').textContent = stats.currentStreak;
       document.getElementById('lessons-completed').textContent = stats.totalLessonsCompleted;
 
-      // Skill Breakdown
       document.getElementById('listening-fill').style.width = stats.listeningPercent + '%';
       document.getElementById('listening-percent').textContent = stats.listeningPercent + '%';
-
       document.getElementById('reading-fill').style.width = stats.readingPercent + '%';
       document.getElementById('reading-percent').textContent = stats.readingPercent + '%';
-
       document.getElementById('speaking-fill').style.width = stats.speakingPercent + '%';
       document.getElementById('speaking-percent').textContent = stats.speakingPercent + '%';
-
       document.getElementById('writing-fill').style.width = stats.writingPercent + '%';
       document.getElementById('writing-percent').textContent = stats.writingPercent + '%';
     }
 
-    // Continue to next lesson
     function continueLesson() {
       const moduleProgress = getModuleProgress();
-      
-      // Find first incomplete module
       const modules = [
         { id: 'basics-introductions', totalLessons: 5 },
         { id: 'family-people', totalLessons: 5 },
@@ -286,7 +272,6 @@
         const progress = moduleProgress[module.id] || { completedLessons: 0 };
         
         if (progress.completedLessons < module.totalLessons) {
-          // Found incomplete module - go to next lesson
           const nextLessonNum = progress.completedLessons + 1;
           const lessonId = `lesson-${i + 1}-${nextLessonNum}`;
           window.location.href = `lesson.html?id=${lessonId}`;
@@ -294,21 +279,11 @@
         }
       }
 
-      // All lessons completed
       alert('Congratulations! You completed all A1 lessons! 🎉');
       window.location.href = 'courses.html';
     }
 
-    // Initialize progress page
     renderProgress();
   </script>
-  <script type="module">
-  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-  import { auth } from "./js/firebase.js";
-
-  onAuthStateChanged(auth, (user) => {
-    if (!user) window.location.replace("login.html");
-  });
-</script>
 </body>
 </html>

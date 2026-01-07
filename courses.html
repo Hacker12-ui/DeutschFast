@@ -76,10 +76,9 @@
     // 1. Auth Guard: Check if user is logged in
     onAuthStateChanged(auth, (user) => {
       if (!user) {
-        // If not logged in, redirect to login
-        window.location.href = "login.html";
+        // Use replace to prevent back-button loops
+        window.location.replace("login.html");
       } else {
-        // Optional: Personalize the title with the user's name
         const title = document.getElementById('welcome-title');
         if (user.displayName) {
           title.textContent = `Willkommen, ${user.displayName.split(' ')[0]}!`;
@@ -94,7 +93,7 @@
         e.preventDefault();
         try {
           await signOut(auth);
-          window.location.href = "login.html";
+          window.location.replace("login.html");
         } catch (error) {
           console.error("Logout Error:", error);
         }
