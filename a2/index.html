@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2 - DeutschFast</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header (copy from courses.html) -->
+  <header class="header">
+    <div class="logo">DeutschFast</div>
+    <nav><!-- Your nav --></nav>
+  </header>
+
+  <main class="courses-main">
+    <!-- Level Selector (A2 active) -->
+    <section class="level-selector">
+      <button class="level-pill">A1</button>
+      <button class="level-pill level-pill-active">A2</button>
+      <button class="level-pill">B1</button>
+      <button class="level-pill">B2</button>
+    </section>
+
+    <!-- 6 A2 Module Cards (2x3 grid) -->
+    <section class="module-grid">
+      <!-- Past & Biography -->
+      <div class="module-card">
+        <div class="module-icon">📖</div>
+        <h3>Past & Biography</h3>
+        <p>Talking about your childhood, school years, and professional background.</p>
+        <button class="start-btn" onclick="location.href='past/'">6 Lessons → Start</button>
+      </div>
+
+      <!-- Travel & Directions -->
+      <div class="module-card">
+        <div class="module-icon">🗺️</div>
+        <h3>Travel & Directions</h3>
+        <p>Booking hotels, reading transport schedules, and describing vacation experiences.</p>
+        <button class="start-btn" onclick="location.href='travel/'">6 Lessons → Start</button>
+      </div>
+
+      <!-- Work & Office -->
+      <div class="module-card">
+        <div class="module-icon">💼</div>
+        <h3>Work & Office</h3>
+        <p>Making appointments, talking about professional tasks, and handling basic phone calls.</p>
+        <button class="start-btn" onclick="location.href='work/'">6 Lessons → Start</button>
+      </div>
+
+      <!-- Health & Body -->
+      <div class="module-card">
+        <div class="module-icon">🏥</div>
+        <h3>Health & Body</h3>
+        <p>Describing symptoms to a doctor, giving advice on a healthy lifestyle, and naming body parts.</p>
+        <button class="start-btn" onclick="location.href='health/'">6 Lessons → Start</button>
+      </div>
+
+      <!-- Living & City -->
+      <div class="module-card">
+        <div class="module-icon">🏠</div>
+        <h3>Living & City</h3>
+        <p>Describing your home, looking for an apartment, and comparing life in the city vs. the country.</p>
+        <button class="start-btn" onclick="location.href='living/'">6 Lessons → Start</button>
+      </div>
+
+      <!-- Social Life -->
+      <div class="module-card">
+        <div class="module-icon">👥</div>
+        <h3>Social Life</h3>
+        <p>Making plans with friends, inviting people to events, and discussing hobbies like sports or media.</p>
+        <button class="start-btn" onclick="location.href='social/'">6 Lessons → Start</button>
+      </div>
+    </section>
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+      Each module works lessons with listening, reading, speaking, writing
+    </div>
+  </main>
+
+  <!-- Auth Guard -->
+  <script type="module">
+    import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    import { auth } from "../js/firebase.js";
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) window.location.replace("../login.html");
+    });
+  </script>
+</body>
+</html>
