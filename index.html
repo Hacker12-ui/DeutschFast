@@ -158,8 +158,10 @@
       loggedInElements.forEach(el => el.style.display = 'inline-block');
       
       if (userEmailSpan) {
-        userEmailSpan.textContent = user.email; //
-      }
+    userEmailSpan.textContent = "Go to Dashboard"; // Changed from user.email
+    // Optional: Make it clickable to go to dashboard if it isn't already
+    userEmailSpan.parentElement.href = "dashboard.html"; 
+}
     } else {
       // User is logged out: update UI state
       loggedOutElements.forEach(el => el.style.display = 'inline-block');
