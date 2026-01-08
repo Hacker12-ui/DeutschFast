@@ -2334,6 +2334,300 @@
         "prompt": "Include: what places you visited, what you did, and what you thought about it.",
         "placeholder": "Schreiben Sie hier Ihre Antwort..."
       }
+    },
+    {
+      "id": "a2_past_1",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 1,
+      "totalLessons": 6,
+      "title": "Meine Kindheit (My Childhood)",
+      "focus": "Using 'war' and 'hatte' (Simple Past of to be/to have).",
+      "instructions": "Learn how to describe how things were in the past.",
+      "listening": {
+        "subtitle": "Listen to Julia talking about her childhood home.",
+        "audioFile": "audio/a2_past_1.mp3",
+        "duration": "0:45",
+        "questions": [
+          {
+            "text": "Wo hat Julia als Kind gewohnt?",
+            "options": ["In Berlin", "Auf dem Land", "In München", "Am Meer"]
+          },
+          {
+            "text": "Was hatte sie im Garten?",
+            "options": ["Einen Hund", "Ein Baumhaus", "Ein Schwimmbad", "Viele Blumen"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a short text about 'Früher vs. Heute'.",
+        "text": "Früher war alles anders. Als Kind hatte ich kein Smartphone. Wir waren oft draußen und haben Fußball gespielt. Mein bester Freund war Thomas. Er war sehr lustig. Wir hatten viel Zeit und keine Sorgen. Heute ist das Leben stressig, aber ich habe mehr Geld.",
+        "questions": [
+          {
+            "text": "Was hatte der Erzähler als Kind nicht?",
+            "options": ["Zeit", "Freunde", "Ein Smartphone", "Spaß"]
+          },
+          {
+            "text": "Wie war Thomas?",
+            "options": ["Stressig", "Lustig", "Reich", "Langweilig"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about your childhood.",
+        "prompt": "Say sentences like: 'Als Kind war ich...' (As a child I was...) or 'Ich hatte...' (I had...)."
+      },
+      "writing": {
+        "subtitle": "Write 3 sentences about your past.",
+        "prompt": "Use 'war' (was) and 'hatte' (had). Example: Früher war ich klein.",
+        "placeholder": "Als Kind war ich..."
+      }
+    },
+    {
+      "id": "a2_past_2",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 2,
+      "totalLessons": 6,
+      "title": "Meine Schulzeit (My School Years)",
+      "focus": "School vocabulary and subjects.",
+      "instructions": "Discussing your favorite subjects and teachers.",
+      "listening": {
+        "subtitle": "Markus talks about his school report card.",
+        "audioFile": "audio/a2_past_2.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Was war Markus' Lieblingsfach?",
+            "options": ["Mathe", "Sport", "Kunst", "Geschichte"]
+          },
+          {
+            "text": "Wie waren seine Noten?",
+            "options": ["Sehr gut", "Schlecht", "Okay", "Furchtbar"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a diary entry about a school day.",
+        "text": "Ich bin 1995 in die Schule gekommen. Meine Grundschule war klein. Ich mochte Deutsch und Englisch, aber Mathe war schwer. Mein Lehrer, Herr Müller, war streng aber fair. In der Pause habe ich immer mein Brot gegessen.",
+        "questions": [
+          {
+            "text": "Wann kam der Autor in die Schule?",
+            "options": ["1990", "2000", "1995", "1985"]
+          },
+          {
+            "text": "Welches Fach war schwer?",
+            "options": ["Deutsch", "Englisch", "Sport", "Mathe"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your school.",
+        "prompt": "Say: 'Meine Schule war...' or 'Mein Lieblingsfach war...'."
+      },
+      "writing": {
+        "subtitle": "Write about your favorite teacher.",
+        "prompt": "Describe a teacher from your past. Was he/she nice or strict?",
+        "placeholder": "Mein Lieblingslehrer war..."
+      }
+    },
+    {
+      "id": "a2_past_3",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 3,
+      "totalLessons": 6,
+      "title": "Nach der Schule (After School)",
+      "focus": "Perfect Tense (Perfekt) introduction.",
+      "instructions": "Talking about graduation, travel, or university start.",
+      "listening": {
+        "subtitle": "Lisa talks about her gap year.",
+        "audioFile": "audio/a2_past_3.mp3",
+        "duration": "0:55",
+        "questions": [
+          {
+            "text": "Was hat Lisa nach der Schule gemacht?",
+            "options": ["Studiert", "Gereist", "Gearbeitet", "Geschlafen"]
+          },
+          {
+            "text": "Wo war sie?",
+            "options": ["In Spanien", "In den USA", "In Australien", "In Frankreich"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read an email about starting university.",
+        "text": "Nach dem Abitur habe ich ein Jahr Pause gemacht. Ich bin nach Italien gereist und habe Pizza gegessen. Danach habe ich in München studiert. Ich habe Biologie gelernt. Das Studium war interessant, aber auch anstrengend.",
+        "questions": [
+          {
+            "text": "Wohin ist die Person gereist?",
+            "options": ["Italien", "Polen", "Österreich", "Schweiz"]
+          },
+          {
+            "text": "Was hat sie in München gemacht?",
+            "options": ["Gereist", "Studiert", "Gearbeitet", "Gewohnt"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about what you did yesterday.",
+        "prompt": "Use the Perfect tense: 'Ich habe... gemacht' (I did...)."
+      },
+      "writing": {
+        "subtitle": "Write about what you did after school.",
+        "prompt": "Did you study? Did you work? Use 'Ich habe...' or 'Ich bin...'.",
+        "placeholder": "Nach der Schule habe ich..."
+      }
+    },
+    {
+      "id": "a2_past_4",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 4,
+      "totalLessons": 6,
+      "title": "Ausbildung und Beruf (Training & Job)",
+      "focus": "Talking about career paths and internships.",
+      "instructions": "Vocabulary for apprenticeship, internship, and first jobs.",
+      "listening": {
+        "subtitle": "Tim talks about his apprenticeship (Ausbildung).",
+        "audioFile": "audio/a2_past_4.mp3",
+        "duration": "0:45",
+        "questions": [
+          {
+            "text": "Was ist Tims Beruf?",
+            "options": ["Bäcker", "Mechaniker", "Lehrer", "Arzt"]
+          },
+          {
+            "text": "Wie lange hat die Ausbildung gedauert?",
+            "options": ["2 Jahre", "3 Jahre", "4 Jahre", "1 Jahr"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a short CV summary.",
+        "text": "2010-2013: Ausbildung als Bankkaufmann bei der Sparkasse. Ich habe viel über Geld und Kunden gelernt. Es hat Spaß gemacht. 2014: Praktikum in London. Ich habe Englisch gesprochen und im Büro gearbeitet.",
+        "questions": [
+          {
+            "text": "Wo hat er die Ausbildung gemacht?",
+            "options": ["In London", "Bei der Sparkasse", "In der Schule", "Zu Hause"]
+          },
+          {
+            "text": "Was hat er 2014 gemacht?",
+            "options": ["Ein Studium", "Eine Reise", "Ein Praktikum", "Nichts"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your job history.",
+        "prompt": "Say: 'Ich habe als... gearbeitet' (I worked as...)."
+      },
+      "writing": {
+        "subtitle": "Write 3 sentences about a past job or internship.",
+        "prompt": "Where did you work? Was it good? 'Ich habe bei... gearbeitet.'",
+        "placeholder": "Ich habe..."
+      }
+    },
+    {
+      "id": "a2_past_5",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 5,
+      "totalLessons": 6,
+      "title": "Wichtige Lebensereignisse (Life Events)",
+      "focus": "Dates, years, and connecting events (dann, danach).",
+      "instructions": "Structure a life story chronologically.",
+      "listening": {
+        "subtitle": "Sarah tells her life story.",
+        "audioFile": "audio/a2_past_5.mp3",
+        "duration": "1:00",
+        "questions": [
+          {
+            "text": "Wann hat Sarah geheiratet?",
+            "options": ["2010", "2015", "2018", "2020"]
+          },
+          {
+            "text": "Wann ist ihr Sohn geboren?",
+            "options": ["Ein Jahr später", "Zwei Jahre später", "Gestern", "2010"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a biography timeline.",
+        "text": "Klaus ist 1980 geboren. 1999 hat er Abitur gemacht. Danach hat er studiert. 2005 hat er seinen ersten Job bekommen. Dann hat er Maria getroffen. Ein Jahr später haben sie ein Haus gekauft.",
+        "questions": [
+          {
+            "text": "Wann ist Klaus geboren?",
+            "options": ["1999", "1980", "2005", "1990"]
+          },
+          {
+            "text": "Was ist 2005 passiert?",
+            "options": ["Abitur", "Erster Job", "Haus gekauft", "Geheiratet"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Tell a timeline.",
+        "prompt": "Use words like: 'Zuerst' (First), 'Dann' (Then), 'Danach' (After that)."
+      },
+      "writing": {
+        "subtitle": "Write a short timeline of your life.",
+        "prompt": "Born -> School -> Job. Use years (e.g., 'Im Jahr 2010...').",
+        "placeholder": "Ich bin..."
+      }
+    },
+    {
+      "id": "a2_past_6",
+      "moduleId": "a2_past",
+      "level": "A2",
+      "category": "Biography",
+      "lessonNumber": 6,
+      "totalLessons": 6,
+      "title": "Eine Biografie schreiben (Writing a Biography)",
+      "focus": "Consolidating Past Tense skills.",
+      "instructions": "Combining Präteritum and Perfekt to tell a full story.",
+      "listening": {
+        "subtitle": "Listen to a story about a famous person.",
+        "audioFile": "audio/a2_past_6.mp3",
+        "duration": "1:10",
+        "questions": [
+          {
+            "text": "Woher kam die Person?",
+            "options": ["Österreich", "Deutschland", "Schweiz", "USA"]
+          },
+          {
+            "text": "Was war sein Beruf?",
+            "options": ["Musiker", "Wissenschaftler", "Sportler", "Lehrer"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a short biography of Albert Einstein.",
+        "text": "Albert Einstein wurde 1879 in Ulm geboren. Er war sehr gut in Mathe und Physik. Er hat die Relativitätstheorie entwickelt. 1921 hat er den Nobelpreis bekommen. Er hat lange in den USA gelebt.",
+        "questions": [
+          {
+            "text": "Wann wurde Einstein geboren?",
+            "options": ["1921", "1879", "1900", "1880"]
+          },
+          {
+            "text": "Was hat er bekommen?",
+            "options": ["Einen Oscar", "Einen Nobelpreis", "Ein Auto", "Geld"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about a person you admire.",
+        "prompt": "Describe who they were and what they did."
+      },
+      "writing": {
+        "subtitle": "Write a short biography of a friend or family member.",
+        "prompt": "Include: Born when? School where? Job? Family?",
+        "placeholder": "Mein Freund heißt..."
+      }
     }
   ]
 }

@@ -79,6 +79,23 @@
         "lesson-5-4",
         "lesson-5-5"
       ]
+    },
+    {
+      "id": "a2_past",
+      "title": "Past & Biography",
+      "description": "Talking about your childhood, school years, and professional background.",
+      "icon": "📖",
+      "level": "A2",
+      "category": "Basics",
+      "totalLessons": 6,
+      "lessons": [
+        "a2_past_1",
+        "a2_past_2",
+        "a2_past_3",
+        "a2_past_4",
+        "a2_past_5",
+        "a2_past_6"
+      ]
     }
   ]
 }
