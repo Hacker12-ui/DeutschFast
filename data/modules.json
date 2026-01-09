@@ -96,6 +96,23 @@
         "a2_past_5",
         "a2_past_6"
       ]
+    },
+    {
+      "id": "a2_travel",
+      "title": "Travel & Directions",
+      "description": "Booking hotels, understanding transport schedules, and finding your way.",
+      "icon": "✈️",
+      "level": "A2",
+      "category": "Basics",
+      "totalLessons": 6,
+      "lessons": [
+        "a2_travel_1",
+        "a2_travel_2",
+        "a2_travel_3",
+        "a2_travel_4",
+        "a2_travel_5",
+        "a2_travel_6"
+      ]
     }
   ]
 }

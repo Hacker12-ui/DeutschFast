@@ -2628,6 +2628,300 @@
         "prompt": "Include: Born when? School where? Job? Family?",
         "placeholder": "Mein Freund heißt..."
       }
+    },
+    {
+      "id": "a2_travel_1",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 1,
+      "totalLessons": 6,
+      "title": "Am Bahnhof (At the Train Station)",
+      "focus": "Buying tickets and understanding schedules.",
+      "instructions": "Vocab: Gleis (platform), Fahrkarte (ticket), Hin- und Rückfahrt (round trip).",
+      "listening": {
+        "subtitle": "A customer buys a train ticket.",
+        "audioFile": "audio/a2_travel_1.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Wohin möchte der Mann fahren?",
+            "options": ["Nach Berlin", "Nach Hamburg", "Nach München", "Nach Wien"]
+          },
+          {
+            "text": "Welche Karte kauft er?",
+            "options": ["Eine einfache Fahrt", "Hin- und Rückfahrt", "Eine Monatskarte", "Eine Gruppenkarte"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a train schedule board.",
+        "text": "ICE 502 nach Berlin Hbf. Abfahrt: 14:30 Uhr. Gleis 4. Achtung: Der Zug hat heute 10 Minuten Verspätung. Bitte achten Sie auf die Ansagen.",
+        "questions": [
+          {
+            "text": "Wann fährt der Zug normalerweise ab?",
+            "options": ["14:40", "14:30", "14:00", "15:00"]
+          },
+          {
+            "text": "Auf welchem Gleis fährt der Zug?",
+            "options": ["Gleis 10", "Gleis 1", "Gleis 4", "Gleis 5"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Buy a ticket.",
+        "prompt": "Say: 'Ich möchte eine Fahrkarte nach [City] bitte.' (I would like a ticket to...)"
+      },
+      "writing": {
+        "subtitle": "Write a message about your travel plans.",
+        "prompt": "Use: 'Zug' (train), 'abfahren' (depart), 'ankommen' (arrive).",
+        "placeholder": "Mein Zug fährt um..."
+      }
+    },
+    {
+      "id": "a2_travel_2",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 2,
+      "totalLessons": 6,
+      "title": "Am Flughafen (At the Airport)",
+      "focus": "Check-in, luggage, and gates.",
+      "instructions": "Vocab: Koffer (suitcase), Handgepäck (carry-on), Flug (flight), Reisepass (passport).",
+      "listening": {
+        "subtitle": "Announcement at the airport.",
+        "audioFile": "audio/a2_travel_2.mp3",
+        "duration": "0:45",
+        "questions": [
+          {
+            "text": "Welcher Flug ist bereit zum Einsteigen?",
+            "options": ["LH 400", "AF 123", "BA 777", "LH 202"]
+          },
+          {
+            "text": "Was brauchen die Passagiere?",
+            "options": ["Geld", "Bordkarte und Ausweis", "Koffer", "Essen"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read check-in instructions.",
+        "text": "Bitte legen Sie Ihren Koffer auf das Band. Haben Sie Flüssigkeiten im Handgepäck? Ihr Flug geht von Gate B12. Das Boarding beginnt um 18:00 Uhr.",
+        "questions": [
+          {
+            "text": "Wo ist das Gate?",
+            "options": ["A10", "C3", "B12", "D4"]
+          },
+          {
+            "text": "Was darf man nicht im Handgepäck haben?",
+            "options": ["Kleidung", "Bücher", "Große Flüssigkeiten", "Hüte"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Check in your luggage.",
+        "prompt": "Say: 'Ich habe einen Koffer und Handgepäck.' (I have a suitcase and carry-on.)"
+      },
+      "writing": {
+        "subtitle": "Describe what you take on a trip.",
+        "prompt": "List 3 items you pack. 'Ich nehme... mit.' (passport, ticket, bag).",
+        "placeholder": "Ich nehme meinen..."
+      }
+    },
+    {
+      "id": "a2_travel_3",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 3,
+      "totalLessons": 6,
+      "title": "Hotelreservierung (Hotel Booking)",
+      "focus": "Booking rooms and asking about amenities.",
+      "instructions": "Vocab: Einzelzimmer (single room), Doppelzimmer (double room), Frühstück (breakfast), reservieren.",
+      "listening": {
+        "subtitle": "Calling a hotel reception.",
+        "audioFile": "audio/a2_travel_3.mp3",
+        "duration": "0:55",
+        "questions": [
+          {
+            "text": "Für wie viele Nächte möchte die Frau bleiben?",
+            "options": ["Eine Nacht", "Drei Nächte", "Zwei Nächte", "Eine Woche"]
+          },
+          {
+            "text": "Was ist im Preis inklusive?",
+            "options": ["Abendessen", "Frühstück", "Parkplatz", "Wellness"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a booking confirmation email.",
+        "text": "Vielen Dank für Ihre Reservierung. Sie haben ein Doppelzimmer mit Meerblick gebucht. Anreise: 15. Juli. Abreise: 18. Juli. Der Preis beträgt 300 Euro. Bitte zahlen Sie bei Ankunft.",
+        "questions": [
+          {
+            "text": "Welches Zimmer wurde gebucht?",
+            "options": ["Einzelzimmer", "Doppelzimmer", "Suite", "Appartement"]
+          },
+          {
+            "text": "Wann muss der Gast bezahlen?",
+            "options": ["Jetzt", "Online", "Bei Ankunft", "Nach der Abreise"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Book a room.",
+        "prompt": "Say: 'Ich möchte ein Doppelzimmer für zwei Nächte reservieren.' (I want to book a double room...)"
+      },
+      "writing": {
+        "subtitle": "Write an email to a hotel.",
+        "prompt": "Ask for a room and if they have parking (Parkplatz).",
+        "placeholder": "Sehr geehrte Damen und Herren..."
+      }
+    },
+    {
+      "id": "a2_travel_4",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 4,
+      "totalLessons": 6,
+      "title": "Probleme im Hotel (Hotel Problems)",
+      "focus": "Complaining politely about room issues.",
+      "instructions": "Vocab: funktioniert nicht (doesn't work), laut (loud), schmutzig (dirty), Handtuch (towel).",
+      "listening": {
+        "subtitle": "A guest calls the reception with a complaint.",
+        "audioFile": "audio/a2_travel_4.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Was ist das Problem?",
+            "options": ["Das Bett ist kaputt", "Die Heizung geht nicht", "Kein Wasser", "Zu laut"]
+          },
+          {
+            "text": "Was fehlt im Badezimmer?",
+            "options": ["Seife", "Handtücher", "Toilettenpapier", "Licht"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a hotel review.",
+        "text": "Das Hotel war schön, aber mein Zimmer war leider sehr laut. Die Klimaanlage hat nicht funktioniert und es war zu heiß. Das Personal war aber sehr freundlich und hat geholfen.",
+        "questions": [
+          {
+            "text": "Was hat nicht funktioniert?",
+            "options": ["Der Fernseher", "Die Dusche", "Die Klimaanlage", "Der Aufzug"]
+          },
+          {
+            "text": "Wie war das Personal?",
+            "options": ["Unfreundlich", "Freundlich", "Müde", "Nicht da"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Report a problem.",
+        "prompt": "Say: 'Entschuldigung, meine Dusche funktioniert nicht.' (Excuse me, my shower doesn't work.)"
+      },
+      "writing": {
+        "subtitle": "Write a complaint note.",
+        "prompt": "The room is dirty and there are no towels. 'Das Zimmer ist...'",
+        "placeholder": "Entschuldigung, aber..."
+      }
+    },
+    {
+      "id": "a2_travel_5",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 5,
+      "totalLessons": 6,
+      "title": "Nach dem Weg fragen (Asking Directions)",
+      "focus": "Navigating a city.",
+      "instructions": "Vocab: geradeaus (straight), links/rechts (left/right), Kreuzung (intersection), Ampel (traffic light).",
+      "listening": {
+        "subtitle": "A tourist asks for the museum.",
+        "audioFile": "audio/a2_travel_5.mp3",
+        "duration": "0:55",
+        "questions": [
+          {
+            "text": "Was sucht der Tourist?",
+            "options": ["Den Bahnhof", "Das Museum", "Die Post", "Das Hotel"]
+          },
+          {
+            "text": "Wo muss er abbiegen?",
+            "options": ["An der ersten Ampel", "An der zweiten Kreuzung", "Am Park", "Niemals"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read directions on a map app.",
+        "text": "Gehen Sie 200 Meter geradeaus. Biegen Sie an der Ampel rechts ab in die Parkstraße. Das Restaurant ist auf der linken Seite, gegenüber von der Bank.",
+        "questions": [
+          {
+            "text": "Wohin muss man an der Ampel gehen?",
+            "options": ["Links", "Rechts", "Zurück", "Geradeaus"]
+          },
+          {
+            "text": "Wo ist das Restaurant?",
+            "options": ["Neben der Bank", "Hinter der Bank", "Gegenüber der Bank", "Im Park"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Give directions.",
+        "prompt": "Say: 'Gehen Sie geradeaus und dann links.' (Go straight and then left.)"
+      },
+      "writing": {
+        "subtitle": "Write directions to your house.",
+        "prompt": "Use 'links', 'rechts', 'in der Nähe' (nearby).",
+        "placeholder": "Gehen Sie..."
+      }
+    },
+    {
+      "id": "a2_travel_6",
+      "moduleId": "a2_travel",
+      "level": "A2",
+      "category": "Travel",
+      "lessonNumber": 6,
+      "totalLessons": 6,
+      "title": "Sehenswürdigkeiten (Sightseeing)",
+      "focus": "Talking about tourist attractions and tours.",
+      "instructions": "Vocab: besichtigen (to visit/view), Führung (guided tour), Eintrittskarte (ticket), Dom (cathedral).",
+      "listening": {
+        "subtitle": "A guide explains a city tour.",
+        "audioFile": "audio/a2_travel_6.mp3",
+        "duration": "1:00",
+        "questions": [
+          {
+            "text": "Wann beginnt die Führung?",
+            "options": ["Um 10 Uhr", "Um 11 Uhr", "Um 12 Uhr", "Morgen"]
+          },
+          {
+            "text": "Was besichtigen sie zuerst?",
+            "options": ["Das Museum", "Den alten Markt", "Den Dom", "Den Fluss"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a brochure about a castle.",
+        "text": "Besichtigen Sie das Schloss Neuschwanstein. Öffnungszeiten: Täglich 9 bis 18 Uhr. Eintrittskarten kosten 15 Euro für Erwachsene. Kinder sind frei. Bitte keine Fotos im Schloss machen.",
+        "questions": [
+          {
+            "text": "Wie viel kostet der Eintritt für Erwachsene?",
+            "options": ["10 Euro", "15 Euro", "Kostenlos", "20 Euro"]
+          },
+          {
+            "text": "Was ist verboten?",
+            "options": ["Essen", "Sprechen", "Fotos machen", "Laufen"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Choose a place to visit.",
+        "prompt": "Say: 'Ich möchte den Dom besichtigen.' (I want to visit the cathedral.)"
+      },
+      "writing": {
+        "subtitle": "Write about a place you want to visit.",
+        "prompt": "Where is it? Why do you like it? 'Ich möchte nach... reisen.'",
+        "placeholder": "Ich möchte..."
+      }
     }
   ]
 }
