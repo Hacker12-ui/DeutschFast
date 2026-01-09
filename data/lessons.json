@@ -2922,6 +2922,594 @@
         "prompt": "Where is it? Why do you like it? 'Ich möchte nach... reisen.'",
         "placeholder": "Ich möchte..."
       }
+    },
+    {
+      "id": "a2_health_1",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 1,
+      "totalLessons": 6,
+      "title": "Der Körper (The Body)",
+      "focus": "Body parts and saying where it hurts.",
+      "instructions": "Vocab: der Kopf (head), der Bauch (stomach), wehtun (to hurt).",
+      "listening": {
+        "subtitle": "A patient describes pain to a nurse.",
+        "audioFile": "audio/a2_health_1.mp3",
+        "duration": "0:45",
+        "questions": [
+          {
+            "text": "Was tut dem Patienten weh?",
+            "options": ["Der Fuß", "Der Kopf", "Der Rücken", "Der Arm"]
+          },
+          {
+            "text": "Seit wann hat er Schmerzen?",
+            "options": ["Seit gestern", "Seit einer Woche", "Seit heute Morgen", "Seit einem Jahr"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a short email about being sick.",
+        "text": "Hallo Chef, ich kann heute nicht arbeiten. Ich habe starke Kopfschmerzen und Fieber. Mein Arzt sagt, ich soll im Bett bleiben. Ich komme am Montag wieder.",
+        "questions": [
+          {
+            "text": "Warum arbeitet die Person nicht?",
+            "options": ["Sie ist im Urlaub", "Sie ist krank", "Sie hat keine Lust", "Sie ist müde"]
+          },
+          {
+            "text": "Wann kommt sie wieder?",
+            "options": ["Morgen", "Am Montag", "Nächste Woche", "Nie"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Say where it hurts.",
+        "prompt": "Say: 'Mein Kopf tut weh.' (My head hurts) or 'Ich habe Bauchschmerzen.'"
+      },
+      "writing": {
+        "subtitle": "Write an excuse note for work/school.",
+        "prompt": "Say you are sick and have a fever. 'Ich bin krank...'",
+        "placeholder": "Sehr geehrter Herr Müller..."
+      }
+    },
+    {
+      "id": "a2_health_2",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 2,
+      "totalLessons": 6,
+      "title": "Beim Arzt (At the Doctor)",
+      "focus": "Making appointments and understanding advice.",
+      "instructions": "Vocab: Termin (appointment), Praxis (practice), Rezept (prescription).",
+      "listening": {
+        "subtitle": "Calling for a doctor's appointment.",
+        "audioFile": "audio/a2_health_2.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Wann ist der Termin?",
+            "options": ["Heute 10 Uhr", "Morgen 9 Uhr", "Freitag 14 Uhr", "Montag 8 Uhr"]
+          },
+          {
+            "text": "Was soll der Patient mitbringen?",
+            "options": ["Geld", "Die Versichertenkarte", "Essen", "Ein Handtuch"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a doctor's prescription note.",
+        "text": "Herr Müller hat eine Grippe. Er soll viel Tee trinken und schlafen. Er muss diese Tabletten dreimal täglich vor dem Essen nehmen. Keine Arbeit für 3 Tage.",
+        "questions": [
+          {
+            "text": "Was hat Herr Müller?",
+            "options": ["Einen Beinbruch", "Eine Grippe", "Kopfschmerzen", "Stress"]
+          },
+          {
+            "text": "Wie oft soll er die Tabletten nehmen?",
+            "options": ["Einmal täglich", "Zweimal täglich", "Dreimal täglich", "Nie"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Ask for an appointment.",
+        "prompt": "Say: 'Ich brauche einen Termin beim Arzt.' (I need a doctor's appointment.)"
+      },
+      "writing": {
+        "subtitle": "Write down doctor's advice.",
+        "prompt": "Use 'soll' (should). Example: 'Ich soll viel Wasser trinken.'",
+        "placeholder": "Der Arzt sagt..."
+      }
+    },
+    {
+      "id": "a2_health_3",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 3,
+      "totalLessons": 6,
+      "title": "In der Apotheke (At the Pharmacy)",
+      "focus": "Buying medicine and asking for help.",
+      "instructions": "Vocab: Medikament (medicine), Hustensaft (cough syrup), Apotheker (pharmacist).",
+      "listening": {
+        "subtitle": "Buying medicine for a cold.",
+        "audioFile": "audio/a2_health_3.mp3",
+        "duration": "0:55",
+        "questions": [
+          {
+            "text": "Was braucht die Frau?",
+            "options": ["Pflaster", "Hustensaft", "Aspirin", "Vitamine"]
+          },
+          {
+            "text": "Wie viel kostet es?",
+            "options": ["5 Euro", "12 Euro", "20 Euro", "Gratis"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read instructions on a medicine bottle.",
+        "text": "Hustensaft: Für Erwachsene und Kinder ab 12 Jahren. Nehmen Sie 10ml morgens und abends. Nicht auf nüchternen Magen einnehmen. Nebenwirkungen: Müdigkeit.",
+        "questions": [
+          {
+            "text": "Wann soll man den Saft nehmen?",
+            "options": ["Nur mittags", "Morgens und abends", "Jede Stunde", "Vor dem Schlafen"]
+          },
+          {
+            "text": "Was ist eine mögliche Nebenwirkung?",
+            "options": ["Hunger", "Müdigkeit", "Schmerzen", "Fieber"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Ask for something at the pharmacy.",
+        "prompt": "Say: 'Haben Sie etwas gegen Kopfschmerzen?' (Do you have something for headaches?)"
+      },
+      "writing": {
+        "subtitle": "List 3 things you buy at a pharmacy.",
+        "prompt": "Tabletten, Pflaster, Salbe...",
+        "placeholder": "Ich kaufe..."
+      }
+    },
+    {
+      "id": "a2_health_4",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 4,
+      "totalLessons": 6,
+      "title": "Gesund leben (Living Healthy)",
+      "focus": "Talk about diet, sport, and habits.",
+      "instructions": "Vocab: Obst (fruit), Gemüse (vegetables), Sport treiben (to do sports), rauchen (smoke).",
+      "listening": {
+        "subtitle": "Two friends talk about their diet.",
+        "audioFile": "audio/a2_health_4.mp3",
+        "duration": "1:00",
+        "questions": [
+          {
+            "text": "Was isst der Mann zum Frühstück?",
+            "options": ["Brot mit Wurst", "Müsli mit Obst", "Eier", "Nichts"]
+          },
+          {
+            "text": "Wie oft macht er Sport?",
+            "options": ["Jeden Tag", "Nie", "Zweimal pro Woche", "Einmal im Monat"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a blog post about fitness.",
+        "text": "Um gesund zu bleiben, gehe ich dreimal pro Woche joggen. Ich esse viel Gemüse und wenig Zucker. Früher habe ich geraucht, aber ich habe vor einem Jahr aufgehört. Jetzt fühle ich mich fit.",
+        "questions": [
+          {
+            "text": "Was macht der Autor für die Gesundheit?",
+            "options": ["Schwimmen", "Joggen", "Schlafen", "Fernsehen"]
+          },
+          {
+            "text": "Was hat er früher gemacht?",
+            "options": ["Viel gegessen", "Geraucht", "Viel Sport", "Wenig geschlafen"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your healthy habits.",
+        "prompt": "Say: 'Ich esse viel Obst.' or 'Ich mache Yoga.'"
+      },
+      "writing": {
+        "subtitle": "Write 3 sentences about your lifestyle.",
+        "prompt": "Do you do sports? Do you eat healthy? Use 'oft', 'manchmal', 'nie'.",
+        "placeholder": "Ich mache oft..."
+      }
+    },
+    {
+      "id": "a2_health_5",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 5,
+      "totalLessons": 6,
+      "title": "Notfall (Emergency)",
+      "focus": "Calling for help and describing accidents.",
+      "instructions": "Vocab: Unfall (accident), Krankenhaus (hospital), Hilfe (help), Notarzt (emergency doctor).",
+      "listening": {
+        "subtitle": "A call to emergency services (112).",
+        "audioFile": "audio/a2_health_5.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Was ist passiert?",
+            "options": ["Ein Feuer", "Ein Autounfall", "Ein Diebstahl", "Eine Party"]
+          },
+          {
+            "text": "Wie viele Personen sind verletzt?",
+            "options": ["Eine Person", "Niemand", "Zwei Personen", "Fünf Personen"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a newspaper report about an accident.",
+        "text": "Gestern gab es einen Unfall auf der Hauptstraße. Ein Fahrradfahrer ist gestürzt, weil ein Hund auf die Straße lief. Der Fahrradfahrer hat sich das Bein gebrochen. Der Krankenwagen kam schnell.",
+        "questions": [
+          {
+            "text": "Warum ist der Fahrradfahrer gestürzt?",
+            "options": ["Wegen einem Auto", "Wegen einem Hund", "Wegen Regen", "Er war müde"]
+          },
+          {
+            "text": "Was ist verletzt?",
+            "options": ["Der Kopf", "Der Arm", "Das Bein", "Die Hand"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Call for help.",
+        "prompt": "Say: 'Hilfe! Es gab einen Unfall. Rufen Sie einen Arzt!' (Help! There was an accident...)"
+      },
+      "writing": {
+        "subtitle": "Describe a small accident from the past.",
+        "prompt": "Use Perfekt tense. 'Ich bin gefallen.' (I fell.)",
+        "placeholder": "Letztes Jahr bin ich..."
+      }
+    },
+    {
+      "id": "a2_health_6",
+      "moduleId": "a2_health",
+      "level": "A2",
+      "category": "Health",
+      "lessonNumber": 6,
+      "totalLessons": 6,
+      "title": "Stress & Entspannung (Stress & Relax)",
+      "focus": "Mental health and feelings.",
+      "instructions": "Vocab: müde (tired), gestresst (stressed), entspannen (relax), Urlaub (vacation).",
+      "listening": {
+        "subtitle": "Talking about work stress.",
+        "audioFile": "audio/a2_health_6.mp3",
+        "duration": "1:00",
+        "questions": [
+          {
+            "text": "Warum ist der Mann gestresst?",
+            "options": ["Er hat kein Geld", "Er hat zu viel Arbeit", "Er ist krank", "Er hat Streit"]
+          },
+          {
+            "text": "Was möchte er am Wochenende machen?",
+            "options": ["Arbeiten", "Party machen", "Schlafen und lesen", "Sport treiben"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read tips against stress.",
+        "text": "Haben Sie Stress? Machen Sie Pausen. Gehen Sie in den Wald spazieren. Handy aus! Es ist wichtig, Zeit für sich selbst zu haben. Ein heißes Bad hilft auch.",
+        "questions": [
+          {
+            "text": "Was soll man ausschalten?",
+            "options": ["Den Fernseher", "Das Licht", "Das Handy", "Die Musik"]
+          },
+          {
+            "text": "Was hilft laut Text?",
+            "options": ["Mehr Arbeit", "Kaffee", "Ein Spaziergang", "Laut sein"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Say how you relax.",
+        "prompt": "Say: 'Ich entspanne mich beim Lesen.' (I relax while reading.)"
+      },
+      "writing": {
+        "subtitle": "What do you do when you are stressed?",
+        "prompt": "Write 2-3 sentences. 'Wenn ich gestresst bin, ...'",
+        "placeholder": "Wenn ich Stress habe..."
+      }
+    },
+    {
+      "id": "a2_home_1",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 1,
+      "totalLessons": 6,
+      "title": "Wohnungssuche (Apartment Hunting)",
+      "focus": "Reading ads and abbreviations.",
+      "instructions": "Vocab: Miete (rent), Nebenkosten (utilities), 2ZKB (2 rooms, kitchen, bath).",
+      "listening": {
+        "subtitle": "A couple discusses an apartment ad.",
+        "audioFile": "audio/a2_home_1.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Wie viele Zimmer hat die Wohnung?",
+            "options": ["Ein Zimmer", "Drei Zimmer", "Vier Zimmer", "Zwei Zimmer"]
+          },
+          {
+            "text": "Wie hoch ist die Kaltmiete?",
+            "options": ["400 Euro", "600 Euro", "800 Euro", "1000 Euro"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a classified ad.",
+        "text": "Suche Nachmieter: Schöne 2-Zimmer-Wohnung im Zentrum. 50m², Balkon, Einbauküche. Kaltmiete 550€ + 150€ Nebenkosten. Frei ab 1. Mai. Keine Haustiere.",
+        "questions": [
+          {
+            "text": "Ab wann ist die Wohnung frei?",
+            "options": ["Sofort", "1. Mai", "1. Juni", "Im Winter"]
+          },
+          {
+            "text": "Was ist in der Wohnung?",
+            "options": ["Ein Garten", "Eine Garage", "Eine Küche", "Ein Pool"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe what you are looking for.",
+        "prompt": "Say: 'Ich suche eine 2-Zimmer-Wohnung.' (I am looking for a 2-room apartment.)"
+      },
+      "writing": {
+        "subtitle": "Write a short message to a landlord.",
+        "prompt": "Introduce yourself and ask for a viewing appointment.",
+        "placeholder": "Sehr geehrte Damen und Herren, ich interessiere mich für..."
+      }
+    },
+    {
+      "id": "a2_home_2",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 2,
+      "totalLessons": 6,
+      "title": "Möbel und Zimmer (Furniture & Rooms)",
+      "focus": "Describing where things are.",
+      "instructions": "Vocab: Wohnzimmer (living room), Sofa, Schrank (cupboard), neben/auf (next to/on).",
+      "listening": {
+        "subtitle": "Describing a new living room.",
+        "audioFile": "audio/a2_home_2.mp3",
+        "duration": "0:45",
+        "questions": [
+          {
+            "text": "Was steht vor dem Fenster?",
+            "options": ["Das Sofa", "Der Tisch", "Der Schreibtisch", "Der Fernseher"]
+          },
+          {
+            "text": "Welche Farbe hat der Teppich?",
+            "options": ["Rot", "Blau", "Grün", "Grau"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a furniture catalog description.",
+        "text": "Modernes Sofa 'Luna'. Grau, sehr bequem, Platz für 3 Personen. Maße: 200cm breit. Perfekt für Ihr Wohnzimmer. Jetzt im Angebot für nur 299 Euro.",
+        "questions": [
+          {
+            "text": "Wie viele Personen haben Platz?",
+            "options": ["Eine", "Zwei", "Drei", "Vier"]
+          },
+          {
+            "text": "Für welches Zimmer ist das Sofa?",
+            "options": ["Küche", "Bad", "Schlafzimmer", "Wohnzimmer"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe your room.",
+        "prompt": "Say: 'In meinem Zimmer steht ein Bett und ein Schrank.' (In my room stands...)"
+      },
+      "writing": {
+        "subtitle": "Write 3 sentences about your furniture.",
+        "prompt": "What do you have? Is it old or new? 'Ich habe einen neuen Tisch.'",
+        "placeholder": "Ich habe..."
+      }
+    },
+    {
+      "id": "a2_home_3",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 3,
+      "totalLessons": 6,
+      "title": "Der Umzug (Moving Day)",
+      "focus": "Helping verbs and moving vocabulary.",
+      "instructions": "Vocab: Kisten packen (pack boxes), LKW (truck), helfen (to help), schwer (heavy).",
+      "listening": {
+        "subtitle": "Asking a friend for help moving.",
+        "audioFile": "audio/a2_home_3.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Wann zieht Jonas um?",
+            "options": ["Am Samstag", "Am Sonntag", "Nächste Woche", "Heute"]
+          },
+          {
+            "text": "Was soll der Freund tragen?",
+            "options": ["Lampen", "Kisten", "Den Schrank", "Die Waschmaschine"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a checklist for moving.",
+        "text": "Umzugs-Checkliste: 1. Kartons kaufen. 2. Freunde fragen. 3. Transporter mieten. 4. Alte Wohnung putzen. 5. Schlüssel abgeben. Vergiss nicht, die Adresse zu ändern!",
+        "questions": [
+          {
+            "text": "Was muss man mieten?",
+            "options": ["Ein Auto", "Einen Transporter", "Ein Fahrrad", "Einen Bus"]
+          },
+          {
+            "text": "Was macht man am Ende?",
+            "options": ["Essen kaufen", "Schlafen", "Schlüssel abgeben", "Freunde anrufen"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Ask for help.",
+        "prompt": "Say: 'Kannst du mir beim Umzug helfen?' (Can you help me move?)"
+      },
+      "writing": {
+        "subtitle": "Write a message to a friend asking for help.",
+        "prompt": "Tell them when you are moving. 'Ich ziehe am Samstag um...'",
+        "placeholder": "Hallo, ich ziehe um..."
+      }
+    },
+    {
+      "id": "a2_home_4",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 4,
+      "totalLessons": 6,
+      "title": "Hausordnung (House Rules)",
+      "focus": "Modal verbs (must/allowed) and rules.",
+      "instructions": "Vocab: leise sein (be quiet), Müll trennen (separate trash), verboten (forbidden).",
+      "listening": {
+        "subtitle": "A neighbor explains the rules.",
+        "audioFile": "audio/a2_home_4.mp3",
+        "duration": "0:55",
+        "questions": [
+          {
+            "text": "Ab wann muss man abends leise sein?",
+            "options": ["Ab 20 Uhr", "Ab 22 Uhr", "Ab Mitternacht", "Immer"]
+          },
+          {
+            "text": "Wo stehen die Mülltonnen?",
+            "options": ["Im Keller", "Im Hof", "Auf der Straße", "Im Flur"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a House Rules notice.",
+        "text": "Hausordnung: Haustiere sind nur mit Erlaubnis erlaubt. Bitte schließen Sie die Haustür immer ab. Rauchen im Treppenhaus ist streng verboten. Ruhezeit: 22:00 bis 7:00 Uhr.",
+        "questions": [
+          {
+            "text": "Darf man im Treppenhaus rauchen?",
+            "options": ["Ja", "Nein", "Manchmal", "Nur nachts"]
+          },
+          {
+            "text": "Was muss man immer abschließen?",
+            "options": ["Das Fenster", "Den Keller", "Die Haustür", "Das Auto"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Explain a rule.",
+        "prompt": "Say: 'Hier darf man nicht rauchen.' (Smoking is not allowed here.)"
+      },
+      "writing": {
+        "subtitle": "Write a polite note to a loud neighbor.",
+        "prompt": "Ask them to be quiet because it is late.",
+        "placeholder": "Hallo Nachbar, bitte..."
+      }
+    },
+    {
+      "id": "a2_home_5",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 5,
+      "totalLessons": 6,
+      "title": "Miete und Kosten (Rent & Costs)",
+      "focus": "Numbers, utilities, and banking.",
+      "instructions": "Vocab: überweisen (transfer money), Strom (electricity), Heizung (heating), teuer/billig.",
+      "listening": {
+        "subtitle": "Talking about high electricity bills.",
+        "audioFile": "audio/a2_home_5.mp3",
+        "duration": "0:50",
+        "questions": [
+          {
+            "text": "Warum ist die Rechnung so hoch?",
+            "options": ["Wegen dem Wasser", "Wegen der Heizung", "Wegen dem Strom", "Wegen der Miete"]
+          },
+          {
+            "text": "Wie viel muss er nachzahlen?",
+            "options": ["50 Euro", "100 Euro", "200 Euro", "1000 Euro"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a bank transfer confirmation.",
+        "text": "Überweisung an: Vermieter Schmidt. Betrag: 750,00 Euro. Verwendungszweck: Miete Mai + Nebenkosten. Datum: 01.05.2025. Status: Erfolgreich.",
+        "questions": [
+          {
+            "text": "An wen geht das Geld?",
+            "options": ["Stromwerke", "Vermieter Schmidt", "Ein Freund", "Die Bank"]
+          },
+          {
+            "text": "Für welchen Monat ist die Miete?",
+            "options": ["April", "Mai", "Juni", "Juli"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Talk about costs.",
+        "prompt": "Say: 'Die Miete ist zu teuer.' (The rent is too expensive.)"
+      },
+      "writing": {
+        "subtitle": "Write sentences comparing costs.",
+        "prompt": "Use 'teurer als' (more expensive than). 'Meine Wohnung ist...'",
+        "placeholder": "Meine alte Wohnung war..."
+      }
+    },
+    {
+      "id": "a2_home_6",
+      "moduleId": "a2_home",
+      "level": "A2",
+      "category": "Home",
+      "lessonNumber": 6,
+      "totalLessons": 6,
+      "title": "Mein Zuhause (My Home)",
+      "focus": "Describing your living situation in detail.",
+      "instructions": "Vocab: gemütlich (cozy), hell (bright), liegen (located), Nachbarschaft (neighborhood).",
+      "listening": {
+        "subtitle": "Describing a dream house.",
+        "audioFile": "audio/a2_home_6.mp3",
+        "duration": "1:00",
+        "questions": [
+          {
+            "text": "Wo liegt das Traumhaus?",
+            "options": ["In der Stadt", "Am Meer", "In den Bergen", "Auf dem Land"]
+          },
+          {
+            "text": "Was hat das Haus?",
+            "options": ["Einen großen Garten", "Einen Balkon", "Eine Garage", "Einen Aufzug"]
+          }
+        ]
+      },
+      "reading": {
+        "subtitle": "Read a letter describing a new home.",
+        "text": "Liebe Mama, ich wohne jetzt in Köln. Meine Wohnung ist klein aber sehr hell. Ich habe einen Balkon mit Sonne. Die Nachbarn sind nett. Ich fühle mich sehr wohl hier. Komm mich bald besuchen!",
+        "questions": [
+          {
+            "text": "Wie ist die Wohnung?",
+            "options": ["Dunkel und groß", "Klein und hell", "Teuer und alt", "Hässlich"]
+          },
+          {
+            "text": "Was hat die Wohnung?",
+            "options": ["Einen Garten", "Eine Terrasse", "Einen Balkon", "Eine Garage"]
+          }
+        ]
+      },
+      "speaking": {
+        "subtitle": "Describe where you live.",
+        "prompt": "Say: 'Ich wohne in einer Stadt. Meine Wohnung ist...' (I live in a city...)"
+      },
+      "writing": {
+        "subtitle": "Write a short paragraph about your home.",
+        "prompt": "Where? How big? Who do you live with? Do you like it?",
+        "placeholder": "Ich wohne in..."
+      }
     }
   ]
 }

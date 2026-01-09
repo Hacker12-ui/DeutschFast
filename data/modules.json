@@ -113,6 +113,40 @@
         "a2_travel_5",
         "a2_travel_6"
       ]
+    },
+    {
+      "id": "a2_health",
+      "title": "Health & Fitness",
+      "description": "Visiting the doctor, describing symptoms, and staying healthy.",
+      "icon": "🏥",
+      "level": "A2",
+      "category": "Basics",
+      "totalLessons": 6,
+      "lessons": [
+        "a2_health_1",
+        "a2_health_2",
+        "a2_health_3",
+        "a2_health_4",
+        "a2_health_5",
+        "a2_health_6"
+      ]
+    },
+    {
+      "id": "a2_home",
+      "title": "Home & Living",
+      "description": "Finding an apartment, furniture, and talking about your home.",
+      "icon": "🏠",
+      "level": "A2",
+      "category": "Basics",
+      "totalLessons": 6,
+      "lessons": [
+        "a2_home_1",
+        "a2_home_2",
+        "a2_home_3",
+        "a2_home_4",
+        "a2_home_5",
+        "a2_home_6"
+      ]
     }
   ]
 }
