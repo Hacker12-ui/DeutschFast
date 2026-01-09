@@ -27,10 +27,10 @@
       </section>
 
       <section class="level-selector">
-        <button class="level-pill level-pill-active">A1</button>
-        <button class="level-pill" onclick="location.href='a2/'">A2</button>
-        <button class="level-pill">B1</button>
-        <button class="level-pill">B2</button>
+        <button class="level-pill level-pill-active" data-level="A1">A1</button>
+        <button class="level-pill" data-level="A2">A2</button>
+        <button class="level-pill" data-level="B1">B1</button>
+        <button class="level-pill" data-level="B2">B2</button>
       </section>
 
       <section class="modules-grid" id="modules-container">
@@ -101,10 +101,11 @@
 
   <script>
     // ========================================
-    // MODULE LOADER (Your existing logic)
+    // MODULE LOADER & FILTERING LOGIC
     // ========================================
 
     let allModules = [];
+    let currentLevel = "A1"; // Default to A1 on load
     const iconColors = ['green', 'orange', 'yellow', 'red', 'purple'];
 
     function getUserProgress() {
@@ -112,12 +113,30 @@
       return saved ? JSON.parse(saved) : {};
     }
 
+    // 1. Initialize Buttons
+    // This attaches click events to A1, A2, B1, B2 buttons
+    document.querySelectorAll('.level-pill').forEach(button => {
+      button.addEventListener('click', (e) => {
+        // Remove active class from all buttons
+        document.querySelectorAll('.level-pill').forEach(btn => btn.classList.remove('level-pill-active'));
+        
+        // Add active class to clicked button
+        e.target.classList.add('level-pill-active');
+        
+        // Update current level variable
+        currentLevel = e.target.dataset.level;
+        
+        // Re-render the grid with the new filter
+        renderModules();
+      });
+    });
+
     async function loadModules() {
       try {
         const response = await fetch('data/modules.json');
         const data = await response.json();
         allModules = data.modules;
-        renderModules(allModules);
+        renderModules(); // Initial render
       } catch (error) {
         console.error('Error loading modules:', error);
         document.getElementById('modules-container').innerHTML = 
@@ -125,13 +144,24 @@
       }
     }
 
-    function renderModules(modules) {
+    function renderModules() {
       const container = document.getElementById('modules-container');
       const progress = getUserProgress();
       
       container.innerHTML = ''; 
 
-      modules.forEach((module, index) => {
+      // FILTERING HAPPENS HERE
+      // We only loop through modules that match 'currentLevel'
+      const filteredModules = allModules.filter(module => module.level === currentLevel);
+
+      if (filteredModules.length === 0) {
+        container.innerHTML = `<p style="text-align: center; width: 100%; color: #888; margin-top: 30px;">
+          No courses available for ${currentLevel} yet. Coming soon!
+        </p>`;
+        return;
+      }
+
+      filteredModules.forEach((module, index) => {
         const moduleProgress = progress[module.id] || { completedLessons: 0 };
         const completed = moduleProgress.completedLessons || 0;
         const buttonText = completed > 0 ? 'Continue' : 'Start';
@@ -165,8 +195,17 @@
       const progress = getUserProgress();
       const moduleProgress = progress[moduleId] || { completedLessons: 0 };
       const nextLessonIndex = moduleProgress.completedLessons || 0;
-      const nextLessonId = module.lessons[nextLessonIndex];
+      
+      // Safety check if user finished all lessons
+      if (nextLessonIndex >= module.lessons.length) {
+         // Optionally send them to the last lesson or a completion page
+         // For now, let's send them to the last lesson
+         const lastLessonId = module.lessons[module.lessons.length - 1];
+         window.location.href = `lesson.html?id=${lastLessonId}`;
+         return;
+      }
 
+      const nextLessonId = module.lessons[nextLessonIndex];
       window.location.href = `lesson.html?id=${nextLessonId}`;
     }
 
